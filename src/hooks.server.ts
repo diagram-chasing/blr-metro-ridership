@@ -10,7 +10,7 @@ export async function handle({ event, resolve }) {
   return resolve(event, {
     transformPageChunk: ({ html }) => {
       return html
-        .replace('%baseURL%', event.locals.baseURL || '')
+        .replace('%baseURL%', event.locals.baseUrl || '')
         .replace('%analyticsID%', event.locals.analyticsID || '');
     }
   });
