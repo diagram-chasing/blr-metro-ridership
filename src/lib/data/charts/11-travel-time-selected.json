@@ -1,0 +1,14 @@
+{
+  "station_averages": [
+    {
+      "From_Station": "Madavara",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 18.318
+    },
+    {
+      "From_Station": "Halasuru",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 6.6426
+    }
+  ]
+}

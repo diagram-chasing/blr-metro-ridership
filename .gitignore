@@ -1,0 +1,46 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+docs
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Built-up volume data files
+analysis/built-up-volume/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_4326_3ss_V1_0_R8_C26.tif
+analysis/built-up-volume/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_4326_3ss_V1_0_R8_C26.zip
+analysis/built-up-volume/GHSL_Data_Package_2023_light.pdf
+# R and RStudio
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+.Renviron
+
+# R temporary files
+*_cache/
+*_files/
+.httr-oauth
+
+# Quarto
+/.quarto/
+_site/
+_book/
+.Rproj.user

@@ -1,0 +1,124 @@
+{
+  "sample_data": [
+    {
+      "From_Station": "Trinity",
+      "To_Station": "Nagasandra",
+      "Ridership": 44,
+      "Hour": 18,
+      "wday": "Mon",
+      "Date": "2025-08-11"
+    },
+    {
+      "From_Station": "Chickpete",
+      "To_Station": "Silk Institute",
+      "Ridership": 27,
+      "Hour": 17,
+      "wday": "Wed",
+      "Date": "2025-08-13"
+    },
+    {
+      "From_Station": "Lalbagh",
+      "To_Station": "Baiyappanahalli",
+      "Ridership": 13,
+      "Hour": 13,
+      "wday": "Sun",
+      "Date": "2025-08-10"
+    },
+    {
+      "From_Station": "Hosa Road",
+      "To_Station": "Kudlu Gate",
+      "Ridership": 10,
+      "Hour": 9,
+      "wday": "Sun",
+      "Date": "2025-08-17"
+    },
+    {
+      "From_Station": "Seetharampalya",
+      "To_Station": "Yelachenahalli",
+      "Ridership": 7,
+      "Hour": 20,
+      "wday": "Fri",
+      "Date": "2025-08-01"
+    },
+    {
+      "From_Station": "Halasuru",
+      "To_Station": "Yelachenahalli",
+      "Ridership": 4,
+      "Hour": 15,
+      "wday": "Thu",
+      "Date": "2025-08-07"
+    },
+    {
+      "From_Station": "BTM Layout",
+      "To_Station": "BTM Layout",
+      "Ridership": 3,
+      "Hour": 22,
+      "wday": "Sat",
+      "Date": "2025-08-16"
+    },
+    {
+      "From_Station": "Whitefield (Kadugodi)",
+      "To_Station": "Whitefield (Kadugodi)",
+      "Ridership": 3,
+      "Hour": 8,
+      "wday": "Wed",
+      "Date": "2025-08-06"
+    },
+    {
+      "From_Station": "Majestic",
+      "To_Station": "Sri Sathya Sai Hospital",
+      "Ridership": 3,
+      "Hour": 6,
+      "wday": "Mon",
+      "Date": "2025-08-04"
+    },
+    {
+      "From_Station": "Kengeri Bus Terminal",
+      "To_Station": "Chickpete",
+      "Ridership": 2,
+      "Hour": 7,
+      "wday": "Fri",
+      "Date": "2025-08-15"
+    },
+    {
+      "From_Station": "KR Market",
+      "To_Station": "Manjunathanagara",
+      "Ridership": 2,
+      "Hour": 20,
+      "wday": "Wed",
+      "Date": "2025-08-13"
+    },
+    {
+      "From_Station": "Garudacharpalya",
+      "To_Station": "Silk Institute",
+      "Ridership": 2,
+      "Hour": 17,
+      "wday": "Thu",
+      "Date": "2025-08-14"
+    },
+    {
+      "From_Station": "Jalahalli",
+      "To_Station": "RR Nagar",
+      "Ridership": 1,
+      "Hour": 6,
+      "wday": "Mon",
+      "Date": "2025-08-11"
+    },
+    {
+      "From_Station": "Sri Sathya Sai Hospital",
+      "To_Station": "Singasandra",
+      "Ridership": 1,
+      "Hour": 18,
+      "wday": "Sat",
+      "Date": "2025-08-16"
+    },
+    {
+      "From_Station": "Cubbon Park",
+      "To_Station": "Thalaghattapura",
+      "Ridership": 1,
+      "Hour": 10,
+      "wday": "Fri",
+      "Date": "2025-08-01"
+    }
+  ]
+}

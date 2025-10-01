@@ -1,0 +1,54 @@
+{
+  "station_impacts": [
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "percent_change": 38.6574
+    },
+    {
+      "Station": "Manjunathanagara",
+      "Line": "Green",
+      "percent_change": 27.0134
+    },
+    {
+      "Station": "Majestic",
+      "Line": "Black",
+      "percent_change": 26.2611
+    },
+    {
+      "Station": "Jalahalli",
+      "Line": "Green",
+      "percent_change": 22.5828
+    },
+    {
+      "Station": "Nagasandra",
+      "Line": "Green",
+      "percent_change": 22.1651
+    },
+    {
+      "Station": "RV Road",
+      "Line": "Black",
+      "percent_change": 17.8004
+    },
+    {
+      "Station": "Goraguntepalya",
+      "Line": "Green",
+      "percent_change": 16.3352
+    },
+    {
+      "Station": "Sandal Soap Factory",
+      "Line": "Green",
+      "percent_change": 6.9049
+    },
+    {
+      "Station": "Banashankari",
+      "Line": "Green",
+      "percent_change": -12.9064
+    },
+    {
+      "Station": "Chickpete",
+      "Line": "Green",
+      "percent_change": -13.9461
+    }
+  ]
+}

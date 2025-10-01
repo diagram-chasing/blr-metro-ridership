@@ -1,0 +1,20 @@
+{
+  "interchange_footfall": [
+    {
+      "Station": "Rashtreeya Vidyalaya Road",
+      "Before": 15076
+    },
+    {
+      "Station": "Majestic",
+      "Before": 179803
+    },
+    {
+      "Station": "Rashtreeya Vidyalaya Road",
+      "After": 75366
+    },
+    {
+      "Station": "Majestic",
+      "After": 209576
+    }
+  ]
+}

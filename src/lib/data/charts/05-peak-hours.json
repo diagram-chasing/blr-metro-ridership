@@ -1,0 +1,366 @@
+{
+  "peak_stations": [
+    {
+      "peak_category": "Evening Peak",
+      "Station": "MG Road",
+      "Line": "Purple",
+      "avg_ridership": 3050.4444
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Indiranagar",
+      "Line": "Purple",
+      "avg_ridership": 2876.4444
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Trinity",
+      "Line": "Purple",
+      "avg_ridership": 2664.6389
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Majestic",
+      "Line": "Black",
+      "avg_ridership": 2473.4444
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Cubbon Park",
+      "Line": "Purple",
+      "avg_ridership": 2439.4167
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "avg_ridership": 2194.8611
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Pattandur Agrahara",
+      "Line": "Purple",
+      "avg_ridership": 1992.3333
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Central College",
+      "Line": "Purple",
+      "avg_ridership": 1769.4722
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Benniganahalli",
+      "Line": "Purple",
+      "avg_ridership": 1749.9444
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Sri Sathya Sai Hospital",
+      "Line": "Purple",
+      "avg_ridership": 1694.5
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Mantri Square",
+      "Line": "Green",
+      "avg_ridership": 1677.1389
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Chickpete",
+      "Line": "Green",
+      "avg_ridership": 1501.8333
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Jayanagar",
+      "Line": "Green",
+      "avg_ridership": 1447.6944
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "KR Pura",
+      "Line": "Purple",
+      "avg_ridership": 1441.0278
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Seetharampalya",
+      "Line": "Purple",
+      "avg_ridership": 1332.8056
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Benniganahalli",
+      "Line": "Purple",
+      "avg_ridership": 3205.9167
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Majestic",
+      "Line": "Black",
+      "avg_ridership": 2175.8889
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "KR Pura",
+      "Line": "Purple",
+      "avg_ridership": 2090.6389
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Baiyappanahalli",
+      "Line": "Purple",
+      "avg_ridership": 2062
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Vijayanagara",
+      "Line": "Purple",
+      "avg_ridership": 1880.4722
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Kadugodi Tree Park",
+      "Line": "Purple",
+      "avg_ridership": 1850.8611
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Hosahalli",
+      "Line": "Purple",
+      "avg_ridership": 1670.8056
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Dasarahalli",
+      "Line": "Green",
+      "avg_ridership": 1545.6944
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Indiranagar",
+      "Line": "Purple",
+      "avg_ridership": 1529.25
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Attiguppe",
+      "Line": "Purple",
+      "avg_ridership": 1440.9167
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Yelachenahalli",
+      "Line": "Green",
+      "avg_ridership": 1386.8611
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Whitefield (Kadugodi)",
+      "Line": "Purple",
+      "avg_ridership": 1364.8056
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Nagasandra",
+      "Line": "Green",
+      "avg_ridership": 1356.4444
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "KSR Railway Station",
+      "Line": "Purple",
+      "avg_ridership": 1335.2222
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Konanakunte Cross",
+      "Line": "Green",
+      "avg_ridership": 1289.5
+    }
+  ],
+  "peak_summary": [
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Mahatma Gandhi Road",
+      "Line": "Purple",
+      "avg_ridership": 3050.4444
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Indiranagar",
+      "Line": "Purple",
+      "avg_ridership": 2876.4444
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Trinity",
+      "Line": "Purple",
+      "avg_ridership": 2664.6389
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Nadaprabhu Kempegowda Station, Majestic",
+      "Line": "Black",
+      "avg_ridership": 2473.4444
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Cubbon Park",
+      "Line": "Purple",
+      "avg_ridership": 2439.4167
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Dr. B. R. Ambedkar Station, Vidhana Soudha",
+      "Line": "Purple",
+      "avg_ridership": 2194.8611
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Pattandur Agrahara",
+      "Line": "Purple",
+      "avg_ridership": 1992.3333
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Sir M. Visvesvaraya Stn., Central College",
+      "Line": "Purple",
+      "avg_ridership": 1769.4722
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Benniganahalli",
+      "Line": "Purple",
+      "avg_ridership": 1749.9444
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Sri Sathya Sai Hospital",
+      "Line": "Purple",
+      "avg_ridership": 1694.5
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Mantri Square Sampige Road",
+      "Line": "Green",
+      "avg_ridership": 1677.1389
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Chickpete",
+      "Line": "Green",
+      "avg_ridership": 1501.8333
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Jayanagar",
+      "Line": "Green",
+      "avg_ridership": 1447.6944
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Krishnarajapura",
+      "Line": "Purple",
+      "avg_ridership": 1441.0278
+    },
+    {
+      "peak_category": "Evening Peak",
+      "Station": "Seetharampalya",
+      "Line": "Purple",
+      "avg_ridership": 1332.8056
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Benniganahalli",
+      "Line": "Purple",
+      "avg_ridership": 3205.9167
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Nadaprabhu Kempegowda Station, Majestic",
+      "Line": "Black",
+      "avg_ridership": 2175.8889
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Krishnarajapura",
+      "Line": "Purple",
+      "avg_ridership": 2090.6389
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Baiyappanahalli",
+      "Line": "Purple",
+      "avg_ridership": 2062
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Vijayanagar",
+      "Line": "Purple",
+      "avg_ridership": 1880.4722
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Kadugodi Tree Park",
+      "Line": "Purple",
+      "avg_ridership": 1850.8611
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Sri Balagangadharanatha Swamiji Station, Hosahalli",
+      "Line": "Purple",
+      "avg_ridership": 1670.8056
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Dasarahalli",
+      "Line": "Green",
+      "avg_ridership": 1545.6944
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Indiranagar",
+      "Line": "Purple",
+      "avg_ridership": 1529.25
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Attiguppe",
+      "Line": "Purple",
+      "avg_ridership": 1440.9167
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Yelachenahalli",
+      "Line": "Green",
+      "avg_ridership": 1386.8611
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Whitefield (Kadugodi)",
+      "Line": "Purple",
+      "avg_ridership": 1364.8056
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Nagasandra",
+      "Line": "Green",
+      "avg_ridership": 1356.4444
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Krantivira Sangolli Rayanna Railway Station",
+      "Line": "Purple",
+      "avg_ridership": 1335.2222
+    },
+    {
+      "peak_category": "Morning Peak",
+      "Station": "Konanakunte Cross",
+      "Line": "Green",
+      "avg_ridership": 1289.5
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "station_averages": [
+    {
+      "From_Station": "Madavara",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 18.318
+    },
+    {
+      "From_Station": "Bommasandra",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 18.1681
+    },
+    {
+      "From_Station": "Kengeri",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 18.1336
+    },
+    {
+      "From_Station": "Challaghatta",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 17.2191
+    },
+    {
+      "From_Station": "Kengeri Bus Terminal",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 16.2065
+    },
+    {
+      "From_Station": "Hopefarm Channasandra",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 16.027
+    },
+    {
+      "From_Station": "Hebbagodi",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 16.0018
+    },
+    {
+      "From_Station": "Nagasandra",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 15.9655
+    },
+    {
+      "From_Station": "Chikkabidarakallu",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 15.814
+    },
+    {
+      "From_Station": "Silk Institute",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 15.3761
+    },
+    {
+      "From_Station": "Konappana Agrahara",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 15.3361
+    },
+    {
+      "From_Station": "Pattandur Agrahara",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 15.1882
+    },
+    {
+      "From_Station": "Jnanabharathi",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 15.0179
+    },
+    {
+      "From_Station": "Whitefield (Kadugodi)",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 14.83
+    },
+    {
+      "From_Station": "Pattanagere",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 14.453
+    },
+    {
+      "From_Station": "Manjunathanagara",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 14.3692
+    },
+    {
+      "From_Station": "Dasarahalli",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 14.2255
+    },
+    {
+      "From_Station": "Mysore Road",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 14.1561
+    },
+    {
+      "From_Station": "Huskur Road",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 13.9475
+    },
+    {
+      "From_Station": "RR Nagar",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 13.9332
+    },
+    {
+      "From_Station": "Jalahalli",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 13.8685
+    },
+    {
+      "From_Station": "Thalaghattapura",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 13.5169
+    },
+    {
+      "From_Station": "Electronic City",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 13.4103
+    },
+    {
+      "From_Station": "Doddakallasandra",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 13.2121
+    },
+    {
+      "From_Station": "Seetharampalya",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 13.21
+    },
+    {
+      "From_Station": "Nallurahalli",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 13.1804
+    },
+    {
+      "From_Station": "Kundalahalli",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 13.1508
+    },
+    {
+      "From_Station": "Peenya Industry",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 12.9801
+    },
+    {
+      "From_Station": "Kadugodi Tree Park",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 12.9614
+    },
+    {
+      "From_Station": "Peenya",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 12.6753
+    },
+    {
+      "From_Station": "Vajarahalli",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 12.6132
+    },
+    {
+      "From_Station": "Hosa Road",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 12.5867
+    },
+    {
+      "From_Station": "Yelachenahalli",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 12.2416
+    },
+    {
+      "From_Station": "Konanakunte Cross",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 12.14
+    },
+    {
+      "From_Station": "JP Nagar",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 11.9264
+    },
+    {
+      "From_Station": "Yeshwantpur",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 11.3906
+    },
+    {
+      "From_Station": "Deepanjali Nagar",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 11.3245
+    },
+    {
+      "From_Station": "Singasandra",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 11.3193
+    },
+    {
+      "From_Station": "KR Pura",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 11.1748
+    },
+    {
+      "From_Station": "Hoodi",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 11.1073
+    },
+    {
+      "From_Station": "Goraguntepalya",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 10.8731
+    },
+    {
+      "From_Station": "Sri Sathya Sai Hospital",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 10.8492
+    },
+    {
+      "From_Station": "RV Road",
+      "Origin_Line": "Black",
+      "avg_stations_travelled": 10.8475
+    },
+    {
+      "From_Station": "Kudlu Gate",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 10.8157
+    },
+    {
+      "From_Station": "Benniganahalli",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 10.733
+    },
+    {
+      "From_Station": "Banashankari",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 10.6411
+    },
+    {
+      "From_Station": "Sandal Soap Factory",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 10.5777
+    },
+    {
+      "From_Station": "Bommanahalli",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 10.5573
+    },
+    {
+      "From_Station": "Nayandahalli",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 10.3709
+    },
+    {
+      "From_Station": "Mahalakshmi",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 10.3263
+    },
+    {
+      "From_Station": "Silk Board",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 10.2743
+    },
+    {
+      "From_Station": "BTM Layout",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 10.1096
+    },
+    {
+      "From_Station": "Jayanagar",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 10.0655
+    },
+    {
+      "From_Station": "Attiguppe",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 10.0275
+    },
+    {
+      "From_Station": "Jayadeva Hospital",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 10.0077
+    },
+    {
+      "From_Station": "Swami Vivekananda Road",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 9.9681
+    },
+    {
+      "From_Station": "Hongasandra",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 9.8036
+    },
+    {
+      "From_Station": "Baiyappanahalli",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 9.6558
+    },
+    {
+      "From_Station": "Lalbagh",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 9.5387
+    },
+    {
+      "From_Station": "Vijayanagara",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 9.4931
+    },
+    {
+      "From_Station": "Garudacharpalya",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 9.4668
+    },
+    {
+      "From_Station": "Beratena Agrahara",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 9.4511
+    },
+    {
+      "From_Station": "Rajajinagar",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 9.43
+    },
+    {
+      "From_Station": "Hosahalli",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 9.1124
+    },
+    {
+      "From_Station": "Indiranagar",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 9.1006
+    },
+    {
+      "From_Station": "South End Circle",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 9.0853
+    },
+    {
+      "From_Station": "Ragigudda",
+      "Origin_Line": "Yellow",
+      "avg_stations_travelled": 9.0257
+    },
+    {
+      "From_Station": "Trinity",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 8.9232
+    },
+    {
+      "From_Station": "Singayyanapalya",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 8.7181
+    },
+    {
+      "From_Station": "Cubbon Park",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 8.5214
+    },
+    {
+      "From_Station": "MG Road",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 8.4882
+    },
+    {
+      "From_Station": "National College",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 8.4766
+    },
+    {
+      "From_Station": "MKK Road",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 8.394
+    },
+    {
+      "From_Station": "Majestic",
+      "Origin_Line": "Black",
+      "avg_stations_travelled": 8.3737
+    },
+    {
+      "From_Station": "KSR Railway Station",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 8.332
+    },
+    {
+      "From_Station": "Srirampura",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 8.1016
+    },
+    {
+      "From_Station": "KR Market",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 7.8693
+    },
+    {
+      "From_Station": "Magadi Road",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 7.761
+    },
+    {
+      "From_Station": "Mantri Square",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 7.7608
+    },
+    {
+      "From_Station": "Chickpete",
+      "Origin_Line": "Green",
+      "avg_stations_travelled": 7.613
+    },
+    {
+      "From_Station": "Vidhana Soudha",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 7.5079
+    },
+    {
+      "From_Station": "Central College",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 7.4236
+    },
+    {
+      "From_Station": "Halasuru",
+      "Origin_Line": "Purple",
+      "avg_stations_travelled": 6.6426
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<div class="quarto-title-block">
+
+  $if(logo)$
+    <img src="$logo$" alt="Logo" style="height: 80px; margin-bottom: 1rem; margin-left: -0.5rem; margin-top: -2.5rem;">
+  $endif$
+
+  <h1 class="title" style="border-top: 1px black solid; padding-top: 1rem;">$title$</h1>
+
+  $if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+  $endif$
+
+$if(author)$
+  <div class="quarto-title-authors">
+    $for(author)$
+    <div class="author">$author.name$</div>
+    $endfor$
+  </div>
+  $endif$
+  <p class="date">$date$</p>
+</div>

@@ -1,0 +1,333 @@
+{
+  "window": {
+    "start": "2025-08-15",
+    "end": "2025-08-18"
+  },
+  "stations": ["Vidhana Soudha", "Lalbagh", "Mahalakshmi"],
+  "data": [
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-01",
+      "Total": 12493
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-02",
+      "Total": 10424
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-03",
+      "Total": 4956
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-04",
+      "Total": 13302
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-05",
+      "Total": 12681
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-06",
+      "Total": 13454
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-07",
+      "Total": 13108
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-08",
+      "Total": 8428
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-09",
+      "Total": 5116
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-10",
+      "Total": 4598
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-11",
+      "Total": 14563
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-12",
+      "Total": 14254
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-13",
+      "Total": 15240
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-14",
+      "Total": 14347
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-15",
+      "Total": 15995
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-16",
+      "Total": 10583
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-17",
+      "Total": 5607
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-18",
+      "Total": 14474
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-01",
+      "Total": 6087
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-02",
+      "Total": 6220
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-03",
+      "Total": 4969
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-04",
+      "Total": 6269
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-05",
+      "Total": 6139
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-06",
+      "Total": 6378
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-07",
+      "Total": 6719
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-08",
+      "Total": 6623
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-09",
+      "Total": 10322
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-10",
+      "Total": 7598
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-11",
+      "Total": 8486
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-12",
+      "Total": 8787
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-13",
+      "Total": 8768
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-14",
+      "Total": 10117
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-15",
+      "Total": 10521
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-16",
+      "Total": 10008
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-17",
+      "Total": 8774
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Date": "2025-08-18",
+      "Total": 7558
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-01",
+      "Total": 8750
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-02",
+      "Total": 10502
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-03",
+      "Total": 9718
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-04",
+      "Total": 8903
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-05",
+      "Total": 9042
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-06",
+      "Total": 9199
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-07",
+      "Total": 8792
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-08",
+      "Total": 7565
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-09",
+      "Total": 10726
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-10",
+      "Total": 8985
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-11",
+      "Total": 9435
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-12",
+      "Total": 9299
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-13",
+      "Total": 9190
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-14",
+      "Total": 9964
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-15",
+      "Total": 17992
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-16",
+      "Total": 24881
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-17",
+      "Total": 12381
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Date": "2025-08-18",
+      "Total": 9299
+    }
+  ]
+}

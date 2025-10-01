@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+
+$yellow:    #edbb5f;
+$black:     #151e28;
+$blue:      #5d98b6;
+$green:     #8c9c74;
+$alabaster: #f4e4c9;
+$red:       #db5441;
+
+$primary:    $blue;
+$body-bg:    #ffffff;
+$body-color: $black;
+$link-color: $blue;
+
+
+$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
+$headings-font-family:   "Inter", sans-serif;
+
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;700&display=swap');

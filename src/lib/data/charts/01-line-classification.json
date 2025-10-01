@@ -1,0 +1,8 @@
+{
+  "lines": {
+    "black": ["Majestic", "RV Road"],
+    "green": ["Banashankari", "Chickpete", "Chikkabidarakallu", "Dasarahalli", "Doddakallasandra", "Goraguntepalya", "JP Nagar", "Jalahalli", "Jayanagar", "KR Market", "Konanakunte Cross", "Lalbagh", "MKK Road", "Madavara", "Mahalakshmi", "Manjunathanagara", "Mantri Square", "Nagasandra", "National College", "Peenya", "Peenya Industry", "Rajajinagar", "Sandal Soap Factory", "Silk Institute", "South End Circle", "Srirampura", "Thalaghattapura", "Vajarahalli", "Yelachenahalli", "Yeshwantpur"],
+    "purple": ["Attiguppe", "Baiyappanahalli", "Benniganahalli", "Central College", "Challaghatta", "Cubbon Park", "Deepanjali Nagar", "Garudacharpalya", "Halasuru", "Hoodi", "Hopefarm Channasandra", "Hosahalli", "Indiranagar", "Jnanabharathi", "KR Pura", "KSR Railway Station", "Kadugodi Tree Park", "Kengeri", "Kengeri Bus Terminal", "Kundalahalli", "MG Road", "Magadi Road", "Mysore Road", "Nallurahalli", "Nayandahalli", "Pattanagere", "Pattandur Agrahara", "RR Nagar", "Seetharampalya", "Singayyanapalya", "Sri Sathya Sai Hospital", "Swami Vivekananda Road", "Trinity", "Vidhana Soudha", "Vijayanagara", "Whitefield (Kadugodi)"],
+    "yellow": ["BTM Layout", "Beratena Agrahara", "Bommanahalli", "Bommasandra", "Electronic City", "Hebbagodi", "Hongasandra", "Hosa Road", "Huskur Road", "Jayadeva Hospital", "Konappana Agrahara", "Kudlu Gate", "Ragigudda", "Silk Board", "Singasandra"]
+  }
+}

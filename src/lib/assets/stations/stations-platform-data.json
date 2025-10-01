@@ -1,0 +1,702 @@
+{
+  "stations": {
+    "bguc": {
+      "name": "Jnanabharathi",
+      "line": "purple",
+      "svgFile": "bguc-platform.svg",
+      "originalFile": "bgucPlatformIn.svg"
+    },
+    "brcs": {
+      "name": "Krantivira Sangolli Rayanna Railway Station",
+      "line": "purple",
+      "svgFile": "brcs-platform.svg",
+      "originalFile": "brcsPlatformIn.svg"
+    },
+    "byph": {
+      "name": "Baiyappanahalli",
+      "line": "purple",
+      "svgFile": "byph-platform.svg",
+      "originalFile": "byphPlatformIn.svg"
+    },
+    "cbpk": {
+      "name": "Cubbon Park",
+      "line": "purple",
+      "svgFile": "cbpk-platform.svg",
+      "originalFile": "cbpkPlatformIn.svg"
+    },
+    "ckpe": {
+      "name": "Chickpete",
+      "line": "green",
+      "svgFile": "ckpe-platform.svg",
+      "originalFile": "ckpePlatformIn.svg"
+    },
+    "clgd": {
+      "name": "Challaghatta",
+      "line": "purple",
+      "svgFile": "clgd-platform.svg",
+      "originalFile": "clgdPlatformIn.svg"
+    },
+    "djnr": {
+      "name": "Deepanjali Nagar",
+      "line": "purple",
+      "svgFile": "djnr-platform.svg",
+      "originalFile": "djnrPlatformIn.svg"
+    },
+    "klpk": {
+      "name": "Doddakallasandra",
+      "line": "green",
+      "svgFile": "klpk-platform.svg",
+      "originalFile": "doddakalasandra - platform.svg"
+    },
+    "dsh": {
+      "name": "Dasarahalli",
+      "line": "green",
+      "svgFile": "dsh-platform.svg",
+      "originalFile": "dshPlatformIn.svg"
+    },
+    "hlru": {
+      "name": "Halasuru",
+      "line": "purple",
+      "svgFile": "hlru-platform.svg",
+      "originalFile": "hlruPlatformIn.svg"
+    },
+    "hsli": {
+      "name": "Sri Balagangadharanatha Swamiji Station, Hosahalli",
+      "line": "purple",
+      "svgFile": "hsli-platform.svg",
+      "originalFile": "hsliPlatformIn.svg"
+    },
+    "idn": {
+      "name": "Indiranagar",
+      "line": "purple",
+      "svgFile": "idn-platform.svg",
+      "originalFile": "idnPlatformIn.svg"
+    },
+    "jidl": {
+      "name": "Chikkabidarakallu",
+      "line": "green",
+      "svgFile": "jidl-platform.svg",
+      "originalFile": "jidlPlatformIn.svg"
+    },
+    "jlhl": {
+      "name": "Jalahalli",
+      "line": "green",
+      "svgFile": "jlhl-platform.svg",
+      "originalFile": "jlhlPlatformIn.svg"
+    },
+    "jpn": {
+      "name": "Jaya Prakash Nagar",
+      "line": "green",
+      "svgFile": "jpn-platform.svg",
+      "originalFile": "jpnPlatformIn.svg"
+    },
+    "jtpm": {
+      "name": "Benniganahalli",
+      "line": "purple",
+      "svgFile": "jtpm-platform.svg",
+      "originalFile": "jtpmPlatformIn.svg"
+    },
+    "jyn": {
+      "name": "Jayanagar",
+      "line": "green",
+      "svgFile": "jyn-platform.svg",
+      "originalFile": "jynPlatformIn.svg"
+    },
+    "aprc": {
+      "name": "Konanakunte Cross",
+      "line": "green",
+      "svgFile": "aprc-platform.svg",
+      "originalFile": "konankunte cross - platform.svg"
+    },
+    "kram": {
+      "name": "Krishnarajapura",
+      "line": "purple",
+      "svgFile": "kram-platform.svg",
+      "originalFile": "kramPlatformIn.svg"
+    },
+    "krmt": {
+      "name": "Krishna Rajendra Market",
+      "line": "green",
+      "svgFile": "krmt-platform.svg",
+      "originalFile": "krmtPlatformIn.svg"
+    },
+    "kvpr": {
+      "name": "Mahakavi Kuvempu Road",
+      "line": "green",
+      "svgFile": "kvpr-platform.svg",
+      "originalFile": "kvprPlatformIn.svg"
+    },
+    "lbgh": {
+      "name": "Lalbagh",
+      "line": "green",
+      "svgFile": "lbgh-platform.svg",
+      "originalFile": "lbghPlatformIn.svg"
+    },
+    "magr": {
+      "name": "Mahatma Gandhi Road",
+      "line": "purple",
+      "svgFile": "magr-platform.svg",
+      "originalFile": "magrPlatformIn.svg"
+    },
+    "mdvp": {
+      "name": "Singayyanapalya",
+      "line": "purple",
+      "svgFile": "mdvp-platform.svg",
+      "originalFile": "mdvpPlatformIn.svg"
+    },
+    "mhli": {
+      "name": "Mahalakshmi",
+      "line": "green",
+      "svgFile": "mhli-platform.svg",
+      "originalFile": "mhliPlatformIn.svg"
+    },
+    "mird": {
+      "name": "Magadi Road",
+      "line": "purple",
+      "svgFile": "mird-platform.svg",
+      "originalFile": "mirdPlatformIn.svg"
+    },
+    "mlsd": {
+      "name": "Kengeri Bus Terminal",
+      "line": "purple",
+      "svgFile": "mlsd-platform.svg",
+      "originalFile": "mlsdPlatformIn.svg"
+    },
+    "mnjn": {
+      "name": "Manjunathanagara",
+      "line": "green",
+      "svgFile": "mnjn-platform.svg",
+      "originalFile": "mnjnPlatformIn.svg"
+    },
+    "myrd": {
+      "name": "Mysore Road",
+      "line": "purple",
+      "svgFile": "myrd-platform.svg",
+      "originalFile": "myrdPlatformIn.svg"
+    },
+    "ngsa": {
+      "name": "Nagasandra",
+      "line": "green",
+      "svgFile": "ngsa-platform.svg",
+      "originalFile": "ngsaPlatformIn.svg"
+    },
+    "nlc": {
+      "name": "National College",
+      "line": "green",
+      "svgFile": "nlc-platform.svg",
+      "originalFile": "nlcPlatformIn.svg"
+    },
+    "nyhm": {
+      "name": "Pantharapalya - Nayandahalli",
+      "line": "purple",
+      "svgFile": "nyhm-platform.svg",
+      "originalFile": "nyhmPlatformIn.svg"
+    },
+    "patg": {
+      "name": "Pattanagere",
+      "line": "purple",
+      "svgFile": "patg-platform.svg",
+      "originalFile": "patgPlatformIn.svg"
+    },
+    "peya": {
+      "name": "Peenya",
+      "line": "green",
+      "svgFile": "peya-platform.svg",
+      "originalFile": "peyaPlatformIn.svg"
+    },
+    "puth": {
+      "name": "Yelachenahalli",
+      "line": "green",
+      "svgFile": "puth-platform.svg",
+      "originalFile": "puthPlatformIn.svg"
+    },
+    "pyid": {
+      "name": "Peenya Industry",
+      "line": "green",
+      "svgFile": "pyid-platform.svg",
+      "originalFile": "pyidPlatformIn.svg"
+    },
+    "rjnr": {
+      "name": "Rajajinagar",
+      "line": "green",
+      "svgFile": "rjnr-platform.svg",
+      "originalFile": "rjnrPlatformIn.svg"
+    },
+    "rrrn": {
+      "name": "Rajarajeshwari Nagar",
+      "line": "purple",
+      "svgFile": "rrrn-platform.svg",
+      "originalFile": "rrrnPlatformIn.svg"
+    },
+    "sece": {
+      "name": "South End Circle",
+      "line": "green",
+      "svgFile": "sece-platform.svg",
+      "originalFile": "secePlatformIn.svg"
+    },
+    "spgd": {
+      "name": "Mantri Square Sampige Road",
+      "line": "green",
+      "svgFile": "spgd-platform.svg",
+      "originalFile": "spgdPlatformIn.svg"
+    },
+    "spru": {
+      "name": "Srirampura",
+      "line": "green",
+      "svgFile": "spru-platform.svg",
+      "originalFile": "spruPlatformIn.svg"
+    },
+    "ssfy": {
+      "name": "Sandal Soap Factory",
+      "line": "green",
+      "svgFile": "ssfy-platform.svg",
+      "originalFile": "ssfyPlatformIn.svg"
+    },
+    "svrd": {
+      "name": "Swami Vivekananda Road",
+      "line": "purple",
+      "svgFile": "svrd-platform.svg",
+      "originalFile": "svrdPlatformIn.svg"
+    },
+    "tgtp": {
+      "name": "Thalaghattapura",
+      "line": "green",
+      "svgFile": "tgtp-platform.svg",
+      "originalFile": "talaghattapura - platform.svg"
+    },
+    "tty": {
+      "name": "Trinity",
+      "line": "purple",
+      "svgFile": "tty-platform.svg",
+      "originalFile": "ttyPlatformIn.svg"
+    },
+    "vjrh": {
+      "name": "Vajarahalli",
+      "line": "green",
+      "svgFile": "vjrh-platform.svg",
+      "originalFile": "vajrahalli - platform.svg"
+    },
+    "vdhp": {
+      "name": "Nallurahalli",
+      "line": "purple",
+      "svgFile": "vdhp-platform.svg",
+      "originalFile": "vdhpPlatformIn.svg"
+    },
+    "vdsa": {
+      "name": "Dr. B. R. Ambedkar Station, Vidhana Soudha",
+      "line": "purple",
+      "svgFile": "vdsa-platform.svg",
+      "originalFile": "vdsaPlatformIn.svg"
+    },
+    "vjn": {
+      "name": "Vijayanagar",
+      "line": "purple",
+      "svgFile": "vjn-platform.svg",
+      "originalFile": "vjnPlatformIn.svg"
+    },
+    "vswa": {
+      "name": "Sir M. Visvesvaraya Stn., Central College",
+      "line": "purple",
+      "svgFile": "vswa-platform.svg",
+      "originalFile": "vswaPlatformIn.svg"
+    },
+    "whtm": {
+      "name": "Whitefield (Kadugodi)",
+      "line": "purple",
+      "svgFile": "whtm-platform.svg",
+      "originalFile": "whtmPlatformIn.svg"
+    },
+    "ypi": {
+      "name": "Goraguntepalya",
+      "line": "green",
+      "svgFile": "ypi-platform.svg",
+      "originalFile": "ypiPlatformIn.svg"
+    },
+    "ypm": {
+      "name": "Yeshwantpur",
+      "line": "green",
+      "svgFile": "ypm-platform.svg",
+      "originalFile": "ypmPlatformIn.svg"
+    }
+  },
+  "summary": {
+    "totalProcessed": 53,
+    "greenLineStations": 27,
+    "purpleLineStations": 26,
+    "interchangeStations": 0,
+    "generatedAt": "2025-09-26T07:16:37.490Z"
+  },
+  "processedFiles": [
+    {
+      "stationCode": "bguc",
+      "name": "Jnanabharathi",
+      "line": "purple",
+      "originalFile": "bgucPlatformIn.svg",
+      "standardizedFile": "bguc-platform.svg"
+    },
+    {
+      "stationCode": "brcs",
+      "name": "Krantivira Sangolli Rayanna Railway Station",
+      "line": "purple",
+      "originalFile": "brcsPlatformIn.svg",
+      "standardizedFile": "brcs-platform.svg"
+    },
+    {
+      "stationCode": "byph",
+      "name": "Baiyappanahalli",
+      "line": "purple",
+      "originalFile": "byphPlatformIn.svg",
+      "standardizedFile": "byph-platform.svg"
+    },
+    {
+      "stationCode": "cbpk",
+      "name": "Cubbon Park",
+      "line": "purple",
+      "originalFile": "cbpkPlatformIn.svg",
+      "standardizedFile": "cbpk-platform.svg"
+    },
+    {
+      "stationCode": "ckpe",
+      "name": "Chickpete",
+      "line": "green",
+      "originalFile": "ckpePlatformIn.svg",
+      "standardizedFile": "ckpe-platform.svg"
+    },
+    {
+      "stationCode": "clgd",
+      "name": "Challaghatta",
+      "line": "purple",
+      "originalFile": "clgdPlatformIn.svg",
+      "standardizedFile": "clgd-platform.svg"
+    },
+    {
+      "stationCode": "djnr",
+      "name": "Deepanjali Nagar",
+      "line": "purple",
+      "originalFile": "djnrPlatformIn.svg",
+      "standardizedFile": "djnr-platform.svg"
+    },
+    {
+      "stationCode": "klpk",
+      "name": "Doddakallasandra",
+      "line": "green",
+      "originalFile": "doddakalasandra - platform.svg",
+      "standardizedFile": "klpk-platform.svg"
+    },
+    {
+      "stationCode": "dsh",
+      "name": "Dasarahalli",
+      "line": "green",
+      "originalFile": "dshPlatformIn.svg",
+      "standardizedFile": "dsh-platform.svg"
+    },
+    {
+      "stationCode": "hlru",
+      "name": "Halasuru",
+      "line": "purple",
+      "originalFile": "hlruPlatformIn.svg",
+      "standardizedFile": "hlru-platform.svg"
+    },
+    {
+      "stationCode": "hsli",
+      "name": "Sri Balagangadharanatha Swamiji Station, Hosahalli",
+      "line": "purple",
+      "originalFile": "hsliPlatformIn.svg",
+      "standardizedFile": "hsli-platform.svg"
+    },
+    {
+      "stationCode": "idn",
+      "name": "Indiranagar",
+      "line": "purple",
+      "originalFile": "idnPlatformIn.svg",
+      "standardizedFile": "idn-platform.svg"
+    },
+    {
+      "stationCode": "jidl",
+      "name": "Chikkabidarakallu",
+      "line": "green",
+      "originalFile": "jidlPlatformIn.svg",
+      "standardizedFile": "jidl-platform.svg"
+    },
+    {
+      "stationCode": "jlhl",
+      "name": "Jalahalli",
+      "line": "green",
+      "originalFile": "jlhlPlatformIn.svg",
+      "standardizedFile": "jlhl-platform.svg"
+    },
+    {
+      "stationCode": "jpn",
+      "name": "Jaya Prakash Nagar",
+      "line": "green",
+      "originalFile": "jpnPlatformIn.svg",
+      "standardizedFile": "jpn-platform.svg"
+    },
+    {
+      "stationCode": "jtpm",
+      "name": "Benniganahalli",
+      "line": "purple",
+      "originalFile": "jtpmPlatformIn.svg",
+      "standardizedFile": "jtpm-platform.svg"
+    },
+    {
+      "stationCode": "jyn",
+      "name": "Jayanagar",
+      "line": "green",
+      "originalFile": "jynPlatformIn.svg",
+      "standardizedFile": "jyn-platform.svg"
+    },
+    {
+      "stationCode": "aprc",
+      "name": "Konanakunte Cross",
+      "line": "green",
+      "originalFile": "konankunte cross - platform.svg",
+      "standardizedFile": "aprc-platform.svg"
+    },
+    {
+      "stationCode": "kram",
+      "name": "Krishnarajapura",
+      "line": "purple",
+      "originalFile": "kramPlatformIn.svg",
+      "standardizedFile": "kram-platform.svg"
+    },
+    {
+      "stationCode": "krmt",
+      "name": "Krishna Rajendra Market",
+      "line": "green",
+      "originalFile": "krmtPlatformIn.svg",
+      "standardizedFile": "krmt-platform.svg"
+    },
+    {
+      "stationCode": "kvpr",
+      "name": "Mahakavi Kuvempu Road",
+      "line": "green",
+      "originalFile": "kvprPlatformIn.svg",
+      "standardizedFile": "kvpr-platform.svg"
+    },
+    {
+      "stationCode": "lbgh",
+      "name": "Lalbagh",
+      "line": "green",
+      "originalFile": "lbghPlatformIn.svg",
+      "standardizedFile": "lbgh-platform.svg"
+    },
+    {
+      "stationCode": "magr",
+      "name": "Mahatma Gandhi Road",
+      "line": "purple",
+      "originalFile": "magrPlatformIn.svg",
+      "standardizedFile": "magr-platform.svg"
+    },
+    {
+      "stationCode": "mdvp",
+      "name": "Singayyanapalya",
+      "line": "purple",
+      "originalFile": "mdvpPlatformIn.svg",
+      "standardizedFile": "mdvp-platform.svg"
+    },
+    {
+      "stationCode": "mhli",
+      "name": "Mahalakshmi",
+      "line": "green",
+      "originalFile": "mhliPlatformIn.svg",
+      "standardizedFile": "mhli-platform.svg"
+    },
+    {
+      "stationCode": "mird",
+      "name": "Magadi Road",
+      "line": "purple",
+      "originalFile": "mirdPlatformIn.svg",
+      "standardizedFile": "mird-platform.svg"
+    },
+    {
+      "stationCode": "mlsd",
+      "name": "Kengeri Bus Terminal",
+      "line": "purple",
+      "originalFile": "mlsdPlatformIn.svg",
+      "standardizedFile": "mlsd-platform.svg"
+    },
+    {
+      "stationCode": "mnjn",
+      "name": "Manjunathanagara",
+      "line": "green",
+      "originalFile": "mnjnPlatformIn.svg",
+      "standardizedFile": "mnjn-platform.svg"
+    },
+    {
+      "stationCode": "myrd",
+      "name": "Mysore Road",
+      "line": "purple",
+      "originalFile": "myrdPlatformIn.svg",
+      "standardizedFile": "myrd-platform.svg"
+    },
+    {
+      "stationCode": "ngsa",
+      "name": "Nagasandra",
+      "line": "green",
+      "originalFile": "ngsaPlatformIn.svg",
+      "standardizedFile": "ngsa-platform.svg"
+    },
+    {
+      "stationCode": "nlc",
+      "name": "National College",
+      "line": "green",
+      "originalFile": "nlcPlatformIn.svg",
+      "standardizedFile": "nlc-platform.svg"
+    },
+    {
+      "stationCode": "nyhm",
+      "name": "Pantharapalya - Nayandahalli",
+      "line": "purple",
+      "originalFile": "nyhmPlatformIn.svg",
+      "standardizedFile": "nyhm-platform.svg"
+    },
+    {
+      "stationCode": "patg",
+      "name": "Pattanagere",
+      "line": "purple",
+      "originalFile": "patgPlatformIn.svg",
+      "standardizedFile": "patg-platform.svg"
+    },
+    {
+      "stationCode": "peya",
+      "name": "Peenya",
+      "line": "green",
+      "originalFile": "peyaPlatformIn.svg",
+      "standardizedFile": "peya-platform.svg"
+    },
+    {
+      "stationCode": "puth",
+      "name": "Yelachenahalli",
+      "line": "green",
+      "originalFile": "puthPlatformIn.svg",
+      "standardizedFile": "puth-platform.svg"
+    },
+    {
+      "stationCode": "pyid",
+      "name": "Peenya Industry",
+      "line": "green",
+      "originalFile": "pyidPlatformIn.svg",
+      "standardizedFile": "pyid-platform.svg"
+    },
+    {
+      "stationCode": "rjnr",
+      "name": "Rajajinagar",
+      "line": "green",
+      "originalFile": "rjnrPlatformIn.svg",
+      "standardizedFile": "rjnr-platform.svg"
+    },
+    {
+      "stationCode": "rrrn",
+      "name": "Rajarajeshwari Nagar",
+      "line": "purple",
+      "originalFile": "rrrnPlatformIn.svg",
+      "standardizedFile": "rrrn-platform.svg"
+    },
+    {
+      "stationCode": "sece",
+      "name": "South End Circle",
+      "line": "green",
+      "originalFile": "secePlatformIn.svg",
+      "standardizedFile": "sece-platform.svg"
+    },
+    {
+      "stationCode": "spgd",
+      "name": "Mantri Square Sampige Road",
+      "line": "green",
+      "originalFile": "spgdPlatformIn.svg",
+      "standardizedFile": "spgd-platform.svg"
+    },
+    {
+      "stationCode": "spru",
+      "name": "Srirampura",
+      "line": "green",
+      "originalFile": "spruPlatformIn.svg",
+      "standardizedFile": "spru-platform.svg"
+    },
+    {
+      "stationCode": "ssfy",
+      "name": "Sandal Soap Factory",
+      "line": "green",
+      "originalFile": "ssfyPlatformIn.svg",
+      "standardizedFile": "ssfy-platform.svg"
+    },
+    {
+      "stationCode": "svrd",
+      "name": "Swami Vivekananda Road",
+      "line": "purple",
+      "originalFile": "svrdPlatformIn.svg",
+      "standardizedFile": "svrd-platform.svg"
+    },
+    {
+      "stationCode": "tgtp",
+      "name": "Thalaghattapura",
+      "line": "green",
+      "originalFile": "talaghattapura - platform.svg",
+      "standardizedFile": "tgtp-platform.svg"
+    },
+    {
+      "stationCode": "tty",
+      "name": "Trinity",
+      "line": "purple",
+      "originalFile": "ttyPlatformIn.svg",
+      "standardizedFile": "tty-platform.svg"
+    },
+    {
+      "stationCode": "vjrh",
+      "name": "Vajarahalli",
+      "line": "green",
+      "originalFile": "vajrahalli - platform.svg",
+      "standardizedFile": "vjrh-platform.svg"
+    },
+    {
+      "stationCode": "vdhp",
+      "name": "Nallurahalli",
+      "line": "purple",
+      "originalFile": "vdhpPlatformIn.svg",
+      "standardizedFile": "vdhp-platform.svg"
+    },
+    {
+      "stationCode": "vdsa",
+      "name": "Dr. B. R. Ambedkar Station, Vidhana Soudha",
+      "line": "purple",
+      "originalFile": "vdsaPlatformIn.svg",
+      "standardizedFile": "vdsa-platform.svg"
+    },
+    {
+      "stationCode": "vjn",
+      "name": "Vijayanagar",
+      "line": "purple",
+      "originalFile": "vjnPlatformIn.svg",
+      "standardizedFile": "vjn-platform.svg"
+    },
+    {
+      "stationCode": "vswa",
+      "name": "Sir M. Visvesvaraya Stn., Central College",
+      "line": "purple",
+      "originalFile": "vswaPlatformIn.svg",
+      "standardizedFile": "vswa-platform.svg"
+    },
+    {
+      "stationCode": "whtm",
+      "name": "Whitefield (Kadugodi)",
+      "line": "purple",
+      "originalFile": "whtmPlatformIn.svg",
+      "standardizedFile": "whtm-platform.svg"
+    },
+    {
+      "stationCode": "ypi",
+      "name": "Goraguntepalya",
+      "line": "green",
+      "originalFile": "ypiPlatformIn.svg",
+      "standardizedFile": "ypi-platform.svg"
+    },
+    {
+      "stationCode": "ypm",
+      "name": "Yeshwantpur",
+      "line": "green",
+      "originalFile": "ypmPlatformIn.svg",
+      "standardizedFile": "ypm-platform.svg"
+    }
+  ]
+}

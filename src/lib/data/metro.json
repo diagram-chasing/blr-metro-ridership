@@ -1,0 +1,7620 @@
+{
+  "type": "FeatureCollection",
+  "generator": "JOSM",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "ITPL",
+        "name": "Pattandur Agrahara",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ಪಟ್ಟಂದೂರು ಅಗ್ರಹಾರ",
+        "colour": "purple",
+        "fullName": "Pattandur Agrahara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7372451,
+          12.9875935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "name": "Peenya Industry",
+        "code": "PYID",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ಪೀಣ್ಯ ಕೈಗಾರಿಕ",
+        "fullName": "Peenya Industry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.525528,
+          13.0363428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "ETCT",
+        "railway": "stop",
+        "name:kn": "ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸಿಟಿ",
+        "subway": "yes",
+        "colour": "yellow",
+        "name": "Electronic City",
+        "fullName": "Electronic City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6637352,
+          12.8562795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "GDCP",
+        "railway": "stop",
+        "name:kn": "ಗರುಡಾಚಾರ್ ಪಾಳ್ಯ",
+        "name": "Garudacharpalya",
+        "subway": "yes",
+        "colour": "purple",
+        "fullName": "Garudacharpalya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7032966,
+          12.9935165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Challaghatta",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ಚಲ್ಲಘಟ್ಟ",
+        "colour": "purple",
+        "code": "CLGA",
+        "fullName": "Challaghatta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4612476,
+          12.897289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಡೆಲ್ಟಾ ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಬೊಮ್ಮಸಂದ್ರ",
+        "name": "Bommasandra",
+        "code": "BMSD",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "yellow",
+        "fullName": "Delta Electronics Bommasandra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.688657,
+          12.8190878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಪಟ್ಟಣಗೆರೆ",
+        "name": "Pattanagere",
+        "code": "PATG",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "purple",
+        "fullName": "Pattanagere"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4983713,
+          12.9242399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "SSHP",
+        "name": "Sri Sathya Sai Hospital",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ಶ್ರೀ ಸತ್ಯ ಸಾಯಿ ಆಸ್ಪತ್ರೆ",
+        "colour": "purple",
+        "fullName": "Sri Sathya Sai Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7274963,
+          12.9807354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "BTML",
+        "name": "BTM Layout",
+        "railway": "stop",
+        "name:kn": "ಬಿಟಿಎಂ ಬಡಾವಣೆ",
+        "subway": "yes",
+        "colour": "yellow",
+        "fullName": "BTM Layout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6086222,
+          12.916598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "VWIA",
+        "name:kn": "ಸೀತಾರಾಮ ಪಾಳ್ಯ",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Seetharampalya",
+        "colour": "purple",
+        "fullName": "Seetharampalya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7086129,
+          12.9813697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "code": "CKPE",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Chickpete",
+        "name:kn": "ಚಿಕ್ಕಪೇಟೆ",
+        "fullName": "Chickpete"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5745737,
+          12.966924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deepanjali Nagar",
+        "railway": "stop",
+        "name:kn": "ದೀಪಾಂಜಲಿ ನಗರ",
+        "code": "DJNR",
+        "subway": "yes",
+        "colour": "purple",
+        "fullName": "Deepanjali Nagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5370399,
+          12.9520466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಸಿಂಗಸಂದ್ರ",
+        "railway": "stop",
+        "code": "CKBR",
+        "subway": "yes",
+        "colour": "yellow",
+        "name": "Singasandra",
+        "fullName": "Singasandra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6451067,
+          12.8804315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rajajinagar",
+        "colour": "green",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "RJNR",
+        "name:kn": "ರಾಜಾಜಿನಗರ",
+        "fullName": "Rajajinagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5496996,
+          13.0005359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "code": "SECE",
+        "name": "South End Circle",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ತಿ.ನಂ.ಶ್ರೀ ವೃತ್ತ",
+        "fullName": "South End Circle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5800772,
+          12.938262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ಮಂಜುನಾಥನಗರ",
+        "name": "Manjunathanagara",
+        "code": "MNJN",
+        "fullName": "Manjunathanagara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4944527,
+          13.0501121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "name": "Peenya",
+        "name:kn": "ಪೀಣ್ಯ",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "PEYA",
+        "fullName": "Peenya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5332233,
+          13.0330515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "railway": "stop",
+        "name": "Kengeri Bus Terminal",
+        "subway": "yes",
+        "name:kn": "ಕೆಂಗೇರಿ ಬಸ್ ಟರ್ಮಿನಲ್",
+        "colour": "purple",
+        "code": "MLSD",
+        "fullName": "Kengeri Bus Terminal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4878613,
+          12.9146648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಮೈಸೂರು ರಸ್ತೆ",
+        "railway": "stop",
+        "code": "MYRD",
+        "subway": "yes",
+        "name": "Mysore Road",
+        "colour": "purple",
+        "fullName": "Mysore Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5300896,
+          12.9466619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "name:kn": "ರೇಷ್ಮೆ ಸಂಸ್ಥೆ",
+        "code": "APTS",
+        "railway": "stop",
+        "name": "Silk Institute",
+        "subway": "yes",
+        "fullName": "Silk Institute"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5299532,
+          12.8616662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಹಲಸೂರು",
+        "code": "HLRU",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Halasuru",
+        "colour": "purple",
+        "fullName": "Halasuru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.626705,
+          12.9764915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vijayanagara",
+        "name:kn": "ವಿಜಯನಗರ",
+        "code": "VJN",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "purple",
+        "fullName": "Vijayanagara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5374285,
+          12.9709391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "KGWA",
+        "name:kn": "ಕೆಂಪೇಗೌಡ",
+        "colour": "black",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Majestic",
+        "fullName": "Nadaprabhu Kempegowda Station, Majestic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.57304966336,
+          12.9756523259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hebbagodi",
+        "railway": "stop",
+        "name:kn": "ಬಯೋಕಾನ್ ಹೆಬ್ಬಗೋಡಿ",
+        "code": "HBGI",
+        "subway": "yes",
+        "colour": "yellow",
+        "fullName": "Biocon Hebbagodi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6815497,
+          12.8285866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "name": "Thalaghattapura",
+        "name:kn": "ತಲಘಟ್ಟಪುರ",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "TGTP",
+        "fullName": "Thalaghattapura"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.538419,
+          12.8713916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indiranagar",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ಇಂದಿರಾನಗರ",
+        "colour": "purple",
+        "code": "IDN",
+        "fullName": "Indiranagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6386592,
+          12.9783079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಕುಂದಲಹಳ್ಳಿ",
+        "name": "Kundalahalli",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "KDNH",
+        "colour": "purple",
+        "fullName": "Kundalahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.715061,
+          12.9776292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "code": "VJRH",
+        "railway": "stop",
+        "name:kn": "ವಾಜರಹಳ್ಳಿ",
+        "name": "Vajarahalli",
+        "subway": "yes",
+        "fullName": "Vajarahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5448072,
+          12.8775221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಸಾಂಡಲ್ ಸೋಪ್ ಕಾರ್ಖಾನೆ",
+        "name": "Sandal Soap Factory",
+        "colour": "green",
+        "railway": "stop",
+        "code": "SSFY",
+        "subway": "yes",
+        "fullName": "Sandal Soap Factory"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5540284,
+          13.0147177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "name:kn": "ಚಿಕ್ಕಬಿದರಕಲ್ಲು",
+        "railway": "stop",
+        "name": "Chikkabidarakallu",
+        "code": "CKBD",
+        "subway": "yes",
+        "fullName": "Chikkabidarakallu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4879224,
+          13.0523847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "RVR",
+        "colour": "black",
+        "name:kn": "ರಾಷ್ಟ್ರೀಯ ವಿದ್ಯಾಲಯ ರಸ್ತೆ",
+        "name": "RV Road",
+        "railway": "stop",
+        "subway": "yes",
+        "fullName": "Rashtreeya Vidyalaya Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5802938,
+          12.9208529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಹೊಂಗಸಂದ್ರ",
+        "name": "Hongasandra",
+        "code": "OFDC",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "yellow",
+        "fullName": "Hongasandra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6322415,
+          12.9013317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RR Nagar",
+        "name:kn": "ರಾಜರಾಜೇಶ್ವರಿ ನಗರ",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "RRRN",
+        "colour": "purple",
+        "fullName": "Rajarajeshwari Nagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5196666,
+          12.9366362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ragigudda",
+        "code": "RGDT",
+        "name:kn": "ರಾಗಿಗುಡ್ಡ",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "yellow",
+        "fullName": "Ragigudda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.588698,
+          12.9170892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "code": "APRC",
+        "name:kn": "ಕೋಣನಕುಂಟೆ ಕ್ರಾಸ್",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Konanakunte Cross",
+        "fullName": "Konanakunte Cross"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5627011,
+          12.8889432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "railway": "stop",
+        "name": "Magadi Road",
+        "code": "MIRD",
+        "subway": "yes",
+        "name:kn": "ಮಾಗಡಿ ರಸ್ತೆ",
+        "colour": "purple",
+        "fullName": "Magadi Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5553564,
+          12.975608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಕೃಷ್ಣರಾಜಪುರ (ಕೆ.ಆರ್.ಪುರ)",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "KR Pura",
+        "code": "KRAM",
+        "colour": "purple",
+        "fullName": "Krishnarajapura"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6778421,
+          12.9998836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಪುಟ್ಟೇನಹಳ್ಳಿ",
+        "colour": "green",
+        "code": "PUTH",
+        "name": "Yelachenahalli",
+        "railway": "stop",
+        "subway": "yes",
+        "fullName": "Yelachenahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.57014,
+          12.8960361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "HSRL",
+        "railway": "stop",
+        "name:kn": "ಬೊಮ್ಮನಹಳ್ಳಿ",
+        "name": "Bommanahalli",
+        "subway": "yes",
+        "colour": "yellow",
+        "fullName": "Bommanahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6267043,
+          12.910304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "BGUC",
+        "name:kn": "ಜ್ಞಾನ ಭಾರತಿ",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Jnanabharathi",
+        "colour": "purple",
+        "fullName": "Jnanabharathi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5124194,
+          12.935405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಜಯಪ್ರಕಾಶ ನಾರಾಯಣ ನಗರ",
+        "colour": "green",
+        "code": "JPN",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "JP Nagar",
+        "fullName": "Jaya Prakash Nagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5731495,
+          12.9074812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "BSRD",
+        "name:kn": "ಹೊಸ ರಸ್ತೆ",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Hosa Road",
+        "colour": "yellow",
+        "fullName": "Hosa Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6527461,
+          12.8703997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "railway": "stop",
+        "name:kn": "ಮಹಾಲಕ್ಷ್ಮಿ",
+        "name": "Mahalakshmi",
+        "subway": "yes",
+        "code": "MHLI",
+        "fullName": "Mahalakshmi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5488245,
+          13.0080714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "railway": "subway",
+        "subway": "yes",
+        "name": "Purple Line",
+        "colour": "purple",
+        "fullName": "Purple Line"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.4606635,
+            12.8967793
+          ],
+          [
+            77.4610021,
+            12.8970943
+          ],
+          [
+            77.4612476,
+            12.897289
+          ],
+          [
+            77.4617361,
+            12.8976766
+          ],
+          [
+            77.4630087,
+            12.8984882
+          ],
+          [
+            77.4647337,
+            12.8995756
+          ],
+          [
+            77.4655545,
+            12.9001351
+          ],
+          [
+            77.4663316,
+            12.9006051
+          ],
+          [
+            77.4688749,
+            12.9019787
+          ],
+          [
+            77.4691442,
+            12.9021746
+          ],
+          [
+            77.4695975,
+            12.9026627
+          ],
+          [
+            77.4699844,
+            12.9032765
+          ],
+          [
+            77.4706463,
+            12.9043691
+          ],
+          [
+            77.4708057,
+            12.9046297
+          ],
+          [
+            77.4709934,
+            12.904846
+          ],
+          [
+            77.4712438,
+            12.9050568
+          ],
+          [
+            77.4719986,
+            12.9055984
+          ],
+          [
+            77.4732614,
+            12.9064956
+          ],
+          [
+            77.4733395,
+            12.9065579
+          ],
+          [
+            77.4734259,
+            12.9066206
+          ],
+          [
+            77.4735158,
+            12.9066786
+          ],
+          [
+            77.4736088,
+            12.9067317
+          ],
+          [
+            77.4737128,
+            12.9067835
+          ],
+          [
+            77.4738198,
+            12.9068292
+          ],
+          [
+            77.4739294,
+            12.9068685
+          ],
+          [
+            77.4748507,
+            12.9070633
+          ],
+          [
+            77.4753623,
+            12.9072086
+          ],
+          [
+            77.4755014,
+            12.9072539
+          ],
+          [
+            77.4756613,
+            12.9073205
+          ],
+          [
+            77.4757332,
+            12.9073612
+          ],
+          [
+            77.4758387,
+            12.9074127
+          ],
+          [
+            77.4759979,
+            12.9075137
+          ],
+          [
+            77.4765871,
+            12.9078971
+          ],
+          [
+            77.4773244,
+            12.908365
+          ],
+          [
+            77.4774569,
+            12.9084276
+          ],
+          [
+            77.4775925,
+            12.9084834
+          ],
+          [
+            77.4777308,
+            12.9085324
+          ],
+          [
+            77.4778906,
+            12.9085796
+          ],
+          [
+            77.4780529,
+            12.9086177
+          ],
+          [
+            77.4782172,
+            12.9086465
+          ],
+          [
+            77.4786989,
+            12.9087271
+          ],
+          [
+            77.4788066,
+            12.9087528
+          ],
+          [
+            77.4789912,
+            12.9088108
+          ],
+          [
+            77.4799941,
+            12.9091915
+          ],
+          [
+            77.480085,
+            12.9092287
+          ],
+          [
+            77.4802192,
+            12.9092929
+          ],
+          [
+            77.4804171,
+            12.9094134
+          ],
+          [
+            77.480538,
+            12.9094887
+          ],
+          [
+            77.4806546,
+            12.9095755
+          ],
+          [
+            77.4807777,
+            12.9096767
+          ],
+          [
+            77.480906,
+            12.9097715
+          ],
+          [
+            77.4810392,
+            12.9098598
+          ],
+          [
+            77.4811769,
+            12.9099411
+          ],
+          [
+            77.4813188,
+            12.9100155
+          ],
+          [
+            77.4814644,
+            12.9100825
+          ],
+          [
+            77.4816133,
+            12.9101421
+          ],
+          [
+            77.4817579,
+            12.9101918
+          ],
+          [
+            77.4819048,
+            12.9102345
+          ],
+          [
+            77.4820538,
+            12.9102701
+          ],
+          [
+            77.4822043,
+            12.9102985
+          ],
+          [
+            77.4823561,
+            12.9103196
+          ],
+          [
+            77.4824726,
+            12.9103301
+          ],
+          [
+            77.4825087,
+            12.9103333
+          ],
+          [
+            77.4826619,
+            12.9103397
+          ],
+          [
+            77.4833364,
+            12.9103182
+          ],
+          [
+            77.4834406,
+            12.9103047
+          ],
+          [
+            77.4835455,
+            12.9102997
+          ],
+          [
+            77.4836505,
+            12.9103032
+          ],
+          [
+            77.4837549,
+            12.9103151
+          ],
+          [
+            77.4838578,
+            12.9103355
+          ],
+          [
+            77.4839587,
+            12.9103642
+          ],
+          [
+            77.4840568,
+            12.9104009
+          ],
+          [
+            77.4841514,
+            12.9104454
+          ],
+          [
+            77.4842419,
+            12.9104975
+          ],
+          [
+            77.48433,
+            12.9105585
+          ],
+          [
+            77.4844125,
+            12.9106266
+          ],
+          [
+            77.4844887,
+            12.9107014
+          ],
+          [
+            77.484558,
+            12.9107822
+          ],
+          [
+            77.4846201,
+            12.9108685
+          ],
+          [
+            77.4846743,
+            12.9109596
+          ],
+          [
+            77.4847203,
+            12.911055
+          ],
+          [
+            77.4847578,
+            12.9111538
+          ],
+          [
+            77.4847791,
+            12.9112209
+          ],
+          [
+            77.4849447,
+            12.9117663
+          ],
+          [
+            77.4850722,
+            12.9122301
+          ],
+          [
+            77.4852492,
+            12.9125922
+          ],
+          [
+            77.4853752,
+            12.9127687
+          ],
+          [
+            77.4855423,
+            12.9129277
+          ],
+          [
+            77.485942,
+            12.9132335
+          ],
+          [
+            77.4863108,
+            12.913508
+          ],
+          [
+            77.487301,
+            12.9142275
+          ],
+          [
+            77.4878613,
+            12.9146648
+          ],
+          [
+            77.4883209,
+            12.9150235
+          ],
+          [
+            77.488822,
+            12.915393
+          ],
+          [
+            77.4890965,
+            12.91565
+          ],
+          [
+            77.489274,
+            12.9158176
+          ],
+          [
+            77.489703,
+            12.9162052
+          ],
+          [
+            77.4901348,
+            12.9165478
+          ],
+          [
+            77.4904548,
+            12.9169158
+          ],
+          [
+            77.490686,
+            12.9174184
+          ],
+          [
+            77.4912563,
+            12.918592
+          ],
+          [
+            77.4915169,
+            12.9189942
+          ],
+          [
+            77.4920534,
+            12.9195589
+          ],
+          [
+            77.4925756,
+            12.9199621
+          ],
+          [
+            77.4928438,
+            12.9202183
+          ],
+          [
+            77.4934017,
+            12.9209189
+          ],
+          [
+            77.4935286,
+            12.9211223
+          ],
+          [
+            77.4936949,
+            12.9213628
+          ],
+          [
+            77.4939167,
+            12.9215568
+          ],
+          [
+            77.4944424,
+            12.9218914
+          ],
+          [
+            77.4960835,
+            12.9227353
+          ],
+          [
+            77.496839,
+            12.9230443
+          ],
+          [
+            77.4972909,
+            12.9232522
+          ],
+          [
+            77.4975874,
+            12.92346
+          ],
+          [
+            77.4980924,
+            12.9239667
+          ],
+          [
+            77.4983713,
+            12.9242399
+          ],
+          [
+            77.4992082,
+            12.9250594
+          ],
+          [
+            77.5002864,
+            12.9260424
+          ],
+          [
+            77.5009374,
+            12.9265292
+          ],
+          [
+            77.5025341,
+            12.9277312
+          ],
+          [
+            77.5030169,
+            12.9281756
+          ],
+          [
+            77.5034353,
+            12.9286462
+          ],
+          [
+            77.5039146,
+            12.9290597
+          ],
+          [
+            77.5040245,
+            12.929119
+          ],
+          [
+            77.5042975,
+            12.9292088
+          ],
+          [
+            77.505068,
+            12.9294623
+          ],
+          [
+            77.5052986,
+            12.9295768
+          ],
+          [
+            77.5055432,
+            12.9297291
+          ],
+          [
+            77.5057921,
+            12.9299725
+          ],
+          [
+            77.5060051,
+            12.9302992
+          ],
+          [
+            77.50618,
+            12.9306292
+          ],
+          [
+            77.5064287,
+            12.9310983
+          ],
+          [
+            77.5065682,
+            12.9312394
+          ],
+          [
+            77.5068417,
+            12.9314486
+          ],
+          [
+            77.5084517,
+            12.9325419
+          ],
+          [
+            77.5085803,
+            12.9326653
+          ],
+          [
+            77.5087501,
+            12.9328269
+          ],
+          [
+            77.5105363,
+            12.9344608
+          ],
+          [
+            77.5107598,
+            12.9346992
+          ],
+          [
+            77.5110468,
+            12.934922
+          ],
+          [
+            77.5115524,
+            12.9351281
+          ],
+          [
+            77.5124194,
+            12.935405
+          ],
+          [
+            77.512825,
+            12.9355454
+          ],
+          [
+            77.5135063,
+            12.9358029
+          ],
+          [
+            77.5138383,
+            12.9359304
+          ],
+          [
+            77.5142394,
+            12.9360102
+          ],
+          [
+            77.515099,
+            12.9360598
+          ],
+          [
+            77.5155147,
+            12.9360899
+          ],
+          [
+            77.5165502,
+            12.9362351
+          ],
+          [
+            77.5167819,
+            12.9362619
+          ],
+          [
+            77.5170146,
+            12.9362804
+          ],
+          [
+            77.5172131,
+            12.9362892
+          ],
+          [
+            77.5172477,
+            12.9362907
+          ],
+          [
+            77.5174542,
+            12.9362928
+          ],
+          [
+            77.5176606,
+            12.9362884
+          ],
+          [
+            77.5178878,
+            12.9362903
+          ],
+          [
+            77.5180816,
+            12.9362903
+          ],
+          [
+            77.5183635,
+            12.9362743
+          ],
+          [
+            77.5185293,
+            12.9362847
+          ],
+          [
+            77.5186947,
+            12.9363064
+          ],
+          [
+            77.5188419,
+            12.9363423
+          ],
+          [
+            77.5190245,
+            12.9363917
+          ],
+          [
+            77.5196666,
+            12.9366362
+          ],
+          [
+            77.5205792,
+            12.9369532
+          ],
+          [
+            77.5209059,
+            12.9372049
+          ],
+          [
+            77.5211697,
+            12.9375428
+          ],
+          [
+            77.5214636,
+            12.9378843
+          ],
+          [
+            77.5217637,
+            12.938153
+          ],
+          [
+            77.5221858,
+            12.9384214
+          ],
+          [
+            77.5228544,
+            12.9388705
+          ],
+          [
+            77.5229778,
+            12.9389489
+          ],
+          [
+            77.5234942,
+            12.9394256
+          ],
+          [
+            77.5240969,
+            12.9400848
+          ],
+          [
+            77.5247066,
+            12.9409313
+          ],
+          [
+            77.5248621,
+            12.9411822
+          ],
+          [
+            77.525127,
+            12.9416608
+          ],
+          [
+            77.525377,
+            12.9420299
+          ],
+          [
+            77.5257428,
+            12.9425861
+          ],
+          [
+            77.5263536,
+            12.9434117
+          ],
+          [
+            77.52669,
+            12.9440211
+          ],
+          [
+            77.5270012,
+            12.9444027
+          ],
+          [
+            77.527324,
+            12.9447781
+          ],
+          [
+            77.5275383,
+            12.9449727
+          ],
+          [
+            77.5277588,
+            12.9451812
+          ],
+          [
+            77.5283438,
+            12.9456786
+          ],
+          [
+            77.5287581,
+            12.945976
+          ],
+          [
+            77.529269,
+            12.9462909
+          ],
+          [
+            77.5300896,
+            12.9466619
+          ],
+          [
+            77.5309019,
+            12.9470179
+          ],
+          [
+            77.5326658,
+            12.9475653
+          ],
+          [
+            77.5341284,
+            12.9479608
+          ],
+          [
+            77.5344399,
+            12.9480489
+          ],
+          [
+            77.5347744,
+            12.948174
+          ],
+          [
+            77.5349885,
+            12.9482851
+          ],
+          [
+            77.5360304,
+            12.948934
+          ],
+          [
+            77.536344,
+            12.9491907
+          ],
+          [
+            77.5369484,
+            12.9497616
+          ],
+          [
+            77.5371611,
+            12.9500166
+          ],
+          [
+            77.5372921,
+            12.9502855
+          ],
+          [
+            77.5373384,
+            12.9504502
+          ],
+          [
+            77.5373769,
+            12.9506392
+          ],
+          [
+            77.537387,
+            12.9508561
+          ],
+          [
+            77.5373746,
+            12.9510423
+          ],
+          [
+            77.5373698,
+            12.9510652
+          ],
+          [
+            77.5373429,
+            12.9511939
+          ],
+          [
+            77.5372034,
+            12.951556
+          ],
+          [
+            77.5370399,
+            12.9520466
+          ],
+          [
+            77.536701,
+            12.9531515
+          ],
+          [
+            77.5366429,
+            12.9532588
+          ],
+          [
+            77.5365873,
+            12.9533407
+          ],
+          [
+            77.5364109,
+            12.9535492
+          ],
+          [
+            77.5349689,
+            12.955013
+          ],
+          [
+            77.5348492,
+            12.9551974
+          ],
+          [
+            77.5347535,
+            12.9554062
+          ],
+          [
+            77.5346636,
+            12.9557194
+          ],
+          [
+            77.5345338,
+            12.9562288
+          ],
+          [
+            77.534422,
+            12.9567218
+          ],
+          [
+            77.5343458,
+            12.9570156
+          ],
+          [
+            77.534128,
+            12.9575852
+          ],
+          [
+            77.5339086,
+            12.958056
+          ],
+          [
+            77.5337686,
+            12.9583367
+          ],
+          [
+            77.5334011,
+            12.9592056
+          ],
+          [
+            77.5332286,
+            12.9596465
+          ],
+          [
+            77.5331278,
+            12.9599497
+          ],
+          [
+            77.5330913,
+            12.960157
+          ],
+          [
+            77.5330947,
+            12.96036
+          ],
+          [
+            77.5331364,
+            12.9605831
+          ],
+          [
+            77.5331932,
+            12.9608092
+          ],
+          [
+            77.5333598,
+            12.9612203
+          ],
+          [
+            77.5335932,
+            12.9618581
+          ],
+          [
+            77.5353661,
+            12.9658466
+          ],
+          [
+            77.5364154,
+            12.9681878
+          ],
+          [
+            77.5367153,
+            12.9688614
+          ],
+          [
+            77.5369872,
+            12.9696583
+          ],
+          [
+            77.5374285,
+            12.9709391
+          ],
+          [
+            77.5377307,
+            12.9717735
+          ],
+          [
+            77.5378241,
+            12.972
+          ],
+          [
+            77.5379138,
+            12.9721832
+          ],
+          [
+            77.5380255,
+            12.9723654
+          ],
+          [
+            77.5382076,
+            12.9725915
+          ],
+          [
+            77.5383747,
+            12.9727569
+          ],
+          [
+            77.5385995,
+            12.972932
+          ],
+          [
+            77.5389007,
+            12.9730979
+          ],
+          [
+            77.5394049,
+            12.9732386
+          ],
+          [
+            77.5418227,
+            12.973744
+          ],
+          [
+            77.5433912,
+            12.9740582
+          ],
+          [
+            77.5440783,
+            12.9741598
+          ],
+          [
+            77.5445557,
+            12.9741997
+          ],
+          [
+            77.5449958,
+            12.9742424
+          ],
+          [
+            77.5452585,
+            12.9742555
+          ],
+          [
+            77.5456204,
+            12.974267
+          ],
+          [
+            77.5462449,
+            12.9742654
+          ],
+          [
+            77.546627,
+            12.9742559
+          ],
+          [
+            77.5470379,
+            12.9742731
+          ],
+          [
+            77.547194,
+            12.9742874
+          ],
+          [
+            77.5473454,
+            12.9743181
+          ],
+          [
+            77.5475558,
+            12.9743772
+          ],
+          [
+            77.5477358,
+            12.9744217
+          ],
+          [
+            77.5478769,
+            12.9744643
+          ],
+          [
+            77.5481021,
+            12.9745199
+          ],
+          [
+            77.5482985,
+            12.9745507
+          ],
+          [
+            77.5484261,
+            12.9745427
+          ],
+          [
+            77.548569,
+            12.9745152
+          ],
+          [
+            77.5487394,
+            12.9744757
+          ],
+          [
+            77.5488918,
+            12.9744183
+          ],
+          [
+            77.5490457,
+            12.9743346
+          ],
+          [
+            77.5492779,
+            12.9742069
+          ],
+          [
+            77.5495751,
+            12.9740195
+          ],
+          [
+            77.5497685,
+            12.973891
+          ],
+          [
+            77.5498946,
+            12.9738326
+          ],
+          [
+            77.5500453,
+            12.9737908
+          ],
+          [
+            77.5502114,
+            12.973756
+          ],
+          [
+            77.5503893,
+            12.9737538
+          ],
+          [
+            77.5505523,
+            12.9737735
+          ],
+          [
+            77.5507393,
+            12.9738229
+          ],
+          [
+            77.5509456,
+            12.9739394
+          ],
+          [
+            77.5514175,
+            12.9743037
+          ],
+          [
+            77.5522132,
+            12.9749216
+          ],
+          [
+            77.5524125,
+            12.9750661
+          ],
+          [
+            77.5525761,
+            12.9751733
+          ],
+          [
+            77.5527639,
+            12.9752935
+          ],
+          [
+            77.5529758,
+            12.9753929
+          ],
+          [
+            77.5531555,
+            12.9754608
+          ],
+          [
+            77.5533754,
+            12.9755052
+          ],
+          [
+            77.5535363,
+            12.9755288
+          ],
+          [
+            77.5538177,
+            12.9755571
+          ],
+          [
+            77.5542442,
+            12.9755689
+          ],
+          [
+            77.5546484,
+            12.9755787
+          ],
+          [
+            77.5549444,
+            12.9755941
+          ],
+          [
+            77.5553564,
+            12.975608
+          ],
+          [
+            77.5556391,
+            12.9756176
+          ],
+          [
+            77.5559117,
+            12.9756205
+          ],
+          [
+            77.5562067,
+            12.9756257
+          ],
+          [
+            77.5564974,
+            12.9756385
+          ],
+          [
+            77.5568745,
+            12.9756535
+          ],
+          [
+            77.5572138,
+            12.9756783
+          ],
+          [
+            77.5575517,
+            12.9756979
+          ],
+          [
+            77.5577569,
+            12.9757071
+          ],
+          [
+            77.558182,
+            12.9757384
+          ],
+          [
+            77.5585374,
+            12.9757606
+          ],
+          [
+            77.558929,
+            12.9757802
+          ],
+          [
+            77.5591932,
+            12.9757776
+          ],
+          [
+            77.559672,
+            12.9757685
+          ],
+          [
+            77.5600596,
+            12.9757646
+          ],
+          [
+            77.5603759,
+            12.9757464
+          ],
+          [
+            77.5606269,
+            12.9757201
+          ],
+          [
+            77.5611258,
+            12.9756992
+          ],
+          [
+            77.5617293,
+            12.9756678
+          ],
+          [
+            77.5623185,
+            12.9756026
+          ],
+          [
+            77.5626742,
+            12.9755937
+          ],
+          [
+            77.562966,
+            12.9756099
+          ],
+          [
+            77.5634133,
+            12.9756402
+          ],
+          [
+            77.5651602,
+            12.9758317
+          ],
+          [
+            77.5653792,
+            12.9758581
+          ],
+          [
+            77.5659372,
+            12.975905
+          ],
+          [
+            77.5667188,
+            12.975968
+          ],
+          [
+            77.5669073,
+            12.9759774
+          ],
+          [
+            77.5691203,
+            12.9759798
+          ],
+          [
+            77.5702903,
+            12.9759013
+          ],
+          [
+            77.5712892,
+            12.9757916
+          ],
+          [
+            77.57304966336,
+            12.9756523259
+          ],
+          [
+            77.5741231,
+            12.9755728
+          ],
+          [
+            77.5746028,
+            12.9754592
+          ],
+          [
+            77.5756362,
+            12.9752604
+          ],
+          [
+            77.5757114,
+            12.9752435
+          ],
+          [
+            77.5761213,
+            12.9751329
+          ],
+          [
+            77.5781058,
+            12.9743183
+          ],
+          [
+            77.5803872,
+            12.9733066
+          ],
+          [
+            77.5808769,
+            12.9730628
+          ],
+          [
+            77.5811489,
+            12.9729807
+          ],
+          [
+            77.5813667,
+            12.9729783
+          ],
+          [
+            77.5815531,
+            12.9730134
+          ],
+          [
+            77.5817526,
+            12.9731112
+          ],
+          [
+            77.5819804,
+            12.9732091
+          ],
+          [
+            77.5823634,
+            12.9734266
+          ],
+          [
+            77.5828866,
+            12.9737301
+          ],
+          [
+            77.5842326,
+            12.9745014
+          ],
+          [
+            77.5849855,
+            12.9749481
+          ],
+          [
+            77.5851813,
+            12.9750422
+          ],
+          [
+            77.586462,
+            12.9756035
+          ],
+          [
+            77.5865498,
+            12.9756398
+          ],
+          [
+            77.5872296,
+            12.9759106
+          ],
+          [
+            77.5878889,
+            12.9761897
+          ],
+          [
+            77.5903103,
+            12.9774668
+          ],
+          [
+            77.5906246,
+            12.9776261
+          ],
+          [
+            77.590833,
+            12.9777625
+          ],
+          [
+            77.5911088,
+            12.9779727
+          ],
+          [
+            77.5919999,
+            12.9789626
+          ],
+          [
+            77.5932441,
+            12.9805777
+          ],
+          [
+            77.5937604,
+            12.9809826
+          ],
+          [
+            77.594111,
+            12.9812295
+          ],
+          [
+            77.5945549,
+            12.9814841
+          ],
+          [
+            77.5947035,
+            12.9815352
+          ],
+          [
+            77.5948692,
+            12.9815792
+          ],
+          [
+            77.5951726,
+            12.9815871
+          ],
+          [
+            77.5954462,
+            12.9815552
+          ],
+          [
+            77.5955274,
+            12.9815424
+          ],
+          [
+            77.5957078,
+            12.9815113
+          ],
+          [
+            77.5959769,
+            12.9814444
+          ],
+          [
+            77.5963182,
+            12.9813464
+          ],
+          [
+            77.5966655,
+            12.9812185
+          ],
+          [
+            77.597562,
+            12.9808954
+          ],
+          [
+            77.5984083,
+            12.980656
+          ],
+          [
+            77.5986276,
+            12.980572
+          ],
+          [
+            77.599748,
+            12.9801376
+          ],
+          [
+            77.5999234,
+            12.9800694
+          ],
+          [
+            77.600073,
+            12.9799772
+          ],
+          [
+            77.6002246,
+            12.979846
+          ],
+          [
+            77.6003258,
+            12.9797387
+          ],
+          [
+            77.6004282,
+            12.9796079
+          ],
+          [
+            77.6005564,
+            12.9794355
+          ],
+          [
+            77.600684,
+            12.9792724
+          ],
+          [
+            77.6007978,
+            12.9790971
+          ],
+          [
+            77.6009417,
+            12.9788195
+          ],
+          [
+            77.6013929,
+            12.9775725
+          ],
+          [
+            77.6015458,
+            12.9772188
+          ],
+          [
+            77.6017306,
+            12.976942
+          ],
+          [
+            77.6019036,
+            12.9767963
+          ],
+          [
+            77.6021549,
+            12.9766516
+          ],
+          [
+            77.6023598,
+            12.976562
+          ],
+          [
+            77.6026037,
+            12.9764969
+          ],
+          [
+            77.6050209,
+            12.9759353
+          ],
+          [
+            77.6056543,
+            12.9757829
+          ],
+          [
+            77.6062979,
+            12.9756285
+          ],
+          [
+            77.6079815,
+            12.975212
+          ],
+          [
+            77.6082395,
+            12.9751438
+          ],
+          [
+            77.6084978,
+            12.9750458
+          ],
+          [
+            77.6088569,
+            12.9749315
+          ],
+          [
+            77.6092507,
+            12.9748314
+          ],
+          [
+            77.6112904,
+            12.9743468
+          ],
+          [
+            77.6115725,
+            12.9742823
+          ],
+          [
+            77.6119082,
+            12.9742013
+          ],
+          [
+            77.6123712,
+            12.9740763
+          ],
+          [
+            77.6127428,
+            12.9739738
+          ],
+          [
+            77.617013,
+            12.9729953
+          ],
+          [
+            77.6184067,
+            12.9726754
+          ],
+          [
+            77.6186065,
+            12.9726416
+          ],
+          [
+            77.618827,
+            12.972616
+          ],
+          [
+            77.6191252,
+            12.9725959
+          ],
+          [
+            77.6195914,
+            12.9726226
+          ],
+          [
+            77.6199919,
+            12.9726435
+          ],
+          [
+            77.620255,
+            12.9726626
+          ],
+          [
+            77.6205889,
+            12.9726882
+          ],
+          [
+            77.6208499,
+            12.9727195
+          ],
+          [
+            77.6213265,
+            12.9728353
+          ],
+          [
+            77.6217152,
+            12.9729616
+          ],
+          [
+            77.6220537,
+            12.9730936
+          ],
+          [
+            77.6225043,
+            12.9733037
+          ],
+          [
+            77.6249491,
+            12.9747815
+          ],
+          [
+            77.6252884,
+            12.9750071
+          ],
+          [
+            77.6258797,
+            12.9754185
+          ],
+          [
+            77.6260529,
+            12.9756054
+          ],
+          [
+            77.6262116,
+            12.9758296
+          ],
+          [
+            77.6264096,
+            12.9760818
+          ],
+          [
+            77.626705,
+            12.9764915
+          ],
+          [
+            77.6272588,
+            12.977322
+          ],
+          [
+            77.6274857,
+            12.9775419
+          ],
+          [
+            77.627759,
+            12.9777517
+          ],
+          [
+            77.6280838,
+            12.9779386
+          ],
+          [
+            77.6283756,
+            12.9781203
+          ],
+          [
+            77.6286152,
+            12.9782476
+          ],
+          [
+            77.6288118,
+            12.9783641
+          ],
+          [
+            77.6289832,
+            12.9784271
+          ],
+          [
+            77.6291733,
+            12.978454
+          ],
+          [
+            77.629437,
+            12.9784287
+          ],
+          [
+            77.6326489,
+            12.9781337
+          ],
+          [
+            77.63294,
+            12.9781272
+          ],
+          [
+            77.6377533,
+            12.9782793
+          ],
+          [
+            77.6386592,
+            12.9783079
+          ],
+          [
+            77.6396955,
+            12.9783297
+          ],
+          [
+            77.6399797,
+            12.9783623
+          ],
+          [
+            77.6401849,
+            12.9784331
+          ],
+          [
+            77.6403775,
+            12.9785573
+          ],
+          [
+            77.6405051,
+            12.9786697
+          ],
+          [
+            77.640639,
+            12.9788307
+          ],
+          [
+            77.6407645,
+            12.9790996
+          ],
+          [
+            77.6408039,
+            12.9792985
+          ],
+          [
+            77.6408122,
+            12.9794969
+          ],
+          [
+            77.6406176,
+            12.9829264
+          ],
+          [
+            77.6406041,
+            12.9834974
+          ],
+          [
+            77.6406296,
+            12.983678
+          ],
+          [
+            77.6406736,
+            12.9838442
+          ],
+          [
+            77.6407672,
+            12.9840551
+          ],
+          [
+            77.6409056,
+            12.9841889
+          ],
+          [
+            77.6410628,
+            12.9843491
+          ],
+          [
+            77.6412897,
+            12.9844707
+          ],
+          [
+            77.6426566,
+            12.9850191
+          ],
+          [
+            77.6433944,
+            12.9853151
+          ],
+          [
+            77.6449072,
+            12.9859128
+          ],
+          [
+            77.6455186,
+            12.9861495
+          ],
+          [
+            77.6462539,
+            12.9864565
+          ],
+          [
+            77.6473381,
+            12.9868684
+          ],
+          [
+            77.6476006,
+            12.987009
+          ],
+          [
+            77.6478547,
+            12.9871768
+          ],
+          [
+            77.6480295,
+            12.9874063
+          ],
+          [
+            77.6480803,
+            12.9874735
+          ],
+          [
+            77.6481296,
+            12.9875455
+          ],
+          [
+            77.648176,
+            12.9876159
+          ],
+          [
+            77.648224,
+            12.9876996
+          ],
+          [
+            77.6482633,
+            12.9877736
+          ],
+          [
+            77.6482996,
+            12.9878535
+          ],
+          [
+            77.6483341,
+            12.9879367
+          ],
+          [
+            77.6483727,
+            12.9880503
+          ],
+          [
+            77.6486167,
+            12.9888934
+          ],
+          [
+            77.6486432,
+            12.9889625
+          ],
+          [
+            77.6486728,
+            12.989039
+          ],
+          [
+            77.6487117,
+            12.9891275
+          ],
+          [
+            77.6487499,
+            12.9892025
+          ],
+          [
+            77.6487923,
+            12.9892812
+          ],
+          [
+            77.6488414,
+            12.989358
+          ],
+          [
+            77.6488982,
+            12.9894379
+          ],
+          [
+            77.6489727,
+            12.9895235
+          ],
+          [
+            77.6490383,
+            12.9895861
+          ],
+          [
+            77.649107,
+            12.9896466
+          ],
+          [
+            77.6491794,
+            12.9896991
+          ],
+          [
+            77.6492708,
+            12.9897611
+          ],
+          [
+            77.6493669,
+            12.9898126
+          ],
+          [
+            77.6494829,
+            12.9898627
+          ],
+          [
+            77.6495952,
+            12.9899017
+          ],
+          [
+            77.6497371,
+            12.9899426
+          ],
+          [
+            77.6499792,
+            12.9900105
+          ],
+          [
+            77.650399,
+            12.9901211
+          ],
+          [
+            77.6506271,
+            12.9901858
+          ],
+          [
+            77.651179,
+            12.9903448
+          ],
+          [
+            77.652392,
+            12.9906745
+          ],
+          [
+            77.6530525,
+            12.990854
+          ],
+          [
+            77.6531588,
+            12.9908839
+          ],
+          [
+            77.6536176,
+            12.9910128
+          ],
+          [
+            77.6537983,
+            12.9910636
+          ],
+          [
+            77.6541185,
+            12.991153
+          ],
+          [
+            77.65431,
+            12.9912094
+          ],
+          [
+            77.6544559,
+            12.9912621
+          ],
+          [
+            77.6545903,
+            12.9913217
+          ],
+          [
+            77.6546919,
+            12.9913775
+          ],
+          [
+            77.6547893,
+            12.9914404
+          ],
+          [
+            77.6548821,
+            12.9915174
+          ],
+          [
+            77.6551351,
+            12.991748
+          ],
+          [
+            77.6553877,
+            12.9919939
+          ],
+          [
+            77.6555428,
+            12.9921447
+          ],
+          [
+            77.6557319,
+            12.9923046
+          ],
+          [
+            77.655866,
+            12.9924154
+          ],
+          [
+            77.6560012,
+            12.9925169
+          ],
+          [
+            77.6561167,
+            12.9925892
+          ],
+          [
+            77.6563674,
+            12.9927537
+          ],
+          [
+            77.656603,
+            12.9929013
+          ],
+          [
+            77.6569151,
+            12.9930836
+          ],
+          [
+            77.6571496,
+            12.9932143
+          ],
+          [
+            77.6580135,
+            12.9936992
+          ],
+          [
+            77.6590839,
+            12.9943055
+          ],
+          [
+            77.6597545,
+            12.9946521
+          ],
+          [
+            77.6603537,
+            12.9949586
+          ],
+          [
+            77.660941,
+            12.9952562
+          ],
+          [
+            77.6611438,
+            12.9953501
+          ],
+          [
+            77.6613231,
+            12.9954238
+          ],
+          [
+            77.6614195,
+            12.9954531
+          ],
+          [
+            77.6615806,
+            12.995495
+          ],
+          [
+            77.6617584,
+            12.9955362
+          ],
+          [
+            77.6618749,
+            12.9955597
+          ],
+          [
+            77.6619956,
+            12.9955698
+          ],
+          [
+            77.6621445,
+            12.9955802
+          ],
+          [
+            77.6623239,
+            12.9955872
+          ],
+          [
+            77.6625089,
+            12.9955826
+          ],
+          [
+            77.6626262,
+            12.9955725
+          ],
+          [
+            77.6627361,
+            12.9955593
+          ],
+          [
+            77.6628594,
+            12.9955363
+          ],
+          [
+            77.6630589,
+            12.9954928
+          ],
+          [
+            77.6633536,
+            12.9954111
+          ],
+          [
+            77.6633788,
+            12.9954064
+          ],
+          [
+            77.6634597,
+            12.9953915
+          ],
+          [
+            77.6639571,
+            12.9952986
+          ],
+          [
+            77.6640402,
+            12.9952845
+          ],
+          [
+            77.6642351,
+            12.995272
+          ],
+          [
+            77.66444,
+            12.9952675
+          ],
+          [
+            77.6646389,
+            12.995273
+          ],
+          [
+            77.664851,
+            12.9952827
+          ],
+          [
+            77.6650278,
+            12.9953008
+          ],
+          [
+            77.6651895,
+            12.9953282
+          ],
+          [
+            77.6653486,
+            12.9953574
+          ],
+          [
+            77.6654861,
+            12.9953881
+          ],
+          [
+            77.6658958,
+            12.9955049
+          ],
+          [
+            77.6662499,
+            12.9956073
+          ],
+          [
+            77.6666321,
+            12.9957325
+          ],
+          [
+            77.6674281,
+            12.9960274
+          ],
+          [
+            77.6679336,
+            12.9962416
+          ],
+          [
+            77.6681911,
+            12.9963566
+          ],
+          [
+            77.6684788,
+            12.996496
+          ],
+          [
+            77.6686459,
+            12.9965736
+          ],
+          [
+            77.6688175,
+            12.9966494
+          ],
+          [
+            77.668943,
+            12.9967094
+          ],
+          [
+            77.6690977,
+            12.9967564
+          ],
+          [
+            77.6693234,
+            12.9968243
+          ],
+          [
+            77.6694928,
+            12.9968729
+          ],
+          [
+            77.6696163,
+            12.9968978
+          ],
+          [
+            77.6697376,
+            12.9969215
+          ],
+          [
+            77.6698791,
+            12.9969274
+          ],
+          [
+            77.6699698,
+            12.9969228
+          ],
+          [
+            77.6700655,
+            12.9969262
+          ],
+          [
+            77.6701625,
+            12.9969267
+          ],
+          [
+            77.670269,
+            12.9969393
+          ],
+          [
+            77.6704098,
+            12.996982
+          ],
+          [
+            77.670889,
+            12.9972048
+          ],
+          [
+            77.6713393,
+            12.9974231
+          ],
+          [
+            77.671807,
+            12.9976526
+          ],
+          [
+            77.6720651,
+            12.9977741
+          ],
+          [
+            77.6722184,
+            12.9978515
+          ],
+          [
+            77.6725529,
+            12.9980144
+          ],
+          [
+            77.6727326,
+            12.9981007
+          ],
+          [
+            77.6732405,
+            12.9983497
+          ],
+          [
+            77.673625,
+            12.9985414
+          ],
+          [
+            77.6739379,
+            12.9986939
+          ],
+          [
+            77.6743078,
+            12.9988744
+          ],
+          [
+            77.6745484,
+            12.9989813
+          ],
+          [
+            77.6749532,
+            12.9991862
+          ],
+          [
+            77.6752501,
+            12.9993221
+          ],
+          [
+            77.6754647,
+            12.9994295
+          ],
+          [
+            77.6760165,
+            12.9996776
+          ],
+          [
+            77.6762081,
+            12.9997609
+          ],
+          [
+            77.6763723,
+            12.9998046
+          ],
+          [
+            77.6765217,
+            12.9998284
+          ],
+          [
+            77.6766417,
+            12.9998419
+          ],
+          [
+            77.6768299,
+            12.9998537
+          ],
+          [
+            77.6773791,
+            12.9998651
+          ],
+          [
+            77.6778421,
+            12.9998836
+          ],
+          [
+            77.6782501,
+            12.9998924
+          ],
+          [
+            77.6791508,
+            12.9999283
+          ],
+          [
+            77.6799069,
+            12.9999771
+          ],
+          [
+            77.6803133,
+            13.0000252
+          ],
+          [
+            77.6806338,
+            13.0000722
+          ],
+          [
+            77.6808602,
+            13.0001129
+          ],
+          [
+            77.6811676,
+            13.0001916
+          ],
+          [
+            77.6813792,
+            13.0002565
+          ],
+          [
+            77.6816144,
+            13.0003469
+          ],
+          [
+            77.6817815,
+            13.0003809
+          ],
+          [
+            77.6818737,
+            13.0003866
+          ],
+          [
+            77.6819646,
+            13.000386
+          ],
+          [
+            77.6824202,
+            13.0003647
+          ],
+          [
+            77.682599,
+            13.000359
+          ],
+          [
+            77.6829502,
+            13.0003544
+          ],
+          [
+            77.6838214,
+            13.0003582
+          ],
+          [
+            77.6845514,
+            13.0003346
+          ],
+          [
+            77.6854795,
+            13.0002719
+          ],
+          [
+            77.6862037,
+            13.0002144
+          ],
+          [
+            77.6863601,
+            13.0001853
+          ],
+          [
+            77.6865577,
+            13.000136
+          ],
+          [
+            77.6867224,
+            13.0000773
+          ],
+          [
+            77.6868208,
+            13.0000229
+          ],
+          [
+            77.687,
+            12.9999136
+          ],
+          [
+            77.6872444,
+            12.9997544
+          ],
+          [
+            77.6876574,
+            12.999446
+          ],
+          [
+            77.6878861,
+            12.9992379
+          ],
+          [
+            77.6881617,
+            12.9989338
+          ],
+          [
+            77.6886254,
+            12.9984448
+          ],
+          [
+            77.6888698,
+            12.9982177
+          ],
+          [
+            77.6894921,
+            12.9978988
+          ],
+          [
+            77.6903796,
+            12.9974569
+          ],
+          [
+            77.6907431,
+            12.9972816
+          ],
+          [
+            77.6914823,
+            12.9969528
+          ],
+          [
+            77.6921457,
+            12.9966967
+          ],
+          [
+            77.6937139,
+            12.9961687
+          ],
+          [
+            77.6945185,
+            12.9958237
+          ],
+          [
+            77.6947063,
+            12.9957349
+          ],
+          [
+            77.695232,
+            12.9954997
+          ],
+          [
+            77.6955535,
+            12.99541
+          ],
+          [
+            77.6958757,
+            12.9953638
+          ],
+          [
+            77.6969915,
+            12.9952278
+          ],
+          [
+            77.6979196,
+            12.9950815
+          ],
+          [
+            77.6980781,
+            12.9950378
+          ],
+          [
+            77.6982007,
+            12.994987
+          ],
+          [
+            77.6988493,
+            12.9947486
+          ],
+          [
+            77.6991698,
+            12.9946268
+          ],
+          [
+            77.7000108,
+            12.9943583
+          ],
+          [
+            77.7006596,
+            12.9942076
+          ],
+          [
+            77.7013469,
+            12.9940503
+          ],
+          [
+            77.7015918,
+            12.9939889
+          ],
+          [
+            77.7021063,
+            12.993826
+          ],
+          [
+            77.7026603,
+            12.9936762
+          ],
+          [
+            77.702999,
+            12.9935869
+          ],
+          [
+            77.7032966,
+            12.9935165
+          ],
+          [
+            77.703632,
+            12.9934317
+          ],
+          [
+            77.7037157,
+            12.9934103
+          ],
+          [
+            77.7042378,
+            12.993256
+          ],
+          [
+            77.7044713,
+            12.9931926
+          ],
+          [
+            77.7047836,
+            12.9931124
+          ],
+          [
+            77.7052202,
+            12.9930178
+          ],
+          [
+            77.7056082,
+            12.9929816
+          ],
+          [
+            77.7060558,
+            12.9929704
+          ],
+          [
+            77.7068911,
+            12.9929255
+          ],
+          [
+            77.7075238,
+            12.9928995
+          ],
+          [
+            77.7085889,
+            12.9928606
+          ],
+          [
+            77.7094205,
+            12.9928222
+          ],
+          [
+            77.7100348,
+            12.9928145
+          ],
+          [
+            77.7103669,
+            12.9928119
+          ],
+          [
+            77.7105796,
+            12.9928092
+          ],
+          [
+            77.710798,
+            12.99279
+          ],
+          [
+            77.7112384,
+            12.992683
+          ],
+          [
+            77.7115914,
+            12.992607
+          ],
+          [
+            77.7121025,
+            12.9924501
+          ],
+          [
+            77.7127915,
+            12.9922343
+          ],
+          [
+            77.7133551,
+            12.9919834
+          ],
+          [
+            77.7135442,
+            12.9918709
+          ],
+          [
+            77.7136617,
+            12.9917563
+          ],
+          [
+            77.713819,
+            12.9914749
+          ],
+          [
+            77.7138888,
+            12.9913501
+          ],
+          [
+            77.7139002,
+            12.9911631
+          ],
+          [
+            77.7139108,
+            12.9909934
+          ],
+          [
+            77.7139123,
+            12.9908379
+          ],
+          [
+            77.7139043,
+            12.9907235
+          ],
+          [
+            77.7138915,
+            12.9906047
+          ],
+          [
+            77.7138331,
+            12.9904612
+          ],
+          [
+            77.7137176,
+            12.990294
+          ],
+          [
+            77.7135586,
+            12.9901617
+          ],
+          [
+            77.7132745,
+            12.9899771
+          ],
+          [
+            77.7128079,
+            12.9896897
+          ],
+          [
+            77.712253,
+            12.9893718
+          ],
+          [
+            77.7118453,
+            12.9891327
+          ],
+          [
+            77.7113181,
+            12.9888208
+          ],
+          [
+            77.7104193,
+            12.9883115
+          ],
+          [
+            77.7099132,
+            12.9880405
+          ],
+          [
+            77.7096804,
+            12.9878986
+          ],
+          [
+            77.7094985,
+            12.9877548
+          ],
+          [
+            77.7092611,
+            12.9875285
+          ],
+          [
+            77.709128,
+            12.9873311
+          ],
+          [
+            77.709003,
+            12.9871169
+          ],
+          [
+            77.708657,
+            12.9865126
+          ],
+          [
+            77.7085306,
+            12.9861865
+          ],
+          [
+            77.7083993,
+            12.9858203
+          ],
+          [
+            77.7083398,
+            12.9855473
+          ],
+          [
+            77.7082865,
+            12.985235
+          ],
+          [
+            77.7082684,
+            12.9849389
+          ],
+          [
+            77.7082503,
+            12.9846851
+          ],
+          [
+            77.7082151,
+            12.9843032
+          ],
+          [
+            77.7082196,
+            12.9841232
+          ],
+          [
+            77.7082356,
+            12.9836319
+          ],
+          [
+            77.7082622,
+            12.9830457
+          ],
+          [
+            77.7082728,
+            12.9829257
+          ],
+          [
+            77.7082862,
+            12.9827976
+          ],
+          [
+            77.7083024,
+            12.9826328
+          ],
+          [
+            77.7084234,
+            12.9820637
+          ],
+          [
+            77.7086129,
+            12.9813697
+          ],
+          [
+            77.7088149,
+            12.9806449
+          ],
+          [
+            77.7089169,
+            12.980285
+          ],
+          [
+            77.708992,
+            12.9800198
+          ],
+          [
+            77.7092334,
+            12.9791939
+          ],
+          [
+            77.7093413,
+            12.9789214
+          ],
+          [
+            77.7094418,
+            12.9787361
+          ],
+          [
+            77.7094817,
+            12.9786833
+          ],
+          [
+            77.7096132,
+            12.9785288
+          ],
+          [
+            77.709764,
+            12.9784331
+          ],
+          [
+            77.7099149,
+            12.978352
+          ],
+          [
+            77.7100378,
+            12.9783069
+          ],
+          [
+            77.7102015,
+            12.9782504
+          ],
+          [
+            77.710287,
+            12.9782281
+          ],
+          [
+            77.7104473,
+            12.9782074
+          ],
+          [
+            77.710742,
+            12.9782041
+          ],
+          [
+            77.7111972,
+            12.9781466
+          ],
+          [
+            77.7120314,
+            12.9780405
+          ],
+          [
+            77.7123254,
+            12.9780033
+          ],
+          [
+            77.7131725,
+            12.9778967
+          ],
+          [
+            77.7145125,
+            12.9777202
+          ],
+          [
+            77.7149061,
+            12.977661
+          ],
+          [
+            77.715061,
+            12.9776292
+          ],
+          [
+            77.7158014,
+            12.9775263
+          ],
+          [
+            77.7163397,
+            12.9774383
+          ],
+          [
+            77.716667,
+            12.9774048
+          ],
+          [
+            77.7175168,
+            12.977325
+          ],
+          [
+            77.7185912,
+            12.9772614
+          ],
+          [
+            77.7198403,
+            12.9771469
+          ],
+          [
+            77.721651,
+            12.9769499
+          ],
+          [
+            77.7226598,
+            12.9768472
+          ],
+          [
+            77.7228115,
+            12.9768276
+          ],
+          [
+            77.7229506,
+            12.9767991
+          ],
+          [
+            77.7230798,
+            12.9767743
+          ],
+          [
+            77.7231681,
+            12.9767585
+          ],
+          [
+            77.7232637,
+            12.9767414
+          ],
+          [
+            77.7235906,
+            12.9766976
+          ],
+          [
+            77.7243495,
+            12.9766126
+          ],
+          [
+            77.7255885,
+            12.9765149
+          ],
+          [
+            77.7261093,
+            12.9764606
+          ],
+          [
+            77.7262479,
+            12.9764607
+          ],
+          [
+            77.7263672,
+            12.9764711
+          ],
+          [
+            77.7264837,
+            12.9764929
+          ],
+          [
+            77.7265932,
+            12.9765259
+          ],
+          [
+            77.7267153,
+            12.9765765
+          ],
+          [
+            77.7267928,
+            12.9766158
+          ],
+          [
+            77.7268573,
+            12.9766569
+          ],
+          [
+            77.7269227,
+            12.9767058
+          ],
+          [
+            77.726986,
+            12.9767665
+          ],
+          [
+            77.7270693,
+            12.9768498
+          ],
+          [
+            77.7271321,
+            12.9769283
+          ],
+          [
+            77.7271929,
+            12.9770224
+          ],
+          [
+            77.7272568,
+            12.9771445
+          ],
+          [
+            77.7272893,
+            12.9772253
+          ],
+          [
+            77.7273208,
+            12.9773463
+          ],
+          [
+            77.7273398,
+            12.9774713
+          ],
+          [
+            77.7273582,
+            12.9780451
+          ],
+          [
+            77.7273692,
+            12.9783549
+          ],
+          [
+            77.7273782,
+            12.978592
+          ],
+          [
+            77.7273684,
+            12.978808
+          ],
+          [
+            77.7273378,
+            12.9793403
+          ],
+          [
+            77.7273309,
+            12.9795468
+          ],
+          [
+            77.7273354,
+            12.9796888
+          ],
+          [
+            77.727359,
+            12.9799936
+          ],
+          [
+            77.7273877,
+            12.9801595
+          ],
+          [
+            77.7274295,
+            12.9803512
+          ],
+          [
+            77.7274963,
+            12.9807354
+          ],
+          [
+            77.7275514,
+            12.9810198
+          ],
+          [
+            77.7276813,
+            12.9815671
+          ],
+          [
+            77.727777,
+            12.9819994
+          ],
+          [
+            77.7278298,
+            12.9822191
+          ],
+          [
+            77.7278902,
+            12.9824329
+          ],
+          [
+            77.7280957,
+            12.9829329
+          ],
+          [
+            77.7282764,
+            12.983274
+          ],
+          [
+            77.7284809,
+            12.9835682
+          ],
+          [
+            77.7287039,
+            12.9838597
+          ],
+          [
+            77.7290455,
+            12.9842791
+          ],
+          [
+            77.7295243,
+            12.9848511
+          ],
+          [
+            77.7297323,
+            12.9850841
+          ],
+          [
+            77.7299941,
+            12.9853615
+          ],
+          [
+            77.7302323,
+            12.9855751
+          ],
+          [
+            77.7304264,
+            12.985721
+          ],
+          [
+            77.7306081,
+            12.9858402
+          ],
+          [
+            77.7314935,
+            12.9863465
+          ],
+          [
+            77.7317138,
+            12.98648
+          ],
+          [
+            77.7318687,
+            12.986603
+          ],
+          [
+            77.731955,
+            12.9866817
+          ],
+          [
+            77.7320834,
+            12.9868116
+          ],
+          [
+            77.7321671,
+            12.9869178
+          ],
+          [
+            77.732512,
+            12.9874124
+          ],
+          [
+            77.7327049,
+            12.9876042
+          ],
+          [
+            77.7328002,
+            12.9876726
+          ],
+          [
+            77.7328857,
+            12.987724
+          ],
+          [
+            77.7329743,
+            12.9877694
+          ],
+          [
+            77.7331483,
+            12.9878407
+          ],
+          [
+            77.7333139,
+            12.9878802
+          ],
+          [
+            77.7334369,
+            12.9878925
+          ],
+          [
+            77.7335902,
+            12.9878866
+          ],
+          [
+            77.7339609,
+            12.9878427
+          ],
+          [
+            77.7349683,
+            12.9876844
+          ],
+          [
+            77.7352886,
+            12.987641
+          ],
+          [
+            77.7355424,
+            12.9876152
+          ],
+          [
+            77.7358363,
+            12.9875913
+          ],
+          [
+            77.7366575,
+            12.9875886
+          ],
+          [
+            77.7372451,
+            12.9875935
+          ],
+          [
+            77.7380977,
+            12.9875875
+          ],
+          [
+            77.7392131,
+            12.9875963
+          ],
+          [
+            77.7399579,
+            12.9875824
+          ],
+          [
+            77.7400572,
+            12.9875744
+          ],
+          [
+            77.7401435,
+            12.9875654
+          ],
+          [
+            77.7403078,
+            12.9875335
+          ],
+          [
+            77.7439291,
+            12.9866079
+          ],
+          [
+            77.7452784,
+            12.9862578
+          ],
+          [
+            77.7455102,
+            12.9861916
+          ],
+          [
+            77.7458334,
+            12.9860795
+          ],
+          [
+            77.7465715,
+            12.9857936
+          ],
+          [
+            77.7470097,
+            12.9856238
+          ],
+          [
+            77.7481414,
+            12.9852024
+          ],
+          [
+            77.7489784,
+            12.984907
+          ],
+          [
+            77.7498704,
+            12.9846042
+          ],
+          [
+            77.7509219,
+            12.9842344
+          ],
+          [
+            77.7510922,
+            12.984197
+          ],
+          [
+            77.7512613,
+            12.9841756
+          ],
+          [
+            77.7514017,
+            12.9841669
+          ],
+          [
+            77.7515485,
+            12.9841747
+          ],
+          [
+            77.751711,
+            12.9842038
+          ],
+          [
+            77.7518697,
+            12.9842473
+          ],
+          [
+            77.7520432,
+            12.9843111
+          ],
+          [
+            77.7521693,
+            12.9843658
+          ],
+          [
+            77.7523407,
+            12.9844606
+          ],
+          [
+            77.7524924,
+            12.9845633
+          ],
+          [
+            77.7526407,
+            12.9846943
+          ],
+          [
+            77.7527826,
+            12.984846
+          ],
+          [
+            77.7529214,
+            12.9850355
+          ],
+          [
+            77.7530953,
+            12.9853592
+          ],
+          [
+            77.753314,
+            12.9858857
+          ],
+          [
+            77.7536657,
+            12.986735
+          ],
+          [
+            77.7538642,
+            12.9872074
+          ],
+          [
+            77.7541783,
+            12.987924
+          ],
+          [
+            77.754268,
+            12.9881407
+          ],
+          [
+            77.7547782,
+            12.9893615
+          ],
+          [
+            77.7548917,
+            12.9896483
+          ],
+          [
+            77.7550219,
+            12.9898961
+          ],
+          [
+            77.7551473,
+            12.9901079
+          ],
+          [
+            77.7552675,
+            12.9902928
+          ],
+          [
+            77.7553975,
+            12.9904727
+          ],
+          [
+            77.7564014,
+            12.9917949
+          ],
+          [
+            77.7567758,
+            12.9922837
+          ],
+          [
+            77.7568644,
+            12.9924126
+          ],
+          [
+            77.7569353,
+            12.9925285
+          ],
+          [
+            77.7569867,
+            12.9926106
+          ],
+          [
+            77.7570506,
+            12.9927415
+          ],
+          [
+            77.7570973,
+            12.9928452
+          ],
+          [
+            77.7571491,
+            12.9929885
+          ],
+          [
+            77.7574622,
+            12.9939881
+          ],
+          [
+            77.7575148,
+            12.9941581
+          ],
+          [
+            77.7578215,
+            12.99519
+          ],
+          [
+            77.7580968,
+            12.9962173
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "code": "BSNK",
+        "name": "Banashankari",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ಬನಶಂಕರಿ",
+        "fullName": "Banashankari"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5736205,
+          12.9152186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ವಿಧಾನ ಸೌಧ",
+        "railway": "stop",
+        "name": "Vidhana Soudha",
+        "subway": "yes",
+        "colour": "purple",
+        "code": "VDSA",
+        "fullName": "Dr. B. R. Ambedkar Station, Vidhana Soudha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5911088,
+          12.9779727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "SBJT",
+        "railway": "stop",
+        "name:kn": "ಸೆಂಟ್ರಲ್ ಸಿಲ್ಕ ಬೋರ್ಡ್",
+        "name": "Silk Board",
+        "subway": "yes",
+        "colour": "yellow",
+        "fullName": "Central Silk Board"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6210257,
+          12.9167339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಜಯದೇವ ಆಸ್ಪತ್ರೆ",
+        "railway": "stop",
+        "name": "Jayadeva Hospital",
+        "subway": "yes",
+        "colour": "yellow",
+        "code": "JDHP",
+        "fullName": "Jayadeva Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6004425,
+          12.9167643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Huskur Road",
+        "railway": "stop",
+        "name:kn": "ಹುಸ್ಕೂರು ರಸ್ತೆ",
+        "subway": "yes",
+        "colour": "yellow",
+        "code": "HSKR",
+        "fullName": "Huskur Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6777338,
+          12.8387166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಸ್ವಾಮಿ ವಿವೇಕಾನಂದ ರಸ್ತೆ",
+        "code": "SVRD",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Swami Vivekananda Road",
+        "colour": "purple",
+        "fullName": "Swami Vivekananda Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6449072,
+          12.9859128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "code": "JLHL",
+        "name:kn": "ಜಾಲಹಳ್ಳಿ",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Jalahalli",
+        "fullName": "Jalahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5197626,
+          13.0394442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "code": "YPM",
+        "name:kn": "ಯಶ್ವಂತಪುರ",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Yeshwantpur",
+        "fullName": "Yeshwantpur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.549748,
+          13.0233685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "DKIA",
+        "name:kn": "ಹೂಡಿ",
+        "name": "Hoodi",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "purple",
+        "fullName": "Hoodi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7118453,
+          12.9891327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "name:kn": "ಜಯನಗರ",
+        "name": "Jayanagar",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "JYN",
+        "fullName": "Jayanagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5801653,
+          12.9295069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "VDHP",
+        "name:kn": "ನಲ್ಲೂರಹಳ್ಳಿ",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Nallurahalli",
+        "colour": "purple",
+        "fullName": "Nallurahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7243495,
+          12.9766126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Attiguppe",
+        "railway": "stop",
+        "name:kn": "ಅತ್ತಿಗುಪ್ಪೆ ಮೆಟ್ರೋ",
+        "subway": "yes",
+        "colour": "purple",
+        "code": "AGPP",
+        "fullName": "Attiguppe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5335932,
+          12.9618581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "code": "LBGH",
+        "name": "Lalbagh",
+        "railway": "stop",
+        "name:kn": "ಲಾಲ್ ಬಾಗ್",
+        "subway": "yes",
+        "fullName": "Lalbagh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5800377,
+          12.9465345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Singayyanapalya",
+        "name:kn": "ಸಿಂಗಯ್ಯನಪಾಳ್ಯ",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "MDVP",
+        "colour": "purple",
+        "fullName": "Singayyanapalya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6921457,
+          12.9966967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "SPGD",
+        "colour": "green",
+        "name": "Mantri Square",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ಮಂತ್ರಿ ಸ್ಕ್ವೇರ್ ಸಂಪಿಗೆ ರಸ್ತೆ",
+        "fullName": "Mantri Square Sampige Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5707615,
+          12.9904754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "BYPH",
+        "name": "Baiyappanahalli",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ಬೈಯಪ್ಪನಹಳ್ಳಿ",
+        "colour": "purple",
+        "fullName": "Baiyappanahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.652392,
+          12.9906745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಮಹಾಕವಿ ಕುವೆಂಪು ರಸ್ತೆ",
+        "colour": "green",
+        "name": "MKK Road",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "KVPR",
+        "fullName": "Mahakavi Kuvempu Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5568794,
+          12.9985238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "name": "Madavara",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "BIET",
+        "name:kn": "ಮದವರ",
+        "fullName": "Madavara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4728077,
+          13.0574359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "code": "NLC",
+        "name:kn": "ರಾಷ್ಟ್ರೀಯ ಕಾಲೇಜು",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "National College",
+        "fullName": "National College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.573712,
+          12.9505258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "railway": "stop",
+        "name:kn": "ಬೆನ್ನಿಗಾನಹಳ್ಳಿ",
+        "name": "Benniganahalli",
+        "subway": "yes",
+        "colour": "purple",
+        "code": "JTPM",
+        "fullName": "Benniganahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6684788,
+          12.996496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "railway": "subway",
+        "name": "Yellow Line",
+        "subway": "yes",
+        "colour": "yellow",
+        "fullName": "Yellow Line"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.58009410417,
+            12.9210080712
+          ],
+          [
+            77.5800962,
+            12.9208053
+          ],
+          [
+            77.5800985,
+            12.9205099
+          ],
+          [
+            77.5801099,
+            12.9202277
+          ],
+          [
+            77.5801213,
+            12.9200705
+          ],
+          [
+            77.580133,
+            12.919924
+          ],
+          [
+            77.5801614,
+            12.9196788
+          ],
+          [
+            77.5801776,
+            12.9195208
+          ],
+          [
+            77.5801927,
+            12.9193166
+          ],
+          [
+            77.5801964,
+            12.9191248
+          ],
+          [
+            77.5802085,
+            12.9184202
+          ],
+          [
+            77.5802126,
+            12.9183003
+          ],
+          [
+            77.5802183,
+            12.9182041
+          ],
+          [
+            77.58023,
+            12.9181286
+          ],
+          [
+            77.5802494,
+            12.918032
+          ],
+          [
+            77.5802699,
+            12.917949
+          ],
+          [
+            77.5803055,
+            12.9178592
+          ],
+          [
+            77.5803353,
+            12.917788
+          ],
+          [
+            77.5803737,
+            12.917715
+          ],
+          [
+            77.5804298,
+            12.9176344
+          ],
+          [
+            77.5805043,
+            12.917548
+          ],
+          [
+            77.5806018,
+            12.9174512
+          ],
+          [
+            77.5806689,
+            12.9173926
+          ],
+          [
+            77.5807789,
+            12.9173151
+          ],
+          [
+            77.5808743,
+            12.9172663
+          ],
+          [
+            77.5809933,
+            12.9172195
+          ],
+          [
+            77.5811054,
+            12.9171858
+          ],
+          [
+            77.5812289,
+            12.9171603
+          ],
+          [
+            77.5813427,
+            12.9171458
+          ],
+          [
+            77.581475,
+            12.9171421
+          ],
+          [
+            77.5836204,
+            12.9170875
+          ],
+          [
+            77.5848673,
+            12.9170598
+          ],
+          [
+            77.5867112,
+            12.9170188
+          ],
+          [
+            77.5869875,
+            12.9170696
+          ],
+          [
+            77.5871838,
+            12.9170988
+          ],
+          [
+            77.5873096,
+            12.9171097
+          ],
+          [
+            77.5874966,
+            12.9171157
+          ],
+          [
+            77.5876916,
+            12.9171111
+          ],
+          [
+            77.588698,
+            12.9170892
+          ],
+          [
+            77.5890492,
+            12.9170815
+          ],
+          [
+            77.5893702,
+            12.9170741
+          ],
+          [
+            77.5895863,
+            12.9170472
+          ],
+          [
+            77.5900464,
+            12.9169568
+          ],
+          [
+            77.5903422,
+            12.9169431
+          ],
+          [
+            77.5909409,
+            12.9169317
+          ],
+          [
+            77.5940177,
+            12.9168789
+          ],
+          [
+            77.5950593,
+            12.9168585
+          ],
+          [
+            77.5964892,
+            12.9168259
+          ],
+          [
+            77.5976424,
+            12.9168215
+          ],
+          [
+            77.5986695,
+            12.9167995
+          ],
+          [
+            77.6004425,
+            12.9167643
+          ],
+          [
+            77.6018923,
+            12.9167356
+          ],
+          [
+            77.6046249,
+            12.916703
+          ],
+          [
+            77.6068967,
+            12.9166312
+          ],
+          [
+            77.6086222,
+            12.916598
+          ],
+          [
+            77.6087629,
+            12.9165953
+          ],
+          [
+            77.6106888,
+            12.9165433
+          ],
+          [
+            77.6118316,
+            12.9165458
+          ],
+          [
+            77.6139503,
+            12.9164858
+          ],
+          [
+            77.6141978,
+            12.9164736
+          ],
+          [
+            77.6150608,
+            12.9164126
+          ],
+          [
+            77.6155506,
+            12.9163773
+          ],
+          [
+            77.6160859,
+            12.9163122
+          ],
+          [
+            77.6166352,
+            12.9162589
+          ],
+          [
+            77.617105,
+            12.9162568
+          ],
+          [
+            77.6175656,
+            12.9162819
+          ],
+          [
+            77.6183948,
+            12.9162883
+          ],
+          [
+            77.6187381,
+            12.9162681
+          ],
+          [
+            77.6189522,
+            12.9162493
+          ],
+          [
+            77.6190798,
+            12.9162385
+          ],
+          [
+            77.619208,
+            12.9162346
+          ],
+          [
+            77.6193198,
+            12.916239
+          ],
+          [
+            77.6195277,
+            12.9162762
+          ],
+          [
+            77.6201047,
+            12.9164413
+          ],
+          [
+            77.6210257,
+            12.9167339
+          ],
+          [
+            77.6216107,
+            12.9169198
+          ],
+          [
+            77.6217101,
+            12.9169501
+          ],
+          [
+            77.6218115,
+            12.9169726
+          ],
+          [
+            77.6219146,
+            12.9169873
+          ],
+          [
+            77.6220184,
+            12.9169939
+          ],
+          [
+            77.6221225,
+            12.9169926
+          ],
+          [
+            77.6222262,
+            12.9169832
+          ],
+          [
+            77.6223287,
+            12.9169659
+          ],
+          [
+            77.6224296,
+            12.9169408
+          ],
+          [
+            77.6225281,
+            12.9169079
+          ],
+          [
+            77.6226209,
+            12.9168688
+          ],
+          [
+            77.6227105,
+            12.9168229
+          ],
+          [
+            77.6227961,
+            12.9167704
+          ],
+          [
+            77.6228774,
+            12.9167117
+          ],
+          [
+            77.6229537,
+            12.9166471
+          ],
+          [
+            77.6230248,
+            12.9165769
+          ],
+          [
+            77.6230901,
+            12.9165016
+          ],
+          [
+            77.6231493,
+            12.9164217
+          ],
+          [
+            77.6241354,
+            12.9146328
+          ],
+          [
+            77.6245169,
+            12.913904
+          ],
+          [
+            77.6249592,
+            12.9132082
+          ],
+          [
+            77.6253591,
+            12.912572
+          ],
+          [
+            77.6257373,
+            12.9119217
+          ],
+          [
+            77.6265042,
+            12.9106217
+          ],
+          [
+            77.6267043,
+            12.910304
+          ],
+          [
+            77.6269336,
+            12.9099406
+          ],
+          [
+            77.6290141,
+            12.9065644
+          ],
+          [
+            77.6301871,
+            12.9046464
+          ],
+          [
+            77.6307047,
+            12.9038321
+          ],
+          [
+            77.6322415,
+            12.9013317
+          ],
+          [
+            77.6328666,
+            12.9003404
+          ],
+          [
+            77.6342124,
+            12.89815
+          ],
+          [
+            77.6355179,
+            12.8959546
+          ],
+          [
+            77.636604,
+            12.8942937
+          ],
+          [
+            77.6377442,
+            12.8924261
+          ],
+          [
+            77.6388638,
+            12.8905484
+          ],
+          [
+            77.63947,
+            12.8895614
+          ],
+          [
+            77.6401861,
+            12.8884423
+          ],
+          [
+            77.6429396,
+            12.8839707
+          ],
+          [
+            77.6448028,
+            12.8809349
+          ],
+          [
+            77.6451067,
+            12.8804315
+          ],
+          [
+            77.6455692,
+            12.8796651
+          ],
+          [
+            77.6464115,
+            12.8782921
+          ],
+          [
+            77.6469479,
+            12.8773573
+          ],
+          [
+            77.6472322,
+            12.8769402
+          ],
+          [
+            77.6474603,
+            12.8766448
+          ],
+          [
+            77.6495352,
+            12.8743339
+          ],
+          [
+            77.6506094,
+            12.8731271
+          ],
+          [
+            77.6517427,
+            12.8716458
+          ],
+          [
+            77.6520095,
+            12.8713203
+          ],
+          [
+            77.6524979,
+            12.8707184
+          ],
+          [
+            77.6527461,
+            12.8703997
+          ],
+          [
+            77.6529909,
+            12.8700725
+          ],
+          [
+            77.6532427,
+            12.8697507
+          ],
+          [
+            77.6573064,
+            12.8646247
+          ],
+          [
+            77.6578927,
+            12.8639524
+          ],
+          [
+            77.6581956,
+            12.8635659
+          ],
+          [
+            77.6587439,
+            12.8628664
+          ],
+          [
+            77.6597196,
+            12.8616576
+          ],
+          [
+            77.6605906,
+            12.8605345
+          ],
+          [
+            77.661577,
+            12.859178
+          ],
+          [
+            77.6624071,
+            12.857952
+          ],
+          [
+            77.6628562,
+            12.8573291
+          ],
+          [
+            77.6636413,
+            12.8563854
+          ],
+          [
+            77.6637352,
+            12.8562795
+          ],
+          [
+            77.6641411,
+            12.855822
+          ],
+          [
+            77.6645744,
+            12.8554046
+          ],
+          [
+            77.6649217,
+            12.8550284
+          ],
+          [
+            77.6665847,
+            12.8528881
+          ],
+          [
+            77.6674859,
+            12.8516495
+          ],
+          [
+            77.6684448,
+            12.8504417
+          ],
+          [
+            77.6698688,
+            12.8485803
+          ],
+          [
+            77.6702175,
+            12.8480691
+          ],
+          [
+            77.6704948,
+            12.8475484
+          ],
+          [
+            77.670854,
+            12.8469771
+          ],
+          [
+            77.6714519,
+            12.8460892
+          ],
+          [
+            77.6717026,
+            12.8457169
+          ],
+          [
+            77.671849,
+            12.8455327
+          ],
+          [
+            77.6720701,
+            12.8453354
+          ],
+          [
+            77.6721317,
+            12.8452759
+          ],
+          [
+            77.6725738,
+            12.8449742
+          ],
+          [
+            77.6728503,
+            12.8447418
+          ],
+          [
+            77.6731078,
+            12.844499
+          ],
+          [
+            77.6739674,
+            12.843568
+          ],
+          [
+            77.6743202,
+            12.8431715
+          ],
+          [
+            77.6746434,
+            12.8427557
+          ],
+          [
+            77.6752911,
+            12.8419228
+          ],
+          [
+            77.6765625,
+            12.8402546
+          ],
+          [
+            77.6777338,
+            12.8387166
+          ],
+          [
+            77.677866,
+            12.838543
+          ],
+          [
+            77.6782255,
+            12.8380226
+          ],
+          [
+            77.6783743,
+            12.8377568
+          ],
+          [
+            77.6788209,
+            12.8366916
+          ],
+          [
+            77.6791763,
+            12.8358138
+          ],
+          [
+            77.6795116,
+            12.834921
+          ],
+          [
+            77.6801097,
+            12.8332718
+          ],
+          [
+            77.6803109,
+            12.8324114
+          ],
+          [
+            77.680563,
+            12.8315657
+          ],
+          [
+            77.68074,
+            12.8310191
+          ],
+          [
+            77.6812499,
+            12.8295021
+          ],
+          [
+            77.6815497,
+            12.8285866
+          ],
+          [
+            77.6817429,
+            12.8279964
+          ],
+          [
+            77.6819175,
+            12.8275863
+          ],
+          [
+            77.6821039,
+            12.8271734
+          ],
+          [
+            77.6826964,
+            12.8260415
+          ],
+          [
+            77.6831752,
+            12.8251262
+          ],
+          [
+            77.683595,
+            12.8245626
+          ],
+          [
+            77.6859542,
+            12.8220526
+          ],
+          [
+            77.6868743,
+            12.8210794
+          ],
+          [
+            77.6877575,
+            12.820076
+          ],
+          [
+            77.6883479,
+            12.8194273
+          ],
+          [
+            77.688657,
+            12.8190878
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "BRCS",
+        "name:kn": "ನಗರ ರೈಲು ನಿಲ್ದಾಣ",
+        "railway": "stop",
+        "name": "KSR Railway Station",
+        "subway": "yes",
+        "colour": "purple",
+        "fullName": "Krantivira Sangolli Rayanna Railway Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5653792,
+          12.9758581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "TTY",
+        "railway": "stop",
+        "name": "Trinity",
+        "subway": "yes",
+        "name:kn": "ಟ್ರಿನಿಟಿ",
+        "colour": "purple",
+        "fullName": "Trinity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.617013,
+          12.9729953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಗೊರಗುಂಟೆಪಾಳ್ಯ ಮೆಟ್ರೋ ನಿಲ್ದಾಣ",
+        "colour": "green",
+        "name": "Goraguntepalya",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "YPI",
+        "fullName": "Goraguntepalya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5411923,
+          13.0282471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cubbon Park",
+        "railway": "stop",
+        "code": "CBPK",
+        "subway": "yes",
+        "name:kn": "ಕಬ್ಬನ್ ಪಾರ್ಕ್",
+        "colour": "purple",
+        "fullName": "Cubbon Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.597562,
+          12.9808954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "name": "Doddakallasandra",
+        "railway": "stop",
+        "code": "KLPK",
+        "subway": "yes",
+        "name:kn": "ದೊಡ್ಡಕಲ್ಲಸಂದ್ರ",
+        "fullName": "Doddakallasandra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5527796,
+          12.8846245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kadugodi Tree Park",
+        "code": "KDGD",
+        "name:kn": "ಕಾಡುಗೋಡಿ ಟ್ರೀ ಪಾರ್ಕ್",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "purple",
+        "fullName": "Kadugodi Tree Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7465715,
+          12.9857936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "KGIT",
+        "railway": "stop",
+        "name": "Kengeri",
+        "subway": "yes",
+        "name:kn": "ಕೆಂಗೇರಿ",
+        "colour": "purple",
+        "fullName": "Kengeri"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4765871,
+          12.9078971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "code": "DSH",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ದಾಸರಹಳ್ಳಿ",
+        "name": "Dasarahalli",
+        "fullName": "Dasarahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5125628,
+          13.0432956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Konappana Agrahara",
+        "railway": "stop",
+        "subway": "yes",
+        "code": "ECTN",
+        "colour": "yellow",
+        "name:kn": "ಇನ್ಫೋಸಿಸ್ ಫೌಂಡೇಶನ್ ಕೊನಪ್ಪನ ಅಗ್ರಹಾರ",
+        "fullName": "Infosys Foundation Konappana Agrahara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6714519,
+          12.8460892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಪಂತರಪಾಳ್ಯ - ನಾಯಂಡಹಳ್ಳಿ",
+        "name": "Nayandahalli",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "purple",
+        "code": "NYHM",
+        "fullName": "Pantharapalya - Nayandahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.525127,
+          12.9416608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "railway": "subway",
+        "subway": "yes",
+        "name": "Green Line",
+        "fullName": "Green Line"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.5276932,
+            12.8579955
+          ],
+          [
+            77.527996,
+            12.8584166
+          ],
+          [
+            77.5291132,
+            12.8602616
+          ],
+          [
+            77.5292106,
+            12.8604109
+          ],
+          [
+            77.5293188,
+            12.8605979
+          ],
+          [
+            77.5294788,
+            12.860867
+          ],
+          [
+            77.5298172,
+            12.861435
+          ],
+          [
+            77.5299532,
+            12.8616662
+          ],
+          [
+            77.5302856,
+            12.862197
+          ],
+          [
+            77.5304964,
+            12.8625424
+          ],
+          [
+            77.530806,
+            12.8627735
+          ],
+          [
+            77.5314277,
+            12.8631881
+          ],
+          [
+            77.532077,
+            12.8636242
+          ],
+          [
+            77.5324861,
+            12.8639691
+          ],
+          [
+            77.5328619,
+            12.8643238
+          ],
+          [
+            77.5330171,
+            12.8644921
+          ],
+          [
+            77.5342366,
+            12.866038
+          ],
+          [
+            77.5350065,
+            12.8670555
+          ],
+          [
+            77.5365886,
+            12.8691171
+          ],
+          [
+            77.5367491,
+            12.8693086
+          ],
+          [
+            77.5378837,
+            12.8707251
+          ],
+          [
+            77.538419,
+            12.8713916
+          ],
+          [
+            77.539826,
+            12.8731484
+          ],
+          [
+            77.540106,
+            12.8734354
+          ],
+          [
+            77.5403602,
+            12.8736735
+          ],
+          [
+            77.5407012,
+            12.8739539
+          ],
+          [
+            77.541002,
+            12.8741433
+          ],
+          [
+            77.5412876,
+            12.8743119
+          ],
+          [
+            77.5423538,
+            12.8747967
+          ],
+          [
+            77.5429577,
+            12.8750538
+          ],
+          [
+            77.5433884,
+            12.8753154
+          ],
+          [
+            77.543658,
+            12.8755361
+          ],
+          [
+            77.5439311,
+            12.8758213
+          ],
+          [
+            77.5441844,
+            12.8761403
+          ],
+          [
+            77.5444246,
+            12.8766284
+          ],
+          [
+            77.5448072,
+            12.8775221
+          ],
+          [
+            77.5455999,
+            12.8794146
+          ],
+          [
+            77.5465144,
+            12.8816785
+          ],
+          [
+            77.5468242,
+            12.8823955
+          ],
+          [
+            77.5470185,
+            12.8827483
+          ],
+          [
+            77.5471404,
+            12.8828975
+          ],
+          [
+            77.5473191,
+            12.8830216
+          ],
+          [
+            77.5475216,
+            12.8831324
+          ],
+          [
+            77.5477886,
+            12.8832503
+          ],
+          [
+            77.548092,
+            12.8833326
+          ],
+          [
+            77.5495993,
+            12.8837093
+          ],
+          [
+            77.5503576,
+            12.8839021
+          ],
+          [
+            77.5511006,
+            12.8841215
+          ],
+          [
+            77.5527796,
+            12.8846245
+          ],
+          [
+            77.552925,
+            12.8846652
+          ],
+          [
+            77.5549214,
+            12.8852865
+          ],
+          [
+            77.5559889,
+            12.8856367
+          ],
+          [
+            77.5562482,
+            12.8857094
+          ],
+          [
+            77.5568757,
+            12.8858898
+          ],
+          [
+            77.5577428,
+            12.8861991
+          ],
+          [
+            77.5579868,
+            12.8862606
+          ],
+          [
+            77.5590708,
+            12.8866017
+          ],
+          [
+            77.5592789,
+            12.8866668
+          ],
+          [
+            77.5599738,
+            12.8869171
+          ],
+          [
+            77.5604136,
+            12.8871348
+          ],
+          [
+            77.5612116,
+            12.8877215
+          ],
+          [
+            77.561521,
+            12.8879304
+          ],
+          [
+            77.5618091,
+            12.8881719
+          ],
+          [
+            77.5627011,
+            12.8889432
+          ],
+          [
+            77.5634887,
+            12.8896241
+          ],
+          [
+            77.563618,
+            12.8897372
+          ],
+          [
+            77.5639984,
+            12.8900878
+          ],
+          [
+            77.5644343,
+            12.8904835
+          ],
+          [
+            77.5653166,
+            12.8912755
+          ],
+          [
+            77.5661453,
+            12.8919891
+          ],
+          [
+            77.566717,
+            12.8925194
+          ],
+          [
+            77.5674777,
+            12.8932211
+          ],
+          [
+            77.5682123,
+            12.8939458
+          ],
+          [
+            77.5687719,
+            12.8945321
+          ],
+          [
+            77.5692191,
+            12.8949932
+          ],
+          [
+            77.5695482,
+            12.8953693
+          ],
+          [
+            77.57014,
+            12.8960361
+          ],
+          [
+            77.5708245,
+            12.8967948
+          ],
+          [
+            77.5712553,
+            12.8972517
+          ],
+          [
+            77.5716465,
+            12.8977588
+          ],
+          [
+            77.5725456,
+            12.8989976
+          ],
+          [
+            77.5727487,
+            12.8993544
+          ],
+          [
+            77.5728639,
+            12.8996046
+          ],
+          [
+            77.5729151,
+            12.8996823
+          ],
+          [
+            77.5730137,
+            12.9000062
+          ],
+          [
+            77.5731012,
+            12.9002775
+          ],
+          [
+            77.5733542,
+            12.9011752
+          ],
+          [
+            77.5734294,
+            12.9014972
+          ],
+          [
+            77.5734628,
+            12.9017801
+          ],
+          [
+            77.5734785,
+            12.9019195
+          ],
+          [
+            77.5734708,
+            12.9020677
+          ],
+          [
+            77.5734387,
+            12.9023765
+          ],
+          [
+            77.5732659,
+            12.9034829
+          ],
+          [
+            77.5732386,
+            12.9036281
+          ],
+          [
+            77.5732336,
+            12.9038461
+          ],
+          [
+            77.5732549,
+            12.904063
+          ],
+          [
+            77.5732851,
+            12.9043311
+          ],
+          [
+            77.5733434,
+            12.904904
+          ],
+          [
+            77.5733704,
+            12.9053055
+          ],
+          [
+            77.5733662,
+            12.9055492
+          ],
+          [
+            77.5733459,
+            12.9057733
+          ],
+          [
+            77.5733197,
+            12.9059627
+          ],
+          [
+            77.5732987,
+            12.9062199
+          ],
+          [
+            77.5732362,
+            12.9066441
+          ],
+          [
+            77.5731495,
+            12.9074812
+          ],
+          [
+            77.5730428,
+            12.9081566
+          ],
+          [
+            77.5730029,
+            12.908457
+          ],
+          [
+            77.5729632,
+            12.908955
+          ],
+          [
+            77.5729032,
+            12.9110064
+          ],
+          [
+            77.5728853,
+            12.911436
+          ],
+          [
+            77.5728903,
+            12.9116747
+          ],
+          [
+            77.5729324,
+            12.9120234
+          ],
+          [
+            77.5729914,
+            12.9124024
+          ],
+          [
+            77.5730428,
+            12.9126774
+          ],
+          [
+            77.5731936,
+            12.9131419
+          ],
+          [
+            77.5733963,
+            12.9139485
+          ],
+          [
+            77.5734666,
+            12.9142957
+          ],
+          [
+            77.5735324,
+            12.9147097
+          ],
+          [
+            77.5736205,
+            12.9152186
+          ],
+          [
+            77.5738299,
+            12.9167244
+          ],
+          [
+            77.5738819,
+            12.9168967
+          ],
+          [
+            77.5739711,
+            12.9170846
+          ],
+          [
+            77.5741167,
+            12.9172677
+          ],
+          [
+            77.5742651,
+            12.917387
+          ],
+          [
+            77.5744928,
+            12.9175189
+          ],
+          [
+            77.5746198,
+            12.9175631
+          ],
+          [
+            77.5747854,
+            12.9176065
+          ],
+          [
+            77.5749269,
+            12.9176263
+          ],
+          [
+            77.575098,
+            12.9176258
+          ],
+          [
+            77.5754492,
+            12.9176202
+          ],
+          [
+            77.5768943,
+            12.9175923
+          ],
+          [
+            77.5770839,
+            12.9175874
+          ],
+          [
+            77.5772584,
+            12.9175579
+          ],
+          [
+            77.5774272,
+            12.9175082
+          ],
+          [
+            77.5776311,
+            12.9174354
+          ],
+          [
+            77.5778064,
+            12.9173643
+          ],
+          [
+            77.5780173,
+            12.917279
+          ],
+          [
+            77.5781702,
+            12.9172346
+          ],
+          [
+            77.5783373,
+            12.9171915
+          ],
+          [
+            77.578504,
+            12.9171592
+          ],
+          [
+            77.5786886,
+            12.9171503
+          ],
+          [
+            77.5788522,
+            12.917148
+          ],
+          [
+            77.5790061,
+            12.9171494
+          ],
+          [
+            77.5791414,
+            12.9171582
+          ],
+          [
+            77.5792943,
+            12.9171737
+          ],
+          [
+            77.5794194,
+            12.9171955
+          ],
+          [
+            77.5795342,
+            12.9172296
+          ],
+          [
+            77.579653,
+            12.917275
+          ],
+          [
+            77.579732,
+            12.9173135
+          ],
+          [
+            77.579833,
+            12.917381
+          ],
+          [
+            77.5799101,
+            12.9174423
+          ],
+          [
+            77.5799862,
+            12.9175159
+          ],
+          [
+            77.5800528,
+            12.9175914
+          ],
+          [
+            77.580118,
+            12.9176861
+          ],
+          [
+            77.5801678,
+            12.917764
+          ],
+          [
+            77.5802171,
+            12.9178572
+          ],
+          [
+            77.5802551,
+            12.9179686
+          ],
+          [
+            77.5802809,
+            12.9180802
+          ],
+          [
+            77.5803018,
+            12.9181857
+          ],
+          [
+            77.5803118,
+            12.9182905
+          ],
+          [
+            77.5803148,
+            12.9184579
+          ],
+          [
+            77.5802989,
+            12.9199257
+          ],
+          [
+            77.5802938,
+            12.9208529
+          ],
+          [
+            77.58029316861,
+            12.92091904636
+          ],
+          [
+            77.5802816,
+            12.922131
+          ],
+          [
+            77.580266,
+            12.9234476
+          ],
+          [
+            77.5802467,
+            12.9249156
+          ],
+          [
+            77.580234,
+            12.9263713
+          ],
+          [
+            77.580222,
+            12.9271453
+          ],
+          [
+            77.5801653,
+            12.9295069
+          ],
+          [
+            77.5801568,
+            12.9303039
+          ],
+          [
+            77.5801102,
+            12.933122
+          ],
+          [
+            77.5800942,
+            12.9359696
+          ],
+          [
+            77.5800772,
+            12.938262
+          ],
+          [
+            77.5800672,
+            12.9396168
+          ],
+          [
+            77.5800547,
+            12.9401626
+          ],
+          [
+            77.5800569,
+            12.9424057
+          ],
+          [
+            77.5800452,
+            12.9436048
+          ],
+          [
+            77.5800377,
+            12.9465345
+          ],
+          [
+            77.5800233,
+            12.9470636
+          ],
+          [
+            77.580015,
+            12.9473174
+          ],
+          [
+            77.5799858,
+            12.9474701
+          ],
+          [
+            77.5799532,
+            12.9475898
+          ],
+          [
+            77.5798809,
+            12.9477264
+          ],
+          [
+            77.5797726,
+            12.9478968
+          ],
+          [
+            77.5796115,
+            12.9480478
+          ],
+          [
+            77.5793871,
+            12.9481888
+          ],
+          [
+            77.579173,
+            12.9482687
+          ],
+          [
+            77.5789767,
+            12.9483066
+          ],
+          [
+            77.5763652,
+            12.9482861
+          ],
+          [
+            77.5760185,
+            12.9483046
+          ],
+          [
+            77.5757287,
+            12.9483278
+          ],
+          [
+            77.575457,
+            12.9483549
+          ],
+          [
+            77.575181,
+            12.9483819
+          ],
+          [
+            77.5748298,
+            12.9484256
+          ],
+          [
+            77.5745575,
+            12.9484758
+          ],
+          [
+            77.5743602,
+            12.9485442
+          ],
+          [
+            77.5742416,
+            12.9486042
+          ],
+          [
+            77.5741316,
+            12.9486823
+          ],
+          [
+            77.5740209,
+            12.948781
+          ],
+          [
+            77.573945,
+            12.9488821
+          ],
+          [
+            77.5738436,
+            12.9490534
+          ],
+          [
+            77.5737799,
+            12.949205
+          ],
+          [
+            77.5737449,
+            12.9493575
+          ],
+          [
+            77.5737242,
+            12.9494821
+          ],
+          [
+            77.573712,
+            12.9505258
+          ],
+          [
+            77.5736939,
+            12.9520729
+          ],
+          [
+            77.5736956,
+            12.9535221
+          ],
+          [
+            77.5736692,
+            12.9559439
+          ],
+          [
+            77.5736287,
+            12.9567015
+          ],
+          [
+            77.5736139,
+            12.9569783
+          ],
+          [
+            77.5736347,
+            12.9572009
+          ],
+          [
+            77.5736864,
+            12.9574162
+          ],
+          [
+            77.5741322,
+            12.9586353
+          ],
+          [
+            77.5742278,
+            12.9589628
+          ],
+          [
+            77.5744822,
+            12.9596689
+          ],
+          [
+            77.5744982,
+            12.9597541
+          ],
+          [
+            77.5746822,
+            12.9608898
+          ],
+          [
+            77.5748902,
+            12.9623025
+          ],
+          [
+            77.5749312,
+            12.963372
+          ],
+          [
+            77.574918,
+            12.9636316
+          ],
+          [
+            77.5748898,
+            12.963897
+          ],
+          [
+            77.5748486,
+            12.9641311
+          ],
+          [
+            77.5747378,
+            12.9645284
+          ],
+          [
+            77.5746054,
+            12.9650342
+          ],
+          [
+            77.5745388,
+            12.9656816
+          ],
+          [
+            77.5745737,
+            12.966924
+          ],
+          [
+            77.574589,
+            12.967471
+          ],
+          [
+            77.5746944,
+            12.9690094
+          ],
+          [
+            77.5747008,
+            12.9692985
+          ],
+          [
+            77.5746053,
+            12.9697021
+          ],
+          [
+            77.5730056,
+            12.9733182
+          ],
+          [
+            77.5730094,
+            12.973602
+          ],
+          [
+            77.5730207,
+            12.9739729
+          ],
+          [
+            77.57304966336,
+            12.9756523259
+          ],
+          [
+            77.5730713,
+            12.9768229
+          ],
+          [
+            77.5729514,
+            12.9774512
+          ],
+          [
+            77.5728505,
+            12.9779602
+          ],
+          [
+            77.5728522,
+            12.9785014
+          ],
+          [
+            77.5727731,
+            12.9788321
+          ],
+          [
+            77.5726805,
+            12.9790269
+          ],
+          [
+            77.5722839,
+            12.979795
+          ],
+          [
+            77.5721454,
+            12.980043
+          ],
+          [
+            77.5720758,
+            12.9801593
+          ],
+          [
+            77.5720176,
+            12.9803346
+          ],
+          [
+            77.571995,
+            12.980429
+          ],
+          [
+            77.5719563,
+            12.9817925
+          ],
+          [
+            77.5720037,
+            12.9834986
+          ],
+          [
+            77.5720644,
+            12.9857225
+          ],
+          [
+            77.5720446,
+            12.9862279
+          ],
+          [
+            77.5720125,
+            12.9870468
+          ],
+          [
+            77.5719909,
+            12.9875361
+          ],
+          [
+            77.5719447,
+            12.9883347
+          ],
+          [
+            77.5718806,
+            12.9886341
+          ],
+          [
+            77.5718103,
+            12.9888723
+          ],
+          [
+            77.5716442,
+            12.9892435
+          ],
+          [
+            77.5713958,
+            12.9896272
+          ],
+          [
+            77.5710985,
+            12.990016
+          ],
+          [
+            77.5707615,
+            12.9904754
+          ],
+          [
+            77.5696388,
+            12.9920399
+          ],
+          [
+            77.5690859,
+            12.9927989
+          ],
+          [
+            77.5685399,
+            12.9936483
+          ],
+          [
+            77.5677728,
+            12.9947322
+          ],
+          [
+            77.5668985,
+            12.9959675
+          ],
+          [
+            77.5666677,
+            12.9962146
+          ],
+          [
+            77.5665007,
+            12.9963208
+          ],
+          [
+            77.5662974,
+            12.9964102
+          ],
+          [
+            77.5661185,
+            12.9964387
+          ],
+          [
+            77.5659537,
+            12.9964533
+          ],
+          [
+            77.5658341,
+            12.9964481
+          ],
+          [
+            77.5657149,
+            12.9964377
+          ],
+          [
+            77.5656012,
+            12.9964228
+          ],
+          [
+            77.5654882,
+            12.9964031
+          ],
+          [
+            77.5649142,
+            12.9962966
+          ],
+          [
+            77.5648584,
+            12.9962873
+          ],
+          [
+            77.5648019,
+            12.9962829
+          ],
+          [
+            77.5647431,
+            12.9962834
+          ],
+          [
+            77.5646846,
+            12.9962891
+          ],
+          [
+            77.5645633,
+            12.9963024
+          ],
+          [
+            77.5644425,
+            12.9963188
+          ],
+          [
+            77.5643259,
+            12.9963378
+          ],
+          [
+            77.5642098,
+            12.9963597
+          ],
+          [
+            77.5639131,
+            12.9964251
+          ],
+          [
+            77.5633115,
+            12.9965408
+          ],
+          [
+            77.5622743,
+            12.9966663
+          ],
+          [
+            77.5619555,
+            12.9967041
+          ],
+          [
+            77.5618058,
+            12.9967285
+          ],
+          [
+            77.5615998,
+            12.9967854
+          ],
+          [
+            77.5615253,
+            12.9968129
+          ],
+          [
+            77.5613977,
+            12.9968669
+          ],
+          [
+            77.5612722,
+            12.9969199
+          ],
+          [
+            77.5608458,
+            12.9971229
+          ],
+          [
+            77.5606042,
+            12.9972378
+          ],
+          [
+            77.5605541,
+            12.9972617
+          ],
+          [
+            77.5605112,
+            12.9972821
+          ],
+          [
+            77.5603762,
+            12.9973464
+          ],
+          [
+            77.5601197,
+            12.9974721
+          ],
+          [
+            77.5600702,
+            12.9974905
+          ],
+          [
+            77.559788,
+            12.9975955
+          ],
+          [
+            77.5588429,
+            12.9979472
+          ],
+          [
+            77.558633,
+            12.9980253
+          ],
+          [
+            77.5583059,
+            12.9981253
+          ],
+          [
+            77.558029,
+            12.9982209
+          ],
+          [
+            77.5578831,
+            12.9982731
+          ],
+          [
+            77.5573961,
+            12.998412
+          ],
+          [
+            77.5568794,
+            12.9985238
+          ],
+          [
+            77.5562874,
+            12.9986349
+          ],
+          [
+            77.5558972,
+            12.9986834
+          ],
+          [
+            77.5554221,
+            12.9986946
+          ],
+          [
+            77.5530665,
+            12.9982502
+          ],
+          [
+            77.5521594,
+            12.9980562
+          ],
+          [
+            77.5515074,
+            12.9978929
+          ],
+          [
+            77.5512123,
+            12.9978437
+          ],
+          [
+            77.5509822,
+            12.9978458
+          ],
+          [
+            77.5507518,
+            12.9979065
+          ],
+          [
+            77.5505266,
+            12.9980016
+          ],
+          [
+            77.5503478,
+            12.9981365
+          ],
+          [
+            77.5501747,
+            12.9983176
+          ],
+          [
+            77.5500684,
+            12.9985397
+          ],
+          [
+            77.5499887,
+            12.9988839
+          ],
+          [
+            77.5496996,
+            13.0005359
+          ],
+          [
+            77.549401,
+            13.0025514
+          ],
+          [
+            77.5489684,
+            13.0050485
+          ],
+          [
+            77.5488686,
+            13.0056708
+          ],
+          [
+            77.5487552,
+            13.0062036
+          ],
+          [
+            77.5486769,
+            13.0066782
+          ],
+          [
+            77.5486771,
+            13.0070267
+          ],
+          [
+            77.5487184,
+            13.0073775
+          ],
+          [
+            77.5487659,
+            13.0076885
+          ],
+          [
+            77.5487869,
+            13.0078254
+          ],
+          [
+            77.5488152,
+            13.008011
+          ],
+          [
+            77.5488245,
+            13.0080714
+          ],
+          [
+            77.5489458,
+            13.0088654
+          ],
+          [
+            77.5490168,
+            13.0092702
+          ],
+          [
+            77.5490565,
+            13.0094195
+          ],
+          [
+            77.5491209,
+            13.0096041
+          ],
+          [
+            77.5491914,
+            13.0097639
+          ],
+          [
+            77.549262,
+            13.0099113
+          ],
+          [
+            77.5493456,
+            13.0100554
+          ],
+          [
+            77.5494275,
+            13.0101843
+          ],
+          [
+            77.5495183,
+            13.0103123
+          ],
+          [
+            77.5496103,
+            13.0104271
+          ],
+          [
+            77.5497093,
+            13.0105427
+          ],
+          [
+            77.5498074,
+            13.0106436
+          ],
+          [
+            77.5499186,
+            13.0107414
+          ],
+          [
+            77.5500259,
+            13.010833
+          ],
+          [
+            77.5501412,
+            13.0109189
+          ],
+          [
+            77.5503277,
+            13.011041
+          ],
+          [
+            77.5506818,
+            13.0112354
+          ],
+          [
+            77.5524062,
+            13.0121947
+          ],
+          [
+            77.5531494,
+            13.0125468
+          ],
+          [
+            77.5534474,
+            13.0127068
+          ],
+          [
+            77.5536298,
+            13.0128392
+          ],
+          [
+            77.5538004,
+            13.013025
+          ],
+          [
+            77.5539291,
+            13.0132221
+          ],
+          [
+            77.5540112,
+            13.0133768
+          ],
+          [
+            77.5540426,
+            13.0134725
+          ],
+          [
+            77.5540613,
+            13.0135687
+          ],
+          [
+            77.5540746,
+            13.0136669
+          ],
+          [
+            77.5540821,
+            13.0137634
+          ],
+          [
+            77.5540842,
+            13.0138608
+          ],
+          [
+            77.5540284,
+            13.0147177
+          ],
+          [
+            77.5539727,
+            13.015574
+          ],
+          [
+            77.5539484,
+            13.0160068
+          ],
+          [
+            77.5539047,
+            13.0164311
+          ],
+          [
+            77.5538776,
+            13.0166476
+          ],
+          [
+            77.5538413,
+            13.016834
+          ],
+          [
+            77.5537327,
+            13.0172485
+          ],
+          [
+            77.5534416,
+            13.0183085
+          ],
+          [
+            77.5532396,
+            13.0191277
+          ],
+          [
+            77.553174,
+            13.0193519
+          ],
+          [
+            77.5531094,
+            13.0194979
+          ],
+          [
+            77.5527583,
+            13.0201721
+          ],
+          [
+            77.5523138,
+            13.0210226
+          ],
+          [
+            77.5520368,
+            13.0215269
+          ],
+          [
+            77.5518141,
+            13.0218852
+          ],
+          [
+            77.5517185,
+            13.0220339
+          ],
+          [
+            77.5516058,
+            13.0221605
+          ],
+          [
+            77.551493,
+            13.0222786
+          ],
+          [
+            77.5513089,
+            13.0224326
+          ],
+          [
+            77.5511779,
+            13.0225296
+          ],
+          [
+            77.5510136,
+            13.0226339
+          ],
+          [
+            77.549748,
+            13.0233685
+          ],
+          [
+            77.5480872,
+            13.0243206
+          ],
+          [
+            77.5473394,
+            13.0247552
+          ],
+          [
+            77.5464956,
+            13.0252184
+          ],
+          [
+            77.5438604,
+            13.0267417
+          ],
+          [
+            77.5436807,
+            13.0268388
+          ],
+          [
+            77.5435747,
+            13.026902
+          ],
+          [
+            77.5433942,
+            13.0270264
+          ],
+          [
+            77.5432206,
+            13.0271353
+          ],
+          [
+            77.5424909,
+            13.0275489
+          ],
+          [
+            77.5416444,
+            13.0279867
+          ],
+          [
+            77.5411923,
+            13.0282471
+          ],
+          [
+            77.5402105,
+            13.0287877
+          ],
+          [
+            77.5387549,
+            13.0296353
+          ],
+          [
+            77.5378618,
+            13.0301534
+          ],
+          [
+            77.537655,
+            13.0302857
+          ],
+          [
+            77.5366227,
+            13.0309461
+          ],
+          [
+            77.5354489,
+            13.0317443
+          ],
+          [
+            77.5332233,
+            13.0330515
+          ],
+          [
+            77.5310025,
+            13.034347
+          ],
+          [
+            77.5306268,
+            13.0345266
+          ],
+          [
+            77.5300958,
+            13.0347621
+          ],
+          [
+            77.5298137,
+            13.0348609
+          ],
+          [
+            77.5283755,
+            13.0352445
+          ],
+          [
+            77.5272521,
+            13.0355359
+          ],
+          [
+            77.5269858,
+            13.03562
+          ],
+          [
+            77.5266159,
+            13.0357645
+          ],
+          [
+            77.5262662,
+            13.0359417
+          ],
+          [
+            77.525528,
+            13.0363428
+          ],
+          [
+            77.5249884,
+            13.0366351
+          ],
+          [
+            77.5241459,
+            13.0370904
+          ],
+          [
+            77.5239477,
+            13.0371976
+          ],
+          [
+            77.5208388,
+            13.0388829
+          ],
+          [
+            77.5197626,
+            13.0394442
+          ],
+          [
+            77.5185366,
+            13.0401039
+          ],
+          [
+            77.5184203,
+            13.0401896
+          ],
+          [
+            77.5175499,
+            13.0409796
+          ],
+          [
+            77.5165298,
+            13.0419072
+          ],
+          [
+            77.5162253,
+            13.042052
+          ],
+          [
+            77.5125628,
+            13.0432956
+          ],
+          [
+            77.5113763,
+            13.0437142
+          ],
+          [
+            77.5109475,
+            13.043908
+          ],
+          [
+            77.5088582,
+            13.0449868
+          ],
+          [
+            77.5082271,
+            13.0452648
+          ],
+          [
+            77.505146,
+            13.0461609
+          ],
+          [
+            77.5017778,
+            13.047375
+          ],
+          [
+            77.5012661,
+            13.0475734
+          ],
+          [
+            77.5001473,
+            13.0479782
+          ],
+          [
+            77.4995608,
+            13.0482044
+          ],
+          [
+            77.497939,
+            13.0488138
+          ],
+          [
+            77.495422,
+            13.0497448
+          ],
+          [
+            77.4944527,
+            13.0501121
+          ],
+          [
+            77.4941493,
+            13.0502271
+          ],
+          [
+            77.4932587,
+            13.0505308
+          ],
+          [
+            77.4924114,
+            13.0507521
+          ],
+          [
+            77.4915142,
+            13.0510696
+          ],
+          [
+            77.489768,
+            13.0517007
+          ],
+          [
+            77.4891939,
+            13.0519264
+          ],
+          [
+            77.4887633,
+            13.0520816
+          ],
+          [
+            77.4879224,
+            13.0523847
+          ],
+          [
+            77.4873606,
+            13.0525871
+          ],
+          [
+            77.484948,
+            13.0534566
+          ],
+          [
+            77.4837318,
+            13.053902
+          ],
+          [
+            77.482148,
+            13.0544716
+          ],
+          [
+            77.4812736,
+            13.0547904
+          ],
+          [
+            77.47931,
+            13.0555796
+          ],
+          [
+            77.4774259,
+            13.0563529
+          ],
+          [
+            77.4754666,
+            13.056814
+          ],
+          [
+            77.473982,
+            13.0571681
+          ],
+          [
+            77.4728077,
+            13.0574359
+          ],
+          [
+            77.4721836,
+            13.0575783
+          ],
+          [
+            77.4707137,
+            13.0579441
+          ],
+          [
+            77.4695696,
+            13.0582688
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beratena Agrahara",
+        "code": "HOSR",
+        "name:kn": "ಬೆರಟೇನ ಅಗ್ರಹಾರ",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "yellow",
+        "fullName": "Beratena Agrahara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6581956,
+          12.8635659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ವಿಶ್ವೇಶ್ವರಯ್ಯ",
+        "name": "Central College",
+        "code": "VSWA",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "purple",
+        "fullName": "Sir M. Visvesvaraya Stn., Central College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5842326,
+          12.9745014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಮಹಾತ್ಮ ಗಾಂಧಿ ರಸ್ತೆ",
+        "railway": "stop",
+        "code": "MAGR",
+        "subway": "yes",
+        "name": "MG Road",
+        "colour": "purple",
+        "fullName": "Mahatma Gandhi Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6062979,
+          12.9756285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "WHTM",
+        "name": "Whitefield (Kadugodi)",
+        "railway": "stop",
+        "subway": "yes",
+        "name:kn": "ವೈಟ್‌ಫೀಲ್ಡ್ (ಕಾಡುಗೋಡಿ)",
+        "colour": "purple",
+        "fullName": "Whitefield (Kadugodi)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7578215,
+          12.99519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಕುಡ್ಲು ಗೇಟ್",
+        "name": "Kudlu Gate",
+        "railway": "stop",
+        "subway": "yes",
+        "colour": "yellow",
+        "code": "MSRN",
+        "fullName": "Kudlu Gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.63947,
+          12.8895614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "colour": "green",
+        "name:kn": "ಶ್ರೀರಾಮಪುರ",
+        "railway": "stop",
+        "code": "SPRU",
+        "subway": "yes",
+        "name": "Srirampura",
+        "fullName": "Srirampura"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5633115,
+          12.9965408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಶ್ರೀ ಬಾಲಗಂಗಾಧರನಾಥ ಮೆಟ್ರೋ",
+        "code": "HSLI",
+        "railway": "stop",
+        "subway": "yes",
+        "name": "Hosahalli",
+        "colour": "purple",
+        "fullName": "Sri Balagangadharanatha Swamiji Stn., Hosahalli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5456204,
+          12.974267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "NGSA",
+        "name": "Nagasandra",
+        "colour": "green",
+        "name:kn": "ನಾಗಸಂದ್ರ",
+        "railway": "stop",
+        "subway": "yes",
+        "fullName": "Nagasandra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5001473,
+          13.0479782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಕೃಷ್ಣರಾಜೇಂದ್ರ ಮಾರುಕಟ್ಟೆ",
+        "colour": "green",
+        "railway": "stop",
+        "code": "KRMT",
+        "subway": "yes",
+        "name": "KR Market",
+        "fullName": "Krishna Rajendra Market"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5746822,
+          12.9608898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name:kn": "ಹೋಪ್ ಫಾರ್ಮ್ ಚನ್ನಸಂದ್ರ",
+        "code": "UWVL",
+        "railway": "stop",
+        "name": "Hopefarm Channasandra",
+        "subway": "yes",
+        "colour": "purple",
+        "fullName": "Hopefarm Channasandra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7538642,
+          12.9872074
+        ]
+      }
+    }
+  ]
+}

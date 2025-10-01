@@ -1,0 +1,1258 @@
+---
+title: "How Bangalore Uses The Metro"
+author:
+  - name: "Aman Bhargava"
+  - name: "Vivek Matthew"
+date: "last-modified"
+logo: "quarto-assets/logo.png"
+format:
+  html:
+    theme:
+      - quarto-assets/styles.scss
+    template-partials:
+      - quarto-assets/title-block.html
+    toc: true
+    toc-depth: 3
+    toc-float: true
+    number-sections: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-tools: true
+    df-print: kable
+execute:
+  warning: false
+  message: false
+---
+
+```{=html}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  background-color: var(--color-sepia);
+  color: var(--color-sepia-brown);
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.highlight-box {
+  background-color: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+}
+</style>
+```
+
+```{r setup}
+# Load libraries
+library(tidyverse)
+library(sf)
+library(gganimate)
+library(viridis)
+library(scales)
+library(ggraph)
+library(igraph)
+library(tidyr)
+library(knitr)
+library(ggnewscale)
+library(kableExtra)
+library(lubridate)
+library(jsonlite)
+library(gt)
+library(wesanderson)
+library(tidylo)
+library(tidygraph)
+library(broom)
+library(terra)
+library(exactextractr)
+
+# Global options
+options(kable_styling_bootstrap_options = c("striped", "hover", "condensed"))
+knitr::opts_chunk$set(
+  fig.width = 12,
+  fig.height = 8,
+  fig.align = "center",
+  out.width = "100%",
+  warning = FALSE,
+  message = FALSE
+)
+
+# Colors and Themes
+wes_colors <- wes_palette("Darjeeling1", 8, type = "continuous")
+primary_color <- "#3182bd"
+secondary_color <- "#de77ae"
+tertiary_color <- "#2c7fb8"
+
+theme_metro <- function() {
+  theme_minimal(base_family = "sans") +
+    theme(
+      plot.title = element_text(face = "bold", size = 20, margin = margin(b = 8)),
+      plot.subtitle = element_text(size = 15, color = "gray40", margin = margin(b = 15)),
+      panel.grid.major.y = element_blank(),
+      panel.grid.minor = element_blank(),
+      axis.text = element_text(size = 14, color = "gray40"),
+      strip.text = element_text(size = 13, face = "bold", color = "gray20"),
+      plot.margin = margin(0, 0, 0, 0),
+      legend.position = "none"
+    )
+}
+
+# Helper function to add temporal features (DRY)
+add_temporal_features <- function(df) {
+  df %>%
+    mutate(
+      wday = wday(Date, label = TRUE, week_start = 1),
+      day_type = if_else(wday %in% c("Sat", "Sun"), "Weekend", "Weekday"),
+      peak_category = case_when(
+        day_type == "Weekday" & Hour %in% c(8, 9, 10) ~ "Morning Peak",
+        day_type == "Weekday" & Hour %in% c(17, 18, 19) ~ "Evening Peak",
+        TRUE ~ "Off-Peak"
+      )
+    )
+}
+
+# Load and preprocess data
+hourly <- read_delim("data/station-hourly.csv", delim = ";") %>%
+  add_temporal_features()
+
+station_pair_hourly <- read_delim("data/stationpair-hourly.csv", delim = ";") %>%
+  rename(To_Station = `Destination Station`, From_Station = `Origin Station`) %>%
+  mutate(Date = as.Date(Date)) %>%
+  add_temporal_features()
+
+metro_geojson <- read_sf("data/metro.geojson")
+```
+
+-----
+
+# Introduction
+
+This analysis is based on ridership data obtained through a Right to Information (RTI) request to BMRCL. The RTI request sought basic ridership information between stations. However, BMRCL's response provided **station-pairwise hourly ridership between every station pair over 19 days**\! A treat.
+
+The dataset contains over **1.2 million rows** of ridership data, covering a particularly interesting period that includes the opening of the new Yellow Line.
+
+## Questions
+
+1.  How popular is your specific daily commute compared to other routes?
+2.  Which stations experience the heaviest traffic during morning and evening rush hours?
+3.  How does ridership vary by day of the week, time of day?
+4.  What are the most popular travel corridors within the metro network?
+5.  Do certain stations show dramatically different usage patterns between weekdays and weekends?
+6.  How has the Yellow Line impacted ridership on existing stations in the metro network?
+7.  What is the length of an average commute, and how does it vary across stations?
+8.  Have their been particular instances of unusual spikes in traffic due to events in the city?
+
+## Dataset Overview
+
+Our analysis uses multiple data sources:
+
+  - **Station-level hourly ridership**: Passenger counts by station and hour
+  - **Station-pair hourly data**: Origin-destination flows with temporal granularity
+  - Spatial data from OpenStreetMap for mapping locations and additional metadata
+
+Let's begin by examining the structure of our datasets:
+
+```{r preview-data}
+set.seed(42) # For reproducible sampling
+sample_ridership_data <- station_pair_hourly %>%
+  filter(Ridership > 0) %>%
+  sample_n(15) %>%
+  arrange(desc(Ridership)) %>%
+  mutate(Date = as.character(Date))
+
+head(hourly) %>%
+  kable(caption = "Sample of Hourly Station Ridership Data") %>%
+  kable_styling()
+
+head(station_pair_hourly) %>%
+  kable(caption = "Sample of Hourly Station-Pair Ridership Data") %>%
+  kable_styling()
+```
+
+-----
+
+# Data Preparation
+
+We need to classify each station by its metro line. Namma Metro currently operates three main lines:
+
+  - **Purple Line**: The east-west corridor
+  - **Green Line**: The north-south corridor
+  - **Yellow Line**: The newest line serving south-eastern regions in the periphery
+
+<!-- end list -->
+
+```{r line-classification}
+# Extract station data from GeoJSON as the single source of truth
+metro_stations <- metro_geojson %>%
+  filter(st_geometry_type(.) == "POINT") %>%
+  st_drop_geometry() %>%
+  select(Station = name, code, line = colour) %>%
+  mutate(
+    code = if_else(is.na(code),
+                   paste0(str_sub(str_to_upper(str_replace_all(Station, "[^A-Za-z]", "")), 1, 4),
+                          sprintf("%02d", row_number())),
+                   code)
+  ) %>%
+  arrange(line, Station)
+
+# Create a mapping from long/inconsistent names in CSV to short names in GeoJSON
+manual_station_mapping <- tribble(
+  ~csv_name, ~geojson_name,
+  "Biocon Hebbagodi", "Hebbagodi",
+  "Central Silk Board", "Silk Board",
+  "Delta Electronics Bommasandra", "Bommasandra",
+  "Dr. B. R. Ambedkar Station, Vidhana Soudha", "Vidhana Soudha",
+  "Infosys Foundation Konappana Agrahara", "Konappana Agrahara",
+  "Jaya Prakash Nagar", "JP Nagar",
+  "Krantivira Sangolli Rayanna Railway Station", "KSR Railway Station",
+  "Krishna Rajendra Market", "KR Market",
+  "Krishnarajapura", "KR Pura",
+  "Mahakavi Kuvempu Road", "MKK Road",
+  "Mahatma Gandhi Road", "MG Road",
+  "Mantri Square Sampige Road", "Mantri Square",
+  "Nadaprabhu Kempegowda Station, Majestic", "Majestic",
+  "Pantharapalya - Nayandahalli", "Nayandahalli",
+  "Rajarajeshwari Nagar", "RR Nagar",
+  "Rashtreeya Vidyalaya Road", "RV Road",
+  "Sir M. Visvesvaraya Stn., Central College", "Central College",
+  "Sri Balagangadharanatha Swamiji Station, Hosahalli", "Hosahalli",
+  "Vijayanagar", "Vijayanagara"
+)
+
+all_csv_names <- unique(c(hourly$Station, station_pair_hourly$From_Station, station_pair_hourly$To_Station))
+
+identity_mapping <- tibble(csv_name = setdiff(all_csv_names, manual_station_mapping$csv_name)) %>%
+  mutate(geojson_name = csv_name)
+
+station_name_mapping <- bind_rows(manual_station_mapping, identity_mapping)
+
+# Helper functions for name conversion
+convert_to_short_names <- function(data) {
+  if (is.data.frame(data)) {
+    station_cols <- intersect(names(data), c("Station", "From_Station", "To_Station"))
+    for (col in station_cols) {
+      data[[col]] <- station_name_mapping$geojson_name[match(data[[col]], station_name_mapping$csv_name)]
+    }
+  } else if (is.list(data)) {
+    data <- map(data, convert_to_short_names)
+  }
+  return(data)
+}
+get_short_name <- function(station_name) {
+  short_name <- station_name_mapping$geojson_name[match(station_name, station_name_mapping$csv_name)]
+  return(ifelse(is.na(short_name), station_name, short_name))
+}
+
+# Create final map for joining and add Line info to hourly data
+station_map <- station_name_mapping %>%
+  left_join(metro_stations, by = c("geojson_name" = "Station")) %>%
+  select(Station = csv_name, Line = line, code) %>%
+  mutate(Line = str_to_title(Line)) %>%
+  filter(!is.na(Line))
+
+hourly <- hourly %>%
+  left_join(station_map, by = "Station")
+
+# Export data for web components
+station_codes <- metro_stations %>% select(Station, code, line)
+write_json(station_codes, "../src/lib/data/charts/station-codes.json", pretty = TRUE, auto_unbox = TRUE)
+
+station_lines_list <- metro_stations %>%
+  group_by(line) %>%
+  summarise(stations = list(Station), .groups = 'drop') %>%
+  deframe()
+write_json(list(lines = station_lines_list), "../src/lib/data/charts/01-line-classification.json", pretty = TRUE, auto_unbox = TRUE)
+
+ridership_sample_export <- list(
+  sample_data = convert_to_short_names(sample_ridership_data) %>%
+    select(From_Station, To_Station, Ridership, Hour, wday, Date)
+)
+write_json(ridership_sample_export, "../src/lib/data/charts/ridership-sample.json", pretty = TRUE, auto_unbox = TRUE)
+
+# Display station counts per line
+station_map %>%
+  count(Line, name = "Stations") %>%
+  mutate(Line = if_else(Line == "Black", "Interchange", Line)) %>%
+  kable(caption = "Number of stations per metro line") %>%
+  kable_styling()
+```
+
+-----
+
+# Exploratory Data Analysis
+
+## Days and Hours
+
+Understanding when people use the metro most heavily.
+
+```{r basic-patterns}
+# Busiest days by average ridership
+busiest_days <- hourly %>%
+  group_by(Date) %>%
+  summarise(daily_total = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  mutate(day = wday(Date, label = TRUE)) %>%
+  group_by(day) %>%
+  summarise(average_daily_ridership = mean(daily_total), .groups = 'drop') %>%
+  arrange(desc(average_daily_ridership))
+
+# Busiest hours by average ridership
+busiest_hours <- hourly %>%
+  group_by(Hour) %>%
+  summarise(average_hourly_ridership = mean(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  arrange(desc(average_hourly_ridership))
+
+# Most popular routes by total trips
+popular_routes <- station_pair_hourly %>%
+  group_by(From_Station, To_Station) %>%
+  summarise(total_trips = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  arrange(desc(total_trips)) %>%
+  head(15)
+
+# Export for web component
+temporal_patterns <- list(
+  busiest_days = busiest_days,
+  busiest_hours = head(busiest_hours, 10),
+  popular_routes = convert_to_short_names(popular_routes)
+)
+write_json(temporal_patterns, "../src/lib/data/charts/02-temporal-patterns.json", pretty = TRUE, auto_unbox = TRUE)
+
+# Display tables
+busiest_days %>%
+  mutate(average_daily_ridership = comma(round(average_daily_ridership))) %>%
+  kable(col.names = c("Day", "Average Daily Ridership")) %>%
+  kable_styling()
+
+busiest_hours %>%
+  head(10) %>%
+  mutate(
+    Time = paste0(Hour, ":00"),
+    average_hourly_ridership = comma(round(average_hourly_ridership))
+  ) %>%
+  select(Time, average_hourly_ridership) %>%
+  kable(col.names = c("Hour", "Average Hourly Ridership")) %>%
+  kable_styling()
+
+convert_to_short_names(popular_routes) %>%
+  mutate(
+    Route = paste(From_Station, "→", To_Station),
+    total_trips = comma(total_trips)
+  ) %>%
+  select(Route, total_trips) %>%
+  kable(col.names = c("Route", "Cumulative Passengers")) %>%
+  kable_styling()
+```
+
+Weekdays are busier than weekends by a significant amount. The hourly breakdown shows distinct morning (8-10 AM) and evening (5-7 PM) peaks. Routes involving Benniganahalli and Majestic appear frequently among the most popular routes.
+
+-----
+
+# Daily Ridership Trends Over Time
+
+```{r daily-trends}
+daily_trends <- hourly %>%
+  group_by(Date) %>%
+  summarise(total_ridership = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  mutate(
+    day_of_week = wday(Date, label = TRUE),
+    is_weekend = day_of_week %in% c("Sat", "Sun"),
+  )
+
+# Export for web component
+daily_trends_export <- list(
+  daily_data = daily_trends %>% mutate(across(where(is.Date), as.character)),
+  summary_stats = list(
+    max_ridership = max(daily_trends$total_ridership, na.rm = TRUE),
+    min_ridership = min(daily_trends$total_ridership, na.rm = TRUE),
+    avg_weekday = mean(daily_trends$total_ridership[!daily_trends$is_weekend], na.rm = TRUE),
+    avg_weekend = mean(daily_trends$total_ridership[daily_trends$is_weekend], na.rm = TRUE)
+  )
+)
+write_json(daily_trends_export, "../src/lib/data/charts/03-daily-trends.json", pretty = TRUE, auto_unbox = TRUE)
+
+# Plot daily trends
+ggplot(daily_trends, aes(x = Date, y = total_ridership)) +
+  geom_line(alpha = 0.6, color = "#34495e", linewidth = 0.5) +
+  geom_point(data = filter(daily_trends, is_weekend), aes(color = "Weekend"), size = 2, alpha = 0.7) +
+  scale_color_manual(values = c("Weekend" = secondary_color)) +
+  scale_y_continuous(labels = scales::comma_format(scale = 1e-3, suffix = "K")) +
+  labs(
+    title = "Daily Metro Ridership Over Time",
+    subtitle = "Pink points highlight weekends",
+    x = "Date", y = "Total Daily Ridership", color = ""
+  ) +
+  theme_metro() +
+  theme(legend.position = "bottom")
+```
+
+-----
+
+# How Popular is Your Route?
+
+We'll calculate combinations of all possible to and from stations, and rank them by how many people took these trips in all. This will also let us find out where our personal commutes lie in the distribution. Am I an unusual duck?
+
+```{r commute-popularity}
+# Example commute
+from_station <- "Cubbon Park"
+to_station <- "Nagasandra"
+
+yellow_line_opening <- as.Date("2025-08-11")
+
+# Calculate metrics for the period after the Yellow Line opened
+n_dates <- station_pair_hourly %>%
+  filter(Date >= yellow_line_opening) %>%
+  summarise(n = n_distinct(Date)) %>%
+  pull(n)
+
+commute_popularity <- station_pair_hourly %>%
+  filter(Date >= yellow_line_opening, From_Station != To_Station) %>%
+  summarise(total_trips = sum(Ridership, na.rm = TRUE), .by = c(From_Station, To_Station)) %>%
+  arrange(desc(total_trips)) %>%
+  mutate(
+    rank = row_number(),
+    percentile = (1 - (rank / n())) * 100,
+    daily_average = round(total_trips / n_dates, 0)
+  )
+
+my_commute_rank <- commute_popularity %>%
+  filter(From_Station == from_station & To_Station == to_station)
+
+most_common_destination <- station_pair_hourly %>%
+  filter(From_Station == from_station, To_Station != from_station) %>%
+  summarise(total_trips = sum(Ridership, na.rm = TRUE), .by = To_Station) %>%
+  slice_max(order_by = total_trips, n = 1)
+
+most_common_origin <- station_pair_hourly %>%
+  filter(To_Station == to_station, From_Station != to_station) %>%
+  summarise(total_trips = sum(Ridership, na.rm = TRUE), .by = From_Station) %>%
+  slice_max(order_by = total_trips, n = 1)
+
+# Export compressed route data using station codes
+commute_compressed <- commute_popularity %>%
+  left_join(station_map, by = c("From_Station" = "Station")) %>%
+  left_join(station_map, by = c("To_Station" = "Station"), suffix = c("_from", "_to")) %>%
+  select(f = code_from, t = code_to, r = daily_average, n = rank, p = percentile) %>%
+  filter(!is.na(f) & !is.na(t))
+
+commute_flow_only <- commute_compressed %>% select(f, t, r)
+write_json(commute_flow_only, "../src/lib/data/charts/04-commute-flow.json", pretty = TRUE, auto_unbox = TRUE)
+
+write_json(commute_compressed, "../src/lib/data/charts/04-commute-analysis.json", pretty = TRUE, auto_unbox = TRUE)
+
+if (nrow(my_commute_rank) > 0) {
+  cat(paste("Most common destination from", get_short_name(from_station), ":",
+            get_short_name(most_common_destination$To_Station),
+            paste0("(", comma(most_common_destination$total_trips), " passengers)")))
+  cat(paste("\n\nMost common origin for", get_short_name(to_station), ":",
+            get_short_name(most_common_origin$From_Station),
+            paste0("(", comma(most_common_origin$total_trips), " passengers)")))
+} else {
+  cat("No direct trips found for the sample route in the dataset.")
+}
+```
+
+-----
+
+# Peak Hour Stations
+
+Finding out which stations experience the heaviest arrival load during peak hours.
+
+```{r peak-hour-analysis}
+busiest_peak_stations <- hourly %>%
+  filter(peak_category %in% c("Morning Peak", "Evening Peak")) %>%
+  group_by(peak_category, Station, Line) %>%
+  summarise(avg_ridership = mean(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  group_by(peak_category) %>%
+  slice_max(order_by = avg_ridership, n = 15) %>%
+  ungroup() %>%
+  arrange(peak_category, desc(avg_ridership))
+
+# Export for web component
+peak_hour_export <- list(
+  peak_stations = convert_to_short_names(busiest_peak_stations),
+  peak_summary = busiest_peak_stations %>% group_by(peak_category)
+)
+write_json(peak_hour_export, "../src/lib/data/charts/05-peak-hours.json", pretty = TRUE, auto_unbox = TRUE)
+
+# Display table
+convert_to_short_names(busiest_peak_stations) %>%
+  mutate(avg_ridership = round(avg_ridership, 1)) %>%
+  gt() %>%
+  tab_header(
+    title = "Busiest Stations During Peak Hours",
+    subtitle = "Top 15 stations for each peak period (Morning: 8-10 AM, Evening: 5-7 PM)"
+  ) %>%
+  fmt_number(columns = avg_ridership, decimals = 1) %>%
+  tab_style(
+    style = list(cell_fill(color = primary_color, alpha = 0.3), cell_text(weight = "bold")),
+    locations = cells_column_labels()
+  ) %>%
+  cols_align(align = "center", columns = avg_ridership) %>%
+  tab_options(
+    table.font.names = "Atkinson Hyperlegible",
+    heading.title.font.size = 16,
+    heading.subtitle.font.size = 12,
+    table.font.size = 11
+  )
+```
+
+-----
+
+# Station Activity
+
+```{r station-heatmaps}
+# Get the average ridership when station is origin station
+origin_avg <- station_pair_hourly %>%
+  group_by(From_Station, day_type, Hour, Date) %>%
+  summarise(total_ridership = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  select(Station = From_Station, day_type, total_ridership, Hour, Date)
+
+# Get the average ridership when station is destination station
+destination_avg <- station_pair_hourly %>%
+  group_by(To_Station, day_type, Hour, Date) %>%
+  summarise(total_ridership = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  select(Station = To_Station, day_type, total_ridership, Hour, Date)
+
+# Get total ridership at each station at each hour by summing the origin and destination ridership
+total_ridership <- bind_rows(origin_avg, destination_avg) %>%
+  group_by(Station, day_type, Hour, Date) %>%
+  summarise(total_ridership = sum(total_ridership, na.rm = TRUE), .groups = 'drop') %>%
+  select(Station, day_type, total_ridership, Hour, Date)
+
+# Get median at each hour across all dates
+median_ridership <- total_ridership %>%
+  group_by(Station, day_type, Hour) %>%
+  summarise(median_ridership = median(total_ridership, na.rm = TRUE), .groups = 'drop') %>%
+  select(Station, day_type, median_ridership, Hour)
+
+# Get total ridership throughout each day by summing over all median ridership
+daily_ridership <- median_ridership %>%
+  group_by(Station, day_type) %>%
+  summarise(total_ridership = sum(median_ridership, na.rm = TRUE), .groups = 'drop') %>%
+  select(Station, day_type, total_ridership)
+
+# Get the ratio of median ridership at each hour to the total ridership throughout each day
+hourly_heatmap_data <- median_ridership %>%
+  left_join(daily_ridership, by = c("Station", "day_type")) %>%
+  mutate(hourly_ratio = median_ridership / total_ridership) %>%
+  select(Station, day_type, hourly_ratio, Hour, median_ridership)
+
+# Fill missing hours with 0
+hourly_heatmap_data <- hourly_heatmap_data %>%
+  complete(Hour = full_seq(c(0, 23), 1), Station, day_type) %>%
+  replace_na(list(hourly_ratio = 0, median_ridership = 0))
+
+hourly_heatmap_data <- convert_to_short_names(hourly_heatmap_data)
+
+# Get the peak hours
+peak_hours <- c(8:10, 17:19)
+
+heatmap_data <- hourly_heatmap_data %>%
+  select(Station, Hour, day_type, hourly_ratio)
+
+# Export for web component
+heatmap_export <- list(
+  heatmap_data
+)
+write_json(heatmap_export, "../src/lib/data/charts/07-station-heatmaps.json", pretty = TRUE, auto_unbox = TRUE)
+
+# Station order for graph
+station_order <- hourly_heatmap_data %>%
+  filter(Hour %in% c(8:10, 17:19)) %>% # Peak hours
+  group_by(Station) %>%
+  summarise(peak_ridership = mean(median_ridership), .groups = 'drop') %>%
+  arrange(desc(peak_ridership)) %>%
+  pull(Station)
+station_order_display <- purrr::map_chr(station_order, get_short_name)
+
+# Plot heatmap
+ggplot(hourly_heatmap_data, aes(x = Hour, y = factor(Station, levels = rev(station_order_display)), fill = hourly_ratio)) +
+  geom_tile(color = "white", size = 0.1) +
+  scale_fill_viridis_c(name = "Avg\nRidership", trans = "sqrt", labels = comma, option = "plasma") +
+  facet_wrap(~day_type, ncol = 2) +
+  scale_x_continuous(breaks = c(6, 9, 12, 15, 18, 21), labels = c("6AM", "9AM", "12PM", "3PM", "6PM", "9PM")) +
+  labs(
+    title = "Metro Station Activity Throughout the Day",
+    subtitle = "Stations ordered by peak hour ridership. Color scale is square-root transformed.",
+    x = "Hour of Day", y = "Station"
+  ) +
+  theme_metro() +
+  theme(
+    axis.text.y = element_text(size = 6),
+    strip.text = element_text(face = "bold", size = 12),
+    panel.grid = element_blank(),
+    plot.margin = margin(20, 25, 20, 25)
+  )
+```
+
+---
+
+# Interchange Station Footfall
+
+Analyzing how footfall at interchange stations has changed with the opening of the Yellow Line.
+
+
+```{r interchange-station-footfall}
+# Define key dates
+yellow_line_opening <- as.Date("2025-08-11")
+
+# Populate line attribute in station_pair_hourly
+station_pair_hourly <- station_pair_hourly %>%
+  left_join(station_map, by = c("From_Station" = "Station")) %>%
+  left_join(station_map, by = c("To_Station" = "Station"), suffix = c("_from", "_to")) %>%
+  mutate(From_line = if_else(Line_from == "Black", "Purple", Line_from)) %>%
+  mutate(To_line = if_else(Line_to == "Black", "Green", Line_to)) %>%
+  select(-Line_from, -Line_to)
+
+# Calculate average daily number of passengers transferring at Rashtreeya Vidyalaya Road before Yellow Line
+rashtreeya_vidyalaya_road_footfall <- station_pair_hourly %>%
+  filter((From_line == "Yellow" & To_line != "Yellow") | (From_line != "Yellow" & To_line == "Yellow") | (From_Station == "Rashtreeya Vidyalaya Road") | (To_Station == "Rashtreeya Vidyalaya Road")) %>%
+  group_by(Date) %>%
+  summarise(daily_footfall = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  filter(Date < yellow_line_opening) %>%
+  summarise(average_footfall = round(mean(daily_footfall), 0)) %>%
+  mutate(Station = "Rashtreeya Vidyalaya Road", Before = average_footfall) %>%
+  select(-average_footfall)
+
+# Calculate average daily number of passengers transferring at Majestic before Yellow Line
+majestic_footfall <- station_pair_hourly %>%
+  filter((From_line == "Purple" & To_line != "Purple") | (From_line != "Purple" & To_line == "Purple") | (From_Station == "Majestic") | (To_Station == "Majestic")) %>%
+  group_by(Date) %>%
+  summarise(daily_footfall = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  filter(Date < yellow_line_opening) %>%
+  summarise(average_footfall = round(mean(daily_footfall), 0)) %>%
+  mutate(Station = "Majestic", Before = average_footfall) %>%
+  select(-average_footfall)
+
+# Calculate average daily number of passengers transferring at Rashtreeya Vidyalaya Road after Yellow Line
+rashtreeya_vidyalaya_road_footfall_after <- station_pair_hourly %>%
+  filter((From_line == "Yellow" & To_line != "Yellow") | (From_line != "Yellow" & To_line == "Yellow") | (From_Station == "Rashtreeya Vidyalaya Road") | (To_Station == "Rashtreeya Vidyalaya Road")) %>%
+  group_by(Date) %>%
+  summarise(daily_footfall = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  filter(Date >= yellow_line_opening) %>%
+  summarise(average_footfall = round(mean(daily_footfall), 0)) %>%
+  mutate(Station = "Rashtreeya Vidyalaya Road", After = average_footfall) %>%
+  select(-average_footfall)
+
+# Calculate average daily number of passengers transferring at Majestic after Yellow Line
+majestic_footfall_after <- station_pair_hourly %>%
+  filter((From_line == "Purple" & To_line != "Purple") | (From_line != "Purple" & To_line == "Purple") | (From_Station == "Majestic") | (To_Station == "Majestic")) %>%
+  group_by(Date) %>%
+  summarise(daily_footfall = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  filter(Date >= yellow_line_opening) %>%
+  summarise(average_footfall = round(mean(daily_footfall), 0)) %>%
+  mutate(Station = "Majestic", After = average_footfall) %>%
+  select(-average_footfall)
+
+# Combine results
+interchange_footfall <- bind_rows(rashtreeya_vidyalaya_road_footfall, majestic_footfall, rashtreeya_vidyalaya_road_footfall_after, majestic_footfall_after)
+
+# Export for web component
+interchange_footfall_export <- list(
+  interchange_footfall = interchange_footfall
+)
+write_json(interchange_footfall_export, "../src/lib/data/charts/13-interchange-station-footfall.json", pretty = TRUE, auto_unbox = TRUE)
+```
+
+-----
+
+# The Yellow Line Effect
+
+Analyzing how the opening of the Yellow Line on August 11th, 2025 affected daily boarding totals at existing Green and Purple Line stations. The impact of the Yellow Line was more noticeable at Green Line stations than at Purple Line stations.
+
+```{r yellow-line-impact-analysis}
+# Define key dates
+yellow_line_opening <- as.Date("2025-08-11")
+holidays <- as.Date(c("2025-08-15", "2025-08-16")) # Independence Day, Krishna Janmashtami
+
+# Use a linear model to find stations with statistically significant changes
+significant_stations <- hourly %>%
+  group_by(Date, Station, Line, wday, day_type) %>%
+  summarise(daily_ridership = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  mutate(
+    after_yellow_line = if_else(Date >= yellow_line_opening, 1, 0),
+    is_event_day = if_else(Date %in% holidays, 1, 0)
+  ) %>%
+  filter(day_type == "Weekday" & is_event_day == 0 & Line %in% c("Green", "Purple", "Black")) %>%
+  group_by(Station) %>%
+  filter(n_distinct(after_yellow_line) == 2) %>% # Ensure data for both periods
+  ungroup() %>%
+  nest_by(Station, Line) %>%
+  mutate(model = list(lm(daily_ridership ~ after_yellow_line + wday, data = data))) %>%
+  summarise(tidy(model)) %>%
+  ungroup() %>%
+  filter(term == "after_yellow_line" & p.value < 0.09)
+
+# Calculate median percentage change for context
+impact_by_percent_change <- hourly %>%
+  group_by(Date, Station, Line, day_type) %>%
+  summarise(daily_ridership = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  mutate(
+    period = if_else(Date >= yellow_line_opening, "after", "before"),
+    is_event_day = if_else(Date %in% holidays, 1, 0)
+  ) %>%
+  filter(day_type == "Weekday" & is_event_day == 0 & Line %in% c("Green", "Purple", "Black")) %>%
+  group_by(Station, Line, period) %>%
+  summarise(median_weekday_ridership = median(daily_ridership, na.rm = TRUE), .groups = 'drop') %>%
+  pivot_wider(names_from = period, values_from = median_weekday_ridership) %>%
+  filter(!is.na(before) & !is.na(after)) %>%
+  mutate(percent_change = ((after - before) / before) * 100)
+
+# Combine results into a final summary
+final_impact_summary <- significant_stations %>%
+  left_join(impact_by_percent_change, by = c("Station", "Line")) %>%
+  select(
+    Station, Line,
+    `Median Change (%)` = percent_change,
+    `Abs. Change (est.)` = estimate,
+    `p-value` = p.value,
+    `Before Median` = before,
+    `After Median` = after
+  ) %>%
+  arrange(desc(`Median Change (%)`))
+
+print(final_impact_summary)
+
+# Export for web component
+yellow_line_impact_export <- list(
+  station_impacts = final_impact_summary %>%
+    select(Station, Line, percent_change = `Median Change (%)`) %>%
+    convert_to_short_names()
+)
+write_json(yellow_line_impact_export, "../src/lib/data/charts/10-yellow-line-impact.json", pretty = TRUE, auto_unbox = TRUE)
+```
+
+-----
+
+# Station Pair Ridership Spikes
+
+During the days for which data is available, there have been unusual spikes in ridership between pairs of stations, compared to their typical ridership.
+
+```{r station-pair-spikes}
+# Calculate typical ridership (hourly mean) for each station pair
+station_pair_hourly_means <- station_pair_hourly %>%
+  filter(From_Station != To_Station) %>%
+  group_by(From_Station, To_Station, Hour) %>%
+  summarise(
+    typical_ridership = mean(Ridership, na.rm = TRUE),
+    total_observations = n(),
+    .groups = 'drop'
+  ) %>%
+  filter(total_observations >= 5) # Ensure stable mean
+
+# Identify spikes by comparing actual ridership to the hourly mean
+station_pair_spikes <- station_pair_hourly %>%
+  filter(From_Station != To_Station) %>%
+  left_join(station_pair_hourly_means, by = c("From_Station", "To_Station", "Hour")) %>%
+  filter(!is.na(typical_ridership)) %>%
+  mutate(
+    deviation_multiple = if_else(typical_ridership > 0, Ridership / typical_ridership, 0),
+    spike_category = case_when(
+      deviation_multiple >= 5 ~ "Extreme Spike (5x+)",
+      deviation_multiple >= 3 ~ "High Spike (3-5x)",
+      deviation_multiple >= 2 ~ "Moderate Spike (2-3x)",
+      TRUE ~ "Normal"
+    )
+  ) %>%
+  arrange(desc(deviation_multiple))
+
+top_spikes <- station_pair_spikes %>%
+  filter(spike_category != "Normal") %>%
+  head(50)
+
+# Export data for visualization
+spikes_export <- list(
+  top_spikes = convert_to_short_names(top_spikes) %>%
+    select(Date, Hour, From_Station, To_Station, Ridership, typical_ridership, deviation_multiple, spike_category, peak_category) %>%
+    mutate(Date = as.character(Date)),
+  spike_summary = station_pair_spikes %>% count(spike_category, name = "count") %>%
+    mutate(percentage = round(count / sum(count) * 100, 2)) %>%
+    arrange(desc(count))
+)
+write_json(spikes_export, "../src/lib/data/charts/09-station-pair-spikes.json", pretty = TRUE, auto_unbox = TRUE)
+
+# Display top spikes table
+convert_to_short_names(top_spikes) %>%
+  head(20) %>%
+  mutate(
+    Route = paste(From_Station, " & ", To_Station),
+    `Date & Time` = paste(Date, paste0(Hour, ":00")),
+    `Actual Ridership` = Ridership,
+    `Typical Ridership` = round(typical_ridership, 1)
+  ) %>%
+  select(Route, `Date & Time`, `Actual Ridership`, `Typical Ridership`) %>%
+  gt() %>%
+  tab_header(
+    title = "Top Ridership Spikes Between Station Pairs",
+    subtitle = "Instances where ridership was significantly higher than the hourly average"
+  ) %>%
+  fmt_number(columns = c(`Actual Ridership`, `Typical Ridership`), decimals = 0) %>%
+  tab_style(
+    style = list(cell_fill(color = primary_color, alpha = 0.3), cell_text(weight = "bold")),
+    locations = cells_column_labels()
+  ) %>%
+  tab_options(
+    table.font.names = "Atkinson Hyperlegible",
+    heading.title.font.size = 16,
+    heading.subtitle.font.size = 12,
+    table.font.size = 10
+  )
+```
+
+```{r station-spike-daily-export}
+# Export daily totals for specific stations for a targeted spike visualization
+selected_stations <- c("Mahalakshmi", "Lalbagh", "Vidhana Soudha")
+
+station_daily_selected <- hourly %>%
+  filter(Station %in% selected_stations) %>%
+  group_by(Station, Line, Date) %>%
+  summarise(Total = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  arrange(Station, Date) %>%
+  mutate(Date = as.character(Date)) %>%
+  convert_to_short_names() # Use short names for consistency
+
+export_daily_payload <- list(
+  window = list(start = "2025-08-15", end = "2025-08-18"),
+  stations = convert_to_short_names(tibble(Station = selected_stations))$Station,
+  data = station_daily_selected
+)
+
+write_json(export_daily_payload, "../src/lib/data/charts/09-station-spike-daily.json", pretty = TRUE, auto_unbox = TRUE)
+```
+
+-----
+
+# Weekdays vs Weekends - Network
+
+Does Bangalore's metro serve different functions throughout the week? Weekdays for work commute and a visible difference in the weekends?
+
+```{r weekday-weekend-patterns}
+hourly_avg_wide <- hourly %>%
+  group_by(day_type, Hour) %>%
+  summarise(Average_Ridership = mean(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  pivot_wider(names_from = day_type, values_from = Average_Ridership, values_fill = 0)
+
+ribbon_data <- hourly_avg_wide %>%
+  mutate(
+    weekday_ribbon_ymax = if_else(Weekday > Weekend, Weekday, Weekend),
+    weekend_ribbon_ymax = if_else(Weekend > Weekday, Weekend, Weekday)
+  )
+
+# Export for web component
+weekday_weekend_export <- list(
+  hourly_averages = pivot_longer(hourly_avg_wide, -Hour, names_to = "day_type", values_to = "Average_Ridership")
+)
+write_json(weekday_weekend_export, "../src/lib/data/charts/06-weekday-weekend-patterns.json", pretty = TRUE, auto_unbox = TRUE)
+
+# Plot comparison
+ggplot(ribbon_data, aes(x = Hour)) +
+  geom_ribbon(aes(ymin = Weekend, ymax = weekday_ribbon_ymax), fill = primary_color, alpha = 0.3) +
+  geom_ribbon(aes(ymin = Weekday, ymax = weekend_ribbon_ymax), fill = secondary_color, alpha = 0.3) +
+  geom_line(aes(y = Weekday), color = primary_color, linewidth = 1.2) +
+  geom_line(aes(y = Weekend), color = secondary_color, linewidth = 1.2) +
+  annotate("text", x = 8, y = max(ribbon_data$Weekday) * 0.9, label = "Weekday", color = primary_color, size = 4, fontface = "bold") +
+  annotate("text", x = 14, y = max(ribbon_data$Weekend) * 0.8, label = "Weekend", color = secondary_color, size = 4, fontface = "bold") +
+  scale_x_continuous(breaks = seq(0, 23, 3), labels = paste0(seq(0, 23, 3), ":00")) +
+  scale_y_continuous(labels = scales::comma_format()) +
+  labs(
+    title = "Ridership Patterns: Weekday vs Weekend",
+    subtitle = "Average ridership per station across all hours of the day",
+    x = "Hour of Day", y = "Average Ridership per Station"
+  ) +
+  theme_metro() +
+  theme(panel.grid.major.x = element_line(color = "gray90", linetype = "dotted"))
+```
+
+-----
+
+# Weekdays vs Weekends - Stations at Peak Hour
+
+Some stations serve very different functions on weekdays versus weekends.
+
+```{r weekday-weekend-differential}
+# Calculate weekday vs weekend peak traffic differences
+peak_diff_data <- hourly %>%
+  filter(!is.na(Line)) %>%
+  group_by(Station, Hour, day_type, Line) %>%
+  summarise(avg_ridership = mean(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  filter(Hour %in% c(8:10, 17:19)) %>%
+  group_by(Station, day_type, Line) %>%
+  summarise(peak_ridership = mean(avg_ridership), .groups = 'drop') %>%
+  pivot_wider(names_from = day_type, values_from = peak_ridership, values_fill = 0) %>%
+  mutate(
+    weekday_weekend_diff = Weekday - Weekend,
+    diff_category = case_when(
+      weekday_weekend_diff > 500 ~ "Strongly Weekday-Oriented",
+      weekday_weekend_diff > 200 ~ "Moderately Weekday-Oriented",
+      weekday_weekend_diff < -50 ~ "Weekend-Oriented",
+      TRUE ~ "Balanced"
+    )
+  ) %>%
+  arrange(desc(weekday_weekend_diff))
+
+# Export for web component
+differential_export <- list(
+  station_differences = convert_to_short_names(peak_diff_data),
+  category_summary = peak_diff_data %>%
+    count(diff_category, name = "station_count") %>%
+    mutate(percentage = round(station_count / sum(station_count) * 100, 1))
+)
+write_json(differential_export, "../src/lib/data/charts/08-weekday-weekend-differential.json", pretty = TRUE, auto_unbox = TRUE)
+
+# Prepare data for diverging bar chart
+top_diff_data <- convert_to_short_names(peak_diff_data) %>%
+  head(25) %>%
+  mutate(Station = fct_reorder(Station, weekday_weekend_diff)) %>%
+  select(Station, Weekday, Weekend) %>%
+  pivot_longer(cols = c(Weekday, Weekend), names_to = "day_type", values_to = "ridership") %>%
+  mutate(
+    ridership_direction = if_else(day_type == "Weekend", -ridership, ridership),
+    day_type = factor(day_type, levels = c("Weekend", "Weekday"))
+  )
+
+# Plot diverging bar chart
+ggplot(top_diff_data, aes(x = ridership_direction, y = Station, fill = day_type)) +
+  geom_col(alpha = 0.8) +
+  geom_vline(xintercept = 0, color = "black", linewidth = 0.5) +
+  scale_fill_manual(values = c("Weekday" = primary_color, "Weekend" = secondary_color), name = "Day Type") +
+  scale_x_continuous(labels = ~ comma(abs(.x)), breaks = seq(-1000, 2000, 500), expand = expansion(mult = 0.1)) +
+  labs(
+    title = "Weekday vs Weekend Peak Hour Ridership",
+    subtitle = "Top 25 stations with the largest difference between weekday and weekend usage",
+    x = "Average Peak Hour Ridership", y = "Station"
+  ) +
+  theme_metro() +
+  theme(
+    axis.text.y = element_text(size = 9),
+    panel.grid.major.x = element_line(color = "gray90", linetype = "dotted"),
+    legend.position = "bottom"
+  ) +
+  annotate("text", x = 1500, y = 2, label = "Higher Weekday Usage →", color = primary_color, fontface = "bold", size = 3.5) +
+  annotate("text", x = -600, y = 2, label = "← Higher Weekend Usage", color = secondary_color, fontface = "bold", size = 3.5)
+```
+
+-----
+
+# Weekdays vs Weekends - Stations Overall
+
+Which stations and routes show the most consistent ridership patterns between weekdays and weekends? This analysis identifies stations and station pairs that vary the least and most between weekday and weekend usage.
+
+```{r station-variation-analysis}
+# Get number of weekdays and weekends in the dataset
+num_weekdays <- n_distinct(hourly$Date[hourly$day_type == "Weekday"])
+num_weekends <- n_distinct(hourly$Date[hourly$day_type == "Weekend"])
+
+# Station-level weekday vs weekend variation analysis
+station_variation <- hourly %>%
+  group_by(Station, Line, day_type) %>%
+  summarise(total_ridership = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  mutate(
+    days = if_else(day_type == "Weekday", num_weekdays, num_weekends),
+    avg_per_day = total_ridership / days
+  ) %>%
+  select(Station, Line, day_type, avg_per_day) %>%
+  pivot_wider(names_from = day_type, values_from = avg_per_day, values_fill = 0)
+
+# Station pair-level (bidirectional) weekday vs weekend variation
+station_pair_variation <- station_pair_hourly %>%
+  filter(From_Station != To_Station) %>%
+  mutate(
+    station_pair = ifelse(From_Station < To_Station,
+                          paste(From_Station, "↔", To_Station),
+                          paste(To_Station, "↔", From_Station)),
+    # Ensure consistent ordering for bidirectional pairs
+    station_1 = ifelse(From_Station < To_Station, From_Station, To_Station),
+    station_2 = ifelse(From_Station < To_Station, To_Station, From_Station)
+  ) %>%
+  group_by(station_1, station_2, station_pair, day_type) %>%
+  summarise(total_ridership = sum(Ridership, na.rm = TRUE), .groups = 'drop') %>%
+  mutate(
+    days = if_else(day_type == "Weekday", num_weekdays, num_weekends),
+    avg_per_day = total_ridership / days
+  ) %>%
+  select(station_1, station_2, station_pair, day_type, avg_per_day) %>%
+  pivot_wider(names_from = day_type, values_from = avg_per_day, values_fill = 0)
+
+# Export station-level analysis
+variation_export <- list(stations = convert_to_short_names(station_variation))
+write_json(variation_export, "../src/lib/data/charts/09-station-variation-analysis.json", pretty = TRUE, auto_unbox = TRUE)
+
+# Display tables for top variations
+station_variation %>%
+  mutate(`Difference` = Weekday - Weekend) %>%
+  select(Station, Weekday, Weekend, `Difference`) %>%
+  arrange(desc(abs(`Difference`))) %>%
+  head(15) %>%
+  kable(caption = "Top 15 Stations by Weekday-Weekend Ridership Difference") %>%
+  kable_styling(full_width = FALSE)
+
+station_pair_variation %>%
+  filter(Weekday + Weekend > 50) %>% # Exclude low-ridership pairs
+  mutate(`Difference` = Weekday - Weekend) %>%
+  select(`Station Pair` = station_pair, Weekday, Weekend, `Difference`) %>%
+  arrange(desc(abs(`Difference`))) %>%
+  head(15) %>%
+  kable(caption = "Top 15 Station Pairs by Weekday-Weekend Ridership Difference") %>%
+  kable_styling(full_width = FALSE)
+```
+
+-----
+
+# Average Travel Distance
+
+Analyzing the average number of stations travelled by commuters at each station. Commuters from city periphery stations travel longer distances on average (and spend more on metro), compared to city center stations.
+
+```{r average-travel-distance}
+# Define station orders for distance calculation
+purple_line_stations <- c("Whitefield (Kadugodi)", "Hopefarm Channasandra", "Kadugodi Tree Park", "Pattandur Agrahara", "Sri Sathya Sai Hospital", "Nallurahalli", "Kundalahalli", "Seetharampalya", "Hoodi", "Garudacharpalya", "Singayyanapalya", "Krishnarajapura", "Benniganahalli", "Baiyappanahalli", "Swami Vivekananda Road", "Indiranagar", "Halasuru", "Trinity", "Mahatma Gandhi Road", "Cubbon Park", "Dr. B. R. Ambedkar Station, Vidhana Soudha", "Sir M. Visvesvaraya Stn., Central College", "Nadaprabhu Kempegowda Station, Majestic", "Krantivira Sangolli Rayanna Railway Station", "Magadi Road", "Sri Balagangadharanatha Swamiji Station, Hosahalli", "Vijayanagar", "Attiguppe", "Deepanjali Nagar", "Mysore Road", "Pantharapalya - Nayandahalli", "Rajarajeshwari Nagar", "Jnanabharathi", "Pattanagere", "Kengeri Bus Terminal", "Kengeri", "Challaghatta")
+green_line_stations <- c("Silk Institute", "Thalaghattapura", "Vajarahalli", "Doddakallasandra", "Konanakunte Cross", "Yelachenahalli", "Jaya Prakash Nagar", "Banashankari", "Rashtreeya Vidyalaya Road", "Jayanagar", "South End Circle", "Lalbagh", "National College", "Krishna Rajendra Market", "Chickpete", "Nadaprabhu Kempegowda Station, Majestic", "Mantri Square Sampige Road", "Srirampura", "Mahakavi Kuvempu Road", "Rajajinagar", "Mahalakshmi", "Sandal Soap Factory", "Yeshwantpur", "Goraguntepalya", "Peenya", "Peenya Industry", "Jalahalli", "Dasarahalli", "Nagasandra", "Manjunathanagara", "Chikkabidarakallu", "Madavara")
+yellow_line_stations <- c("Rashtreeya Vidyalaya Road", "Ragigudda", "Jayadeva Hospital", "BTM Layout", "Central Silk Board", "Bommanahalli", "Hongasandra", "Kudlu Gate", "Singasandra", "Hosa Road", "Beratena Agrahara", "Electronic City", "Infosys Foundation Konappana Agrahara", "Huskur Road", "Biocon Hebbagodi", "Delta Electronics Bommasandra")
+
+station_positions <- list(
+  Purple = setNames(seq_along(purple_line_stations), purple_line_stations),
+  Green = setNames(seq_along(green_line_stations), green_line_stations),
+  Yellow = setNames(seq_along(yellow_line_stations), yellow_line_stations)
+)
+
+# Function to calculate stations travelled (shortest path on the network)
+calculate_stations_travelled <- function(origin, destination, origin_line, dest_line) {
+  # Handle same station case
+  if (origin == destination) {
+    return(0)
+  }
+
+  # Define interchange stations
+  majestic <- "Nadaprabhu Kempegowda Station, Majestic"
+  rvr <- "Rashtreeya Vidyalaya Road"
+
+  # Map Black line stations to their physical lines for distance calculation
+  map_physical_line <- function(station, line) {
+    if (line == "Black") {
+      if (station == majestic) return("Purple")
+      if (station == rvr) return("Green")
+    }
+    return(line)
+  }
+
+  # Map lines to physical lines
+  origin_physical_line <- map_physical_line(origin, origin_line)
+  dest_physical_line <- map_physical_line(destination, dest_line)
+
+  # Same line travel (using physical lines)
+  if (origin_physical_line == dest_physical_line) {
+    if (origin_physical_line == "Purple") {
+      return(abs(station_positions$Purple[destination] - station_positions$Purple[origin]))
+    } else if (origin_physical_line == "Green") {
+      return(abs(station_positions$Green[destination] - station_positions$Green[origin]))
+    } else if (origin_physical_line == "Yellow") {
+      return(abs(station_positions$Yellow[destination] - station_positions$Yellow[origin]))
+    }
+  }
+
+  # Cross-line travel - need to find optimal interchange
+  min_distance <- Inf
+
+  # Try Majestic interchange (Purple-Green)
+  if ((origin_physical_line %in% c("Purple", "Green")) && (dest_physical_line %in% c("Purple", "Green"))) {
+    if (origin_physical_line == "Purple") {
+      dist_to_majestic <- abs(station_positions$Purple[majestic] - station_positions$Purple[origin])
+      dist_from_majestic <- abs(station_positions$Green[destination] - station_positions$Green[majestic])
+    } else {
+      dist_to_majestic <- abs(station_positions$Green[majestic] - station_positions$Green[origin])
+      dist_from_majestic <- abs(station_positions$Purple[destination] - station_positions$Purple[majestic])
+    }
+    min_distance <- min(min_distance, dist_to_majestic + dist_from_majestic)
+  }
+
+  # Try RVR interchange (Green-Yellow)
+  if ((origin_physical_line %in% c("Green", "Yellow")) && (dest_physical_line %in% c("Green", "Yellow"))) {
+    if (origin_physical_line == "Green") {
+      dist_to_rvr <- abs(station_positions$Green[rvr] - station_positions$Green[origin])
+      dist_from_rvr <- abs(station_positions$Yellow[destination] - station_positions$Yellow[rvr])
+    } else {
+      dist_to_rvr <- abs(station_positions$Yellow[rvr] - station_positions$Yellow[origin])
+      dist_from_rvr <- abs(station_positions$Green[destination] - station_positions$Green[rvr])
+    }
+    min_distance <- min(min_distance, dist_to_rvr + dist_from_rvr)
+  }
+
+  # Purple to Yellow via Majestic + RVR
+  if ((origin_physical_line == "Purple" && dest_physical_line == "Yellow") || (origin_physical_line == "Yellow" && dest_physical_line == "Purple")) {
+    if (origin_physical_line == "Purple") {
+      dist_to_majestic <- abs(station_positions$Purple[majestic] - station_positions$Purple[origin])
+      dist_majestic_to_rvr <- abs(station_positions$Green[rvr] - station_positions$Green[majestic])
+      dist_from_rvr <- abs(station_positions$Yellow[destination] - station_positions$Yellow[rvr])
+    } else {
+      dist_to_rvr <- abs(station_positions$Yellow[rvr] - station_positions$Yellow[origin])
+      dist_rvr_to_majestic <- abs(station_positions$Green[majestic] - station_positions$Green[rvr])
+      dist_from_majestic <- abs(station_positions$Purple[destination] - station_positions$Purple[majestic])
+      dist_to_majestic <- dist_to_rvr + dist_rvr_to_majestic
+      dist_majestic_to_rvr <- 0
+      dist_from_rvr <- dist_from_majestic
+    }
+    min_distance <- min(min_distance, dist_to_majestic + dist_majestic_to_rvr + dist_from_rvr)
+  }
+
+  return(min_distance)
+}
+
+# Calculate weighted average travel distance for each station
+station_travel_analysis <- station_pair_hourly %>%
+  left_join(distinct(hourly, Station, Line), by = c("From_Station" = "Station")) %>%
+  rename(Origin_Line = Line) %>%
+  left_join(distinct(hourly, Station, Line), by = c("To_Station" = "Station")) %>%
+  rename(Dest_Line = Line) %>%
+  filter(!is.na(Origin_Line), !is.na(Dest_Line)) %>%
+  rowwise() %>%
+  mutate(stations_travelled = calculate_stations_travelled(From_Station, To_Station, Origin_Line, Dest_Line)) %>%
+  ungroup() %>%
+  summarise(
+    avg_stations_travelled = weighted.mean(stations_travelled, Ridership, na.rm = TRUE),
+    .by = c(From_Station, Origin_Line)
+  ) %>%
+  filter(avg_stations_travelled > 0) %>%
+  arrange(desc(avg_stations_travelled))
+
+# Export data for web interface
+travel_distance_export <- list(station_averages = convert_to_short_names(station_travel_analysis))
+write_json(travel_distance_export, "../src/lib/data/charts/11-average-travel-distance.json", pretty = TRUE, auto_unbox = TRUE)
+
+travel_time_selected <- travel_distance_export$station_averages %>%
+  filter(From_Station %in% c("Madavara", "Halasuru"))
+write_json(list(station_averages = travel_time_selected), "../src/lib/data/charts/11-travel-time-selected.json", pretty = TRUE, auto_unbox = TRUE)
+
+travel_distance_export$station_averages %>%
+  select(Station = From_Station, Line = Origin_Line, `Trip Length (stations)` = avg_stations_travelled) %>%
+  kable(caption = "Average Trip Length by Origin Station") %>%
+  kable_styling(full_width = FALSE)
+```
+
+-----
+
+# Land use
+
+```{r landuse}
+input_raster_path <- "built-up-volume/built-up-volume.tif"
+output_geojson_path <- "../src/lib/data/charts/12-built_up_volume_hex.json"
+
+# Load raster, set 0 to NA, and create a hex grid
+commercial_built_volume <- rast(input_raster_path)
+commercial_built_volume[commercial_built_volume == 0] <- NA
+hex_grid <- st_make_grid(commercial_built_volume, cellsize = 0.009, square = FALSE) %>% st_as_sf()
+
+# Extract mean raster values for each hex cell
+hex_grid$mean_volume <- exact_extract(commercial_built_volume, hex_grid, fun = "mean")
+hex_summary_filtered <- hex_grid[!is.na(hex_grid$mean_volume), ]
+
+# Write to GeoJSON
+st_write(hex_summary_filtered, output_geojson_path, delete_dsn = TRUE, driver = "GeoJSON")
+
+# Create a quick visualization
+breaks <- pretty(hex_summary_filtered$mean_volume, n = 10)
+pal <- hcl.colors(length(breaks) - 1, "viridis", rev = TRUE)
+plot(hex_summary_filtered["mean_volume"], main = "Built-up Volume Aggregated into Hexagons",
+     breaks = breaks, pal = pal, key.pos = 4, lwd = 0.1, border = NA)
+```
+
+-----
+
+# Network Analysis
+
+```{r network-analysis}
+# --- Network Analysis (Corrected Final Version) ---
+
+# 1. Calculate Station Importance (using short names)
+station_importance <- hourly %>%
+  convert_to_short_names() %>%
+  count(Station, wt = Ridership, name = "total_ridership") %>%
+  rename(id = Station)
+
+# 2. Calculate Hybrid Top Links using consistent short names
+# The `metro_stations` table from your data prep chunk already has short names and line info
+line_info <- metro_stations %>%
+  select(Station, line)
+
+# Create a base table of all links, converting to short names immediately
+all_links_with_lines <- station_pair_hourly %>%
+  count(From_Station, To_Station, wt = Ridership, name = "Ridership") %>%
+  convert_to_short_names() %>% # This ensures all names are short and consistent
+  bind_log_odds(set = From_Station, feature = To_Station, n = Ridership) %>%
+  left_join(line_info, by = c("From_Station" = "Station")) %>%
+  rename(from_line = line) %>%
+  left_join(line_info, by = c("To_Station" = "Station")) %>%
+  rename(to_line = line) %>%
+  filter(!is.na(from_line), !is.na(to_line)) %>%
+  mutate(is_interline = (from_line != to_line))
+
+# Create the hybrid set of top links
+top_links <-
+  bind_rows(
+    # Top 8 intra-line (same-line) links
+    all_links_with_lines %>%
+      filter(!is_interline, Ridership > 100) %>%
+      group_by(From_Station) %>%
+      slice_max(order_by = log_odds_weighted, n = 8, with_ties = FALSE),
+
+    # Top 3 inter-line (cross-line) links
+    all_links_with_lines %>%
+      filter(is_interline, Ridership > 100) %>%
+      group_by(From_Station) %>%
+      slice_max(order_by = log_odds_weighted, n = 3, with_ties = FALSE)
+  ) %>%
+  ungroup() %>%
+  distinct(From_Station, To_Station, .keep_all = TRUE)
+
+# 3. Prepare Nodes and Links for D3 Export
+links_for_graph <- top_links %>%
+  select(From_Station, To_Station, value = log_odds_weighted)
+
+nodes_final <- {
+  base_nodes <- tibble(id = unique(c(links_for_graph$From_Station, links_for_graph$To_Station))) %>%
+    left_join(line_info, by = c("id" = "Station")) %>%
+    select(id, group = line) %>%
+    mutate(group = str_to_title(coalesce(group, "Unknown")))
+
+  tbl_graph(nodes = base_nodes, edges = links_for_graph, directed = FALSE) %>%
+    activate(nodes) %>%
+    mutate(betweenness = centrality_betweenness(weights = value - min(value) + 1)) %>%
+    as_tibble() %>%
+    left_join(station_importance, by = "id") %>%
+    mutate(total_ridership = coalesce(total_ridership, 0L))
+}
+
+links_final_indexed <- {
+  station_indices <- setNames(seq_len(nrow(nodes_final)) - 1, nodes_final$id)
+  links_for_graph %>%
+    mutate(
+      source = station_indices[From_Station],
+      target = station_indices[To_Station]
+    ) %>%
+    filter(!is.na(source), !is.na(target)) %>%
+    select(source, target, value) %>%
+    purrr::pmap(~c(...)) %>%
+    unname()
+}
+
+# 4. Export to JSON
+d3_network_output <- list(
+  nodes = nodes_final,
+  links = links_final_indexed
+)
+
+write_json(
+  d3_network_output,
+  "../src/lib/data/charts/metro-network-final.json",
+  pretty = FALSE,
+  auto_unbox = TRUE
+)
+
+cat(
+  "Successfully exported refined D3 network data.\n",
+  "Exported", nrow(nodes_final), "stations and", length(links_final_indexed), "connections.\n"
+)
+
+```

@@ -1,0 +1,502 @@
+{
+  "stations": [
+    {
+      "Station": "Attiguppe",
+      "Line": "Purple",
+      "Weekday": 9033.4167,
+      "Weekend": 5907
+    },
+    {
+      "Station": "BTM Layout",
+      "Line": "Yellow",
+      "Weekday": 1849.5833,
+      "Weekend": 1312.1667
+    },
+    {
+      "Station": "Baiyappanahalli",
+      "Line": "Purple",
+      "Weekday": 14517.1667,
+      "Weekend": 9756.5
+    },
+    {
+      "Station": "Banashankari",
+      "Line": "Green",
+      "Weekday": 13330.9167,
+      "Weekend": 11651
+    },
+    {
+      "Station": "Benniganahalli",
+      "Line": "Purple",
+      "Weekday": 27766.5,
+      "Weekend": 21907.1667
+    },
+    {
+      "Station": "Beratena Agrahara",
+      "Line": "Yellow",
+      "Weekday": 344.5833,
+      "Weekend": 222.6667
+    },
+    {
+      "Station": "Hebbagodi",
+      "Line": "Yellow",
+      "Weekday": 941.9167,
+      "Weekend": 584.8333
+    },
+    {
+      "Station": "Bommanahalli",
+      "Line": "Yellow",
+      "Weekday": 2281.25,
+      "Weekend": 1454.1667
+    },
+    {
+      "Station": "Silk Board",
+      "Line": "Yellow",
+      "Weekday": 2608.1667,
+      "Weekend": 1470.3333
+    },
+    {
+      "Station": "Challaghatta",
+      "Line": "Purple",
+      "Weekday": 6375.9167,
+      "Weekend": 6502.8333
+    },
+    {
+      "Station": "Chickpete",
+      "Line": "Green",
+      "Weekday": 14020.5,
+      "Weekend": 19728.5
+    },
+    {
+      "Station": "Chikkabidarakallu",
+      "Line": "Green",
+      "Weekday": 4239.5833,
+      "Weekend": 3526.3333
+    },
+    {
+      "Station": "Cubbon Park",
+      "Line": "Purple",
+      "Weekday": 14892.4167,
+      "Weekend": 9512
+    },
+    {
+      "Station": "Dasarahalli",
+      "Line": "Green",
+      "Weekday": 11800.75,
+      "Weekend": 10435.6667
+    },
+    {
+      "Station": "Deepanjali Nagar",
+      "Line": "Purple",
+      "Weekday": 4611.1667,
+      "Weekend": 3687.6667
+    },
+    {
+      "Station": "Bommasandra",
+      "Line": "Yellow",
+      "Weekday": 3793.5,
+      "Weekend": 2544.3333
+    },
+    {
+      "Station": "Doddakallasandra",
+      "Line": "Green",
+      "Weekday": 5283.5833,
+      "Weekend": 4446.5
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Weekday": 13528.25,
+      "Weekend": 6880.6667
+    },
+    {
+      "Station": "Electronic City",
+      "Line": "Yellow",
+      "Weekday": 1798.5,
+      "Weekend": 1232.3333
+    },
+    {
+      "Station": "Garudacharpalya",
+      "Line": "Purple",
+      "Weekday": 8456.5,
+      "Weekend": 4613.6667
+    },
+    {
+      "Station": "Goraguntepalya",
+      "Line": "Green",
+      "Weekday": 7850.5,
+      "Weekend": 6844.5
+    },
+    {
+      "Station": "Halasuru",
+      "Line": "Purple",
+      "Weekday": 9811.1667,
+      "Weekend": 6767.6667
+    },
+    {
+      "Station": "Hongasandra",
+      "Line": "Yellow",
+      "Weekday": 1503.8333,
+      "Weekend": 882.8333
+    },
+    {
+      "Station": "Hoodi",
+      "Line": "Purple",
+      "Weekday": 7480.6667,
+      "Weekend": 5949.5
+    },
+    {
+      "Station": "Hopefarm Channasandra",
+      "Line": "Purple",
+      "Weekday": 2872.25,
+      "Weekend": 1864.5
+    },
+    {
+      "Station": "Hosa Road",
+      "Line": "Yellow",
+      "Weekday": 1848.8333,
+      "Weekend": 1481.8333
+    },
+    {
+      "Station": "Huskur Road",
+      "Line": "Yellow",
+      "Weekday": 1148.9167,
+      "Weekend": 914.3333
+    },
+    {
+      "Station": "Indiranagar",
+      "Line": "Purple",
+      "Weekday": 23785.5833,
+      "Weekend": 16117
+    },
+    {
+      "Station": "Konappana Agrahara",
+      "Line": "Yellow",
+      "Weekday": 3410.0833,
+      "Weekend": 2010.5
+    },
+    {
+      "Station": "Jalahalli",
+      "Line": "Green",
+      "Weekday": 8398.8333,
+      "Weekend": 7846.5
+    },
+    {
+      "Station": "JP Nagar",
+      "Line": "Green",
+      "Weekday": 10681.9167,
+      "Weekend": 8387.1667
+    },
+    {
+      "Station": "Jayadeva Hospital",
+      "Line": "Yellow",
+      "Weekday": 2473.9167,
+      "Weekend": 1177.6667
+    },
+    {
+      "Station": "Jayanagar",
+      "Line": "Green",
+      "Weekday": 13875,
+      "Weekend": 12037.3333
+    },
+    {
+      "Station": "Jnanabharathi",
+      "Line": "Purple",
+      "Weekday": 4575.6667,
+      "Weekend": 3067.3333
+    },
+    {
+      "Station": "Kadugodi Tree Park",
+      "Line": "Purple",
+      "Weekday": 13084.25,
+      "Weekend": 8771.1667
+    },
+    {
+      "Station": "Kengeri",
+      "Line": "Purple",
+      "Weekday": 5961.3333,
+      "Weekend": 5419.5
+    },
+    {
+      "Station": "Kengeri Bus Terminal",
+      "Line": "Purple",
+      "Weekday": 7250.9167,
+      "Weekend": 6821.5
+    },
+    {
+      "Station": "Konanakunte Cross",
+      "Line": "Green",
+      "Weekday": 12354.6667,
+      "Weekend": 13000.5
+    },
+    {
+      "Station": "KSR Railway Station",
+      "Line": "Purple",
+      "Weekday": 12528.6667,
+      "Weekend": 11508.3333
+    },
+    {
+      "Station": "KR Market",
+      "Line": "Green",
+      "Weekday": 10113.3333,
+      "Weekend": 7920.5
+    },
+    {
+      "Station": "KR Pura",
+      "Line": "Purple",
+      "Weekday": 20445.6667,
+      "Weekend": 14162.1667
+    },
+    {
+      "Station": "Kudlu Gate",
+      "Line": "Yellow",
+      "Weekday": 1927.6667,
+      "Weekend": 1174.1667
+    },
+    {
+      "Station": "Kundalahalli",
+      "Line": "Purple",
+      "Weekday": 9303.5,
+      "Weekend": 4320.6667
+    },
+    {
+      "Station": "Lalbagh",
+      "Line": "Green",
+      "Weekday": 7704.3333,
+      "Weekend": 7981.8333
+    },
+    {
+      "Station": "Madavara",
+      "Line": "Green",
+      "Weekday": 7278.5,
+      "Weekend": 7729.8333
+    },
+    {
+      "Station": "Magadi Road",
+      "Line": "Purple",
+      "Weekday": 7906.5,
+      "Weekend": 5791.8333
+    },
+    {
+      "Station": "MKK Road",
+      "Line": "Green",
+      "Weekday": 5684.5833,
+      "Weekend": 4431.8333
+    },
+    {
+      "Station": "Mahalakshmi",
+      "Line": "Green",
+      "Weekday": 9785.8333,
+      "Weekend": 12865.5
+    },
+    {
+      "Station": "MG Road",
+      "Line": "Purple",
+      "Weekday": 21437,
+      "Weekend": 19686.3333
+    },
+    {
+      "Station": "Manjunathanagara",
+      "Line": "Green",
+      "Weekday": 1300.1667,
+      "Weekend": 1195.5
+    },
+    {
+      "Station": "Mantri Square",
+      "Line": "Green",
+      "Weekday": 16290.6667,
+      "Weekend": 16886.6667
+    },
+    {
+      "Station": "Mysore Road",
+      "Line": "Purple",
+      "Weekday": 6989.5,
+      "Weekend": 3573.1667
+    },
+    {
+      "Station": "Majestic",
+      "Line": "Black",
+      "Weekday": 34017.8333,
+      "Weekend": 36809.5
+    },
+    {
+      "Station": "Nagasandra",
+      "Line": "Green",
+      "Weekday": 10867.6667,
+      "Weekend": 10771.1667
+    },
+    {
+      "Station": "Nallurahalli",
+      "Line": "Purple",
+      "Weekday": 9332,
+      "Weekend": 4311.8333
+    },
+    {
+      "Station": "National College",
+      "Line": "Green",
+      "Weekday": 12319.8333,
+      "Weekend": 9443
+    },
+    {
+      "Station": "Nayandahalli",
+      "Line": "Purple",
+      "Weekday": 2265.8333,
+      "Weekend": 2066.5
+    },
+    {
+      "Station": "Pattanagere",
+      "Line": "Purple",
+      "Weekday": 6538,
+      "Weekend": 3117
+    },
+    {
+      "Station": "Pattandur Agrahara",
+      "Line": "Purple",
+      "Weekday": 13412,
+      "Weekend": 3258.6667
+    },
+    {
+      "Station": "Peenya",
+      "Line": "Green",
+      "Weekday": 4290,
+      "Weekend": 2882.1667
+    },
+    {
+      "Station": "Peenya Industry",
+      "Line": "Green",
+      "Weekday": 2486.75,
+      "Weekend": 1462.6667
+    },
+    {
+      "Station": "Ragigudda",
+      "Line": "Yellow",
+      "Weekday": 1534.5,
+      "Weekend": 831.1667
+    },
+    {
+      "Station": "Rajajinagar",
+      "Line": "Green",
+      "Weekday": 11306,
+      "Weekend": 8887.8333
+    },
+    {
+      "Station": "RR Nagar",
+      "Line": "Purple",
+      "Weekday": 6171.5833,
+      "Weekend": 4618.5
+    },
+    {
+      "Station": "RV Road",
+      "Line": "Black",
+      "Weekday": 9394.25,
+      "Weekend": 6763.3333
+    },
+    {
+      "Station": "Sandal Soap Factory",
+      "Line": "Green",
+      "Weekday": 11337.5833,
+      "Weekend": 13129.1667
+    },
+    {
+      "Station": "Seetharampalya",
+      "Line": "Purple",
+      "Weekday": 9995.9167,
+      "Weekend": 5103.1667
+    },
+    {
+      "Station": "Silk Institute",
+      "Line": "Green",
+      "Weekday": 7090.4167,
+      "Weekend": 6554.5
+    },
+    {
+      "Station": "Singasandra",
+      "Line": "Yellow",
+      "Weekday": 733,
+      "Weekend": 528.1667
+    },
+    {
+      "Station": "Singayyanapalya",
+      "Line": "Purple",
+      "Weekday": 8484.4167,
+      "Weekend": 7635.6667
+    },
+    {
+      "Station": "Central College",
+      "Line": "Purple",
+      "Weekday": 13442.5833,
+      "Weekend": 6665.1667
+    },
+    {
+      "Station": "South End Circle",
+      "Line": "Green",
+      "Weekday": 8724.4167,
+      "Weekend": 5815.3333
+    },
+    {
+      "Station": "Hosahalli",
+      "Line": "Purple",
+      "Weekday": 10629.4167,
+      "Weekend": 6406
+    },
+    {
+      "Station": "Sri Sathya Sai Hospital",
+      "Line": "Purple",
+      "Weekday": 10633.3333,
+      "Weekend": 1768.1667
+    },
+    {
+      "Station": "Srirampura",
+      "Line": "Green",
+      "Weekday": 6132.4167,
+      "Weekend": 4795.6667
+    },
+    {
+      "Station": "Swami Vivekananda Road",
+      "Line": "Purple",
+      "Weekday": 9850.5833,
+      "Weekend": 5541.1667
+    },
+    {
+      "Station": "Thalaghattapura",
+      "Line": "Green",
+      "Weekday": 2992.9167,
+      "Weekend": 2412.1667
+    },
+    {
+      "Station": "Trinity",
+      "Line": "Purple",
+      "Weekday": 13903,
+      "Weekend": 5313.8333
+    },
+    {
+      "Station": "Vajarahalli",
+      "Line": "Green",
+      "Weekday": 5443.4167,
+      "Weekend": 4404.5
+    },
+    {
+      "Station": "Vijayanagara",
+      "Line": "Purple",
+      "Weekday": 12298.25,
+      "Weekend": 8434.1667
+    },
+    {
+      "Station": "Whitefield (Kadugodi)",
+      "Line": "Purple",
+      "Weekday": 9348.6667,
+      "Weekend": 6695
+    },
+    {
+      "Station": "Yelachenahalli",
+      "Line": "Green",
+      "Weekday": 10171,
+      "Weekend": 7496.8333
+    },
+    {
+      "Station": "Yeshwantpur",
+      "Line": "Green",
+      "Weekday": 13901,
+      "Weekend": 14373.1667
+    }
+  ]
+}

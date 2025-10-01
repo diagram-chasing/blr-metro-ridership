@@ -1,0 +1,576 @@
+{
+  "top_spikes": [
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Central College",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 130,
+      "typical_ridership": 11.875,
+      "deviation_multiple": 10.9474,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Majestic",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 301,
+      "typical_ridership": 28.0556,
+      "deviation_multiple": 10.7287,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Lalbagh",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 210,
+      "typical_ridership": 19.7647,
+      "deviation_multiple": 10.625,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 18,
+      "From_Station": "Chickpete",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 128,
+      "typical_ridership": 12.25,
+      "deviation_multiple": 10.449,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-03",
+      "Hour": 10,
+      "From_Station": "Central College",
+      "To_Station": "Garudacharpalya",
+      "Ridership": 48,
+      "typical_ridership": 4.7059,
+      "deviation_multiple": 10.2,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Baiyappanahalli",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 47,
+      "typical_ridership": 4.8889,
+      "deviation_multiple": 9.6136,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 21,
+      "From_Station": "Vidhana Soudha",
+      "To_Station": "Central College",
+      "Ridership": 127,
+      "typical_ridership": 13.2727,
+      "deviation_multiple": 9.5685,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-02",
+      "Hour": 14,
+      "From_Station": "Sandal Soap Factory",
+      "To_Station": "Central College",
+      "Ridership": 72,
+      "typical_ridership": 7.5294,
+      "deviation_multiple": 9.5625,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 20,
+      "From_Station": "Central College",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 110,
+      "typical_ridership": 11.6364,
+      "deviation_multiple": 9.4531,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-02",
+      "Hour": 11,
+      "From_Station": "Halasuru",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 178,
+      "typical_ridership": 18.9444,
+      "deviation_multiple": 9.3959,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 16,
+      "From_Station": "Chickpete",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 159,
+      "typical_ridership": 17.1667,
+      "deviation_multiple": 9.2621,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-16",
+      "Hour": 22,
+      "From_Station": "Mahalakshmi",
+      "To_Station": "Halasuru",
+      "Ridership": 49,
+      "typical_ridership": 5.2941,
+      "deviation_multiple": 9.2556,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 21,
+      "From_Station": "Vidhana Soudha",
+      "To_Station": "MG Road",
+      "Ridership": 118,
+      "typical_ridership": 12.75,
+      "deviation_multiple": 9.2549,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-01",
+      "Hour": 23,
+      "From_Station": "KSR Railway Station",
+      "To_Station": "Cubbon Park",
+      "Ridership": 32,
+      "typical_ridership": 3.5294,
+      "deviation_multiple": 9.0667,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 16,
+      "From_Station": "Baiyappanahalli",
+      "To_Station": "Nayandahalli",
+      "Ridership": 60,
+      "typical_ridership": 6.7143,
+      "deviation_multiple": 8.9362,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-10",
+      "Hour": 11,
+      "From_Station": "KSR Railway Station",
+      "To_Station": "Majestic",
+      "Ridership": 268,
+      "typical_ridership": 30.8889,
+      "deviation_multiple": 8.6763,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 18,
+      "From_Station": "Sandal Soap Factory",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 97,
+      "typical_ridership": 11.1875,
+      "deviation_multiple": 8.6704,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Chickpete",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 84,
+      "typical_ridership": 9.7059,
+      "deviation_multiple": 8.6545,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-16",
+      "Hour": 23,
+      "From_Station": "Mahalakshmi",
+      "To_Station": "Majestic",
+      "Ridership": 58,
+      "typical_ridership": 6.7059,
+      "deviation_multiple": 8.6491,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-08",
+      "Hour": 14,
+      "From_Station": "Vidhana Soudha",
+      "To_Station": "Kengeri",
+      "Ridership": 88,
+      "typical_ridership": 10.2222,
+      "deviation_multiple": 8.6087,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 21,
+      "From_Station": "Vidhana Soudha",
+      "To_Station": "Majestic",
+      "Ridership": 199,
+      "typical_ridership": 23.1667,
+      "deviation_multiple": 8.5899,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 17,
+      "From_Station": "Jalahalli",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 72,
+      "typical_ridership": 8.3846,
+      "deviation_multiple": 8.5872,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-17",
+      "Hour": 23,
+      "From_Station": "Madavara",
+      "To_Station": "Majestic",
+      "Ridership": 131,
+      "typical_ridership": 15.2778,
+      "deviation_multiple": 8.5745,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 18,
+      "From_Station": "Lalbagh",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 148,
+      "typical_ridership": 17.2778,
+      "deviation_multiple": 8.5659,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 20,
+      "From_Station": "Vidhana Soudha",
+      "To_Station": "Kadugodi Tree Park",
+      "Ridership": 121,
+      "typical_ridership": 14.1667,
+      "deviation_multiple": 8.5412,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Sandal Soap Factory",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 88,
+      "typical_ridership": 10.6471,
+      "deviation_multiple": 8.2652,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "KR Market",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 43,
+      "typical_ridership": 5.2222,
+      "deviation_multiple": 8.234,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-14",
+      "Hour": 13,
+      "From_Station": "Lalbagh",
+      "To_Station": "Rajajinagar",
+      "Ridership": 132,
+      "typical_ridership": 16.1667,
+      "deviation_multiple": 8.1649,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-03",
+      "Hour": 17,
+      "From_Station": "Garudacharpalya",
+      "To_Station": "Central College",
+      "Ridership": 52,
+      "typical_ridership": 6.3846,
+      "deviation_multiple": 8.1446,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 18,
+      "From_Station": "Kadugodi Tree Park",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 60,
+      "typical_ridership": 7.375,
+      "deviation_multiple": 8.1356,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 20,
+      "From_Station": "Majestic",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 111,
+      "typical_ridership": 13.6667,
+      "deviation_multiple": 8.122,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 20,
+      "From_Station": "Nayandahalli",
+      "To_Station": "Baiyappanahalli",
+      "Ridership": 45,
+      "typical_ridership": 5.5556,
+      "deviation_multiple": 8.1,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Jalahalli",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 30,
+      "typical_ridership": 3.7059,
+      "deviation_multiple": 8.0952,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 21,
+      "From_Station": "Central College",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 55,
+      "typical_ridership": 6.8333,
+      "deviation_multiple": 8.0488,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Garudacharpalya",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 37,
+      "typical_ridership": 4.6154,
+      "deviation_multiple": 8.0167,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Hoodi",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 44,
+      "typical_ridership": 5.5833,
+      "deviation_multiple": 7.8806,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-16",
+      "Hour": 16,
+      "From_Station": "Mahalakshmi",
+      "To_Station": "Halasuru",
+      "Ridership": 46,
+      "typical_ridership": 5.875,
+      "deviation_multiple": 7.8298,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-16",
+      "Hour": 21,
+      "From_Station": "Mahalakshmi",
+      "To_Station": "Vijayanagara",
+      "Ridership": 52,
+      "typical_ridership": 6.6429,
+      "deviation_multiple": 7.828,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-16",
+      "Hour": 22,
+      "From_Station": "Sandal Soap Factory",
+      "To_Station": "Challaghatta",
+      "Ridership": 30,
+      "typical_ridership": 3.8333,
+      "deviation_multiple": 7.8261,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 18,
+      "From_Station": "Garudacharpalya",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 64,
+      "typical_ridership": 8.2143,
+      "deviation_multiple": 7.7913,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Vidhana Soudha",
+      "To_Station": "Chickpete",
+      "Ridership": 119,
+      "typical_ridership": 15.2941,
+      "deviation_multiple": 7.7808,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 20,
+      "From_Station": "Chickpete",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 70,
+      "typical_ridership": 9,
+      "deviation_multiple": 7.7778,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Cubbon Park",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 58,
+      "typical_ridership": 7.4706,
+      "deviation_multiple": 7.7638,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 19,
+      "From_Station": "Vidhana Soudha",
+      "To_Station": "Cubbon Park",
+      "Ridership": 31,
+      "typical_ridership": 4,
+      "deviation_multiple": 7.75,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 17,
+      "From_Station": "Sandal Soap Factory",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 96,
+      "typical_ridership": 12.4667,
+      "deviation_multiple": 7.7005,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-16",
+      "Hour": 17,
+      "From_Station": "Mahalakshmi",
+      "To_Station": "KR Pura",
+      "Ridership": 129,
+      "typical_ridership": 16.7778,
+      "deviation_multiple": 7.6887,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 9,
+      "From_Station": "Vidhana Soudha",
+      "To_Station": "Magadi Road",
+      "Ridership": 37,
+      "typical_ridership": 4.8125,
+      "deviation_multiple": 7.6883,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Morning Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 18,
+      "From_Station": "Majestic",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 282,
+      "typical_ridership": 36.7778,
+      "deviation_multiple": 7.6677,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 18,
+      "From_Station": "Jalahalli",
+      "To_Station": "Vidhana Soudha",
+      "Ridership": 62,
+      "typical_ridership": 8.0909,
+      "deviation_multiple": 7.6629,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Evening Peak"
+    },
+    {
+      "Date": "2025-08-15",
+      "Hour": 20,
+      "From_Station": "Vidhana Soudha",
+      "To_Station": "Challaghatta",
+      "Ridership": 121,
+      "typical_ridership": 15.8333,
+      "deviation_multiple": 7.6421,
+      "spike_category": "Extreme Spike (5x+)",
+      "peak_category": "Off-Peak"
+    }
+  ],
+  "spike_summary": [
+    {
+      "spike_category": "Normal",
+      "count": 1128769,
+      "percentage": 94.59
+    },
+    {
+      "spike_category": "Moderate Spike (2-3x)",
+      "count": 55695,
+      "percentage": 4.67
+    },
+    {
+      "spike_category": "High Spike (3-5x)",
+      "count": 8308,
+      "percentage": 0.7
+    },
+    {
+      "spike_category": "Extreme Spike (5x+)",
+      "count": 497,
+      "percentage": 0.04
+    }
+  ]
+}

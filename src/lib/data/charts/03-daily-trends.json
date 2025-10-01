@@ -1,0 +1,118 @@
+{
+  "daily_data": [
+    {
+      "Date": "2025-08-01",
+      "total_ridership": 670548,
+      "day_of_week": "Fri",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-02",
+      "total_ridership": 628845,
+      "day_of_week": "Sat",
+      "is_weekend": true
+    },
+    {
+      "Date": "2025-08-03",
+      "total_ridership": 498746,
+      "day_of_week": "Sun",
+      "is_weekend": true
+    },
+    {
+      "Date": "2025-08-04",
+      "total_ridership": 708417,
+      "day_of_week": "Mon",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-05",
+      "total_ridership": 687984,
+      "day_of_week": "Tue",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-06",
+      "total_ridership": 732508,
+      "day_of_week": "Wed",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-07",
+      "total_ridership": 714243,
+      "day_of_week": "Thu",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-08",
+      "total_ridership": 545543,
+      "day_of_week": "Fri",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-09",
+      "total_ridership": 565926,
+      "day_of_week": "Sat",
+      "is_weekend": true
+    },
+    {
+      "Date": "2025-08-10",
+      "total_ridership": 482205,
+      "day_of_week": "Sun",
+      "is_weekend": true
+    },
+    {
+      "Date": "2025-08-11",
+      "total_ridership": 795066,
+      "day_of_week": "Mon",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-12",
+      "total_ridership": 778020,
+      "day_of_week": "Tue",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-13",
+      "total_ridership": 800230,
+      "day_of_week": "Wed",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-14",
+      "total_ridership": 843684,
+      "day_of_week": "Thu",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-15",
+      "total_ridership": 668554,
+      "day_of_week": "Fri",
+      "is_weekend": false
+    },
+    {
+      "Date": "2025-08-16",
+      "total_ridership": 667298,
+      "day_of_week": "Sat",
+      "is_weekend": true
+    },
+    {
+      "Date": "2025-08-17",
+      "total_ridership": 542547,
+      "day_of_week": "Sun",
+      "is_weekend": true
+    },
+    {
+      "Date": "2025-08-18",
+      "total_ridership": 786247,
+      "day_of_week": "Mon",
+      "is_weekend": false
+    }
+  ],
+  "summary_stats": {
+    "max_ridership": 843684,
+    "min_ridership": 482205,
+    "avg_weekday": 727587,
+    "avg_weekend": 564261.1667
+  }
+}

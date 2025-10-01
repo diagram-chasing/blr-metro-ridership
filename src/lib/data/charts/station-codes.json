@@ -1,0 +1,417 @@
+[
+  {
+    "Station": "Majestic",
+    "code": "KGWA",
+    "line": "black"
+  },
+  {
+    "Station": "RV Road",
+    "code": "RVR",
+    "line": "black"
+  },
+  {
+    "Station": "Banashankari",
+    "code": "BSNK",
+    "line": "green"
+  },
+  {
+    "Station": "Chickpete",
+    "code": "CKPE",
+    "line": "green"
+  },
+  {
+    "Station": "Chikkabidarakallu",
+    "code": "CKBD",
+    "line": "green"
+  },
+  {
+    "Station": "Dasarahalli",
+    "code": "DSH",
+    "line": "green"
+  },
+  {
+    "Station": "Doddakallasandra",
+    "code": "KLPK",
+    "line": "green"
+  },
+  {
+    "Station": "Goraguntepalya",
+    "code": "YPI",
+    "line": "green"
+  },
+  {
+    "Station": "JP Nagar",
+    "code": "JPN",
+    "line": "green"
+  },
+  {
+    "Station": "Jalahalli",
+    "code": "JLHL",
+    "line": "green"
+  },
+  {
+    "Station": "Jayanagar",
+    "code": "JYN",
+    "line": "green"
+  },
+  {
+    "Station": "KR Market",
+    "code": "KRMT",
+    "line": "green"
+  },
+  {
+    "Station": "Konanakunte Cross",
+    "code": "APRC",
+    "line": "green"
+  },
+  {
+    "Station": "Lalbagh",
+    "code": "LBGH",
+    "line": "green"
+  },
+  {
+    "Station": "MKK Road",
+    "code": "KVPR",
+    "line": "green"
+  },
+  {
+    "Station": "Madavara",
+    "code": "BIET",
+    "line": "green"
+  },
+  {
+    "Station": "Mahalakshmi",
+    "code": "MHLI",
+    "line": "green"
+  },
+  {
+    "Station": "Manjunathanagara",
+    "code": "MNJN",
+    "line": "green"
+  },
+  {
+    "Station": "Mantri Square",
+    "code": "SPGD",
+    "line": "green"
+  },
+  {
+    "Station": "Nagasandra",
+    "code": "NGSA",
+    "line": "green"
+  },
+  {
+    "Station": "National College",
+    "code": "NLC",
+    "line": "green"
+  },
+  {
+    "Station": "Peenya",
+    "code": "PEYA",
+    "line": "green"
+  },
+  {
+    "Station": "Peenya Industry",
+    "code": "PYID",
+    "line": "green"
+  },
+  {
+    "Station": "Rajajinagar",
+    "code": "RJNR",
+    "line": "green"
+  },
+  {
+    "Station": "Sandal Soap Factory",
+    "code": "SSFY",
+    "line": "green"
+  },
+  {
+    "Station": "Silk Institute",
+    "code": "APTS",
+    "line": "green"
+  },
+  {
+    "Station": "South End Circle",
+    "code": "SECE",
+    "line": "green"
+  },
+  {
+    "Station": "Srirampura",
+    "code": "SPRU",
+    "line": "green"
+  },
+  {
+    "Station": "Thalaghattapura",
+    "code": "TGTP",
+    "line": "green"
+  },
+  {
+    "Station": "Vajarahalli",
+    "code": "VJRH",
+    "line": "green"
+  },
+  {
+    "Station": "Yelachenahalli",
+    "code": "PUTH",
+    "line": "green"
+  },
+  {
+    "Station": "Yeshwantpur",
+    "code": "YPM",
+    "line": "green"
+  },
+  {
+    "Station": "Attiguppe",
+    "code": "AGPP",
+    "line": "purple"
+  },
+  {
+    "Station": "Baiyappanahalli",
+    "code": "BYPH",
+    "line": "purple"
+  },
+  {
+    "Station": "Benniganahalli",
+    "code": "JTPM",
+    "line": "purple"
+  },
+  {
+    "Station": "Central College",
+    "code": "VSWA",
+    "line": "purple"
+  },
+  {
+    "Station": "Challaghatta",
+    "code": "CLGA",
+    "line": "purple"
+  },
+  {
+    "Station": "Cubbon Park",
+    "code": "CBPK",
+    "line": "purple"
+  },
+  {
+    "Station": "Deepanjali Nagar",
+    "code": "DJNR",
+    "line": "purple"
+  },
+  {
+    "Station": "Garudacharpalya",
+    "code": "GDCP",
+    "line": "purple"
+  },
+  {
+    "Station": "Halasuru",
+    "code": "HLRU",
+    "line": "purple"
+  },
+  {
+    "Station": "Hoodi",
+    "code": "DKIA",
+    "line": "purple"
+  },
+  {
+    "Station": "Hopefarm Channasandra",
+    "code": "UWVL",
+    "line": "purple"
+  },
+  {
+    "Station": "Hosahalli",
+    "code": "HSLI",
+    "line": "purple"
+  },
+  {
+    "Station": "Indiranagar",
+    "code": "IDN",
+    "line": "purple"
+  },
+  {
+    "Station": "Jnanabharathi",
+    "code": "BGUC",
+    "line": "purple"
+  },
+  {
+    "Station": "KR Pura",
+    "code": "KRAM",
+    "line": "purple"
+  },
+  {
+    "Station": "KSR Railway Station",
+    "code": "BRCS",
+    "line": "purple"
+  },
+  {
+    "Station": "Kadugodi Tree Park",
+    "code": "KDGD",
+    "line": "purple"
+  },
+  {
+    "Station": "Kengeri",
+    "code": "KGIT",
+    "line": "purple"
+  },
+  {
+    "Station": "Kengeri Bus Terminal",
+    "code": "MLSD",
+    "line": "purple"
+  },
+  {
+    "Station": "Kundalahalli",
+    "code": "KDNH",
+    "line": "purple"
+  },
+  {
+    "Station": "MG Road",
+    "code": "MAGR",
+    "line": "purple"
+  },
+  {
+    "Station": "Magadi Road",
+    "code": "MIRD",
+    "line": "purple"
+  },
+  {
+    "Station": "Mysore Road",
+    "code": "MYRD",
+    "line": "purple"
+  },
+  {
+    "Station": "Nallurahalli",
+    "code": "VDHP",
+    "line": "purple"
+  },
+  {
+    "Station": "Nayandahalli",
+    "code": "NYHM",
+    "line": "purple"
+  },
+  {
+    "Station": "Pattanagere",
+    "code": "PATG",
+    "line": "purple"
+  },
+  {
+    "Station": "Pattandur Agrahara",
+    "code": "ITPL",
+    "line": "purple"
+  },
+  {
+    "Station": "RR Nagar",
+    "code": "RRRN",
+    "line": "purple"
+  },
+  {
+    "Station": "Seetharampalya",
+    "code": "VWIA",
+    "line": "purple"
+  },
+  {
+    "Station": "Singayyanapalya",
+    "code": "MDVP",
+    "line": "purple"
+  },
+  {
+    "Station": "Sri Sathya Sai Hospital",
+    "code": "SSHP",
+    "line": "purple"
+  },
+  {
+    "Station": "Swami Vivekananda Road",
+    "code": "SVRD",
+    "line": "purple"
+  },
+  {
+    "Station": "Trinity",
+    "code": "TTY",
+    "line": "purple"
+  },
+  {
+    "Station": "Vidhana Soudha",
+    "code": "VDSA",
+    "line": "purple"
+  },
+  {
+    "Station": "Vijayanagara",
+    "code": "VJN",
+    "line": "purple"
+  },
+  {
+    "Station": "Whitefield (Kadugodi)",
+    "code": "WHTM",
+    "line": "purple"
+  },
+  {
+    "Station": "BTM Layout",
+    "code": "BTML",
+    "line": "yellow"
+  },
+  {
+    "Station": "Beratena Agrahara",
+    "code": "HOSR",
+    "line": "yellow"
+  },
+  {
+    "Station": "Bommanahalli",
+    "code": "HSRL",
+    "line": "yellow"
+  },
+  {
+    "Station": "Bommasandra",
+    "code": "BMSD",
+    "line": "yellow"
+  },
+  {
+    "Station": "Electronic City",
+    "code": "ETCT",
+    "line": "yellow"
+  },
+  {
+    "Station": "Hebbagodi",
+    "code": "HBGI",
+    "line": "yellow"
+  },
+  {
+    "Station": "Hongasandra",
+    "code": "OFDC",
+    "line": "yellow"
+  },
+  {
+    "Station": "Hosa Road",
+    "code": "BSRD",
+    "line": "yellow"
+  },
+  {
+    "Station": "Huskur Road",
+    "code": "HSKR",
+    "line": "yellow"
+  },
+  {
+    "Station": "Jayadeva Hospital",
+    "code": "JDHP",
+    "line": "yellow"
+  },
+  {
+    "Station": "Konappana Agrahara",
+    "code": "ECTN",
+    "line": "yellow"
+  },
+  {
+    "Station": "Kudlu Gate",
+    "code": "MSRN",
+    "line": "yellow"
+  },
+  {
+    "Station": "Ragigudda",
+    "code": "RGDT",
+    "line": "yellow"
+  },
+  {
+    "Station": "Silk Board",
+    "code": "SBJT",
+    "line": "yellow"
+  },
+  {
+    "Station": "Singasandra",
+    "code": "CKBR",
+    "line": "yellow"
+  }
+]

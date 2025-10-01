@@ -1,0 +1,117 @@
+.markdown :is(h1, h2, h3, h4, h5, h6):not(.not-prose *) {
+	color: hsl(var(--foreground));
+	font-family: 'Noto Sans Kannada Variable', sans-serif;
+}
+
+.markdown h1:not(.not-prose *) {
+	border-bottom: 2px solid hsl(var(--border));
+	padding-bottom: 0.5rem;
+	margin-top: 0;
+}
+
+.markdown h2:not(.not-prose *) {
+	border-bottom: 1px solid hsl(var(--border));
+	padding-bottom: 0.3rem;
+}
+
+.markdown p:not(.not-prose *) {
+	margin-bottom: 1.8rem;
+	font-size: 1.2em;
+}
+
+.markdown em:not(.not-prose *) {
+	font-style: italic;
+	color: hsl(var(--muted-foreground));
+}
+
+.markdown strong:not(.not-prose *) {
+	font-weight: 600;
+	color: hsl(var(--foreground));
+}
+
+.markdown a:not(.not-prose *) {
+	color: hsl(var(--primary));
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom-color 0.2s ease;
+}
+
+.markdown a:not(.not-prose *):hover {
+	border-bottom-color: hsl(var(--primary));
+}
+
+.markdown :is(ul, ol):not(.not-prose *) {
+	margin-top: 1.3em;
+	list-style-type: disc;
+	padding-left: 1rem;
+}
+
+.markdown li:not(.not-prose *) {
+	margin-bottom: 0.5rem;
+}
+
+.markdown blockquote:not(.not-prose *) {
+	border-left: 4px solid hsl(var(--border));
+	padding-left: 1rem;
+	margin: 1.5rem 0;
+	font-style: italic;
+	color: hsl(var(--muted-foreground));
+}
+
+.markdown code:not(.not-prose *) {
+	background-color: hsl(var(--muted));
+	padding: 0.2rem 0.4rem;
+	border-radius: var(--radius-sm);
+	font-family: var(--font-mono);
+	font-size: 0.875em;
+}
+
+.markdown pre:not(.not-prose *) {
+	background-color: hsl(var(--muted));
+	border: 1px solid hsl(var(--border));
+	border-radius: var(--radius-md);
+	padding: 1rem;
+	margin: 1.5rem 0;
+	overflow-x: auto;
+}
+
+.markdown pre code:not(.not-prose *) {
+	background-color: transparent;
+	padding: 0;
+}
+
+.markdown hr:not(.not-prose *) {
+	border: none;
+	border-top: 2px solid hsl(var(--border));
+	margin: 2rem 0;
+}
+
+/* Base markdown styles should not apply within .not-prose */
+.markdown:not(.not-prose) {
+	max-width: 65ch;
+	margin: 0 auto;
+	line-height: 1.6;
+	color: hsl(var(--foreground));
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+	.markdown:not(.not-prose) {
+		max-width: 90vw;
+		padding: 0 1rem;
+	}
+
+	.markdown h1:not(.not-prose *) {
+		font-size: 2rem;
+	}
+
+	.markdown h2:not(.not-prose *) {
+		font-size: 1.2rem;
+	}
+
+	.markdown p:not(.not-prose *) {
+		text-align: left;
+		font-size: medium;
+	}
+}

@@ -1,0 +1,151 @@
+{
+  "busiest_days": [
+    {
+      "day": "Thu",
+      "average_daily_ridership": 778963.5
+    },
+    {
+      "day": "Wed",
+      "average_daily_ridership": 766369
+    },
+    {
+      "day": "Mon",
+      "average_daily_ridership": 763243.3333
+    },
+    {
+      "day": "Tue",
+      "average_daily_ridership": 733002
+    },
+    {
+      "day": "Fri",
+      "average_daily_ridership": 628215
+    },
+    {
+      "day": "Sat",
+      "average_daily_ridership": 620689.6667
+    },
+    {
+      "day": "Sun",
+      "average_daily_ridership": 507832.6667
+    }
+  ],
+  "busiest_hours": [
+    {
+      "Hour": 18,
+      "average_hourly_ridership": 850.5432
+    },
+    {
+      "Hour": 9,
+      "average_hourly_ridership": 782.8546
+    },
+    {
+      "Hour": 17,
+      "average_hourly_ridership": 751.214
+    },
+    {
+      "Hour": 19,
+      "average_hourly_ridership": 719.7609
+    },
+    {
+      "Hour": 8,
+      "average_hourly_ridership": 644.1993
+    },
+    {
+      "Hour": 16,
+      "average_hourly_ridership": 617.9926
+    },
+    {
+      "Hour": 10,
+      "average_hourly_ridership": 596.4701
+    },
+    {
+      "Hour": 15,
+      "average_hourly_ridership": 504.0627
+    },
+    {
+      "Hour": 20,
+      "average_hourly_ridership": 489.4
+    },
+    {
+      "Hour": 13,
+      "average_hourly_ridership": 481.6251
+    }
+  ],
+  "popular_routes": [
+    {
+      "From_Station": "Benniganahalli",
+      "To_Station": "Majestic",
+      "total_trips": 44477
+    },
+    {
+      "From_Station": "Kadugodi Tree Park",
+      "To_Station": "Sri Sathya Sai Hospital",
+      "total_trips": 34924
+    },
+    {
+      "From_Station": "Sri Sathya Sai Hospital",
+      "To_Station": "Kadugodi Tree Park",
+      "total_trips": 34736
+    },
+    {
+      "From_Station": "Benniganahalli",
+      "To_Station": "Indiranagar",
+      "total_trips": 28838
+    },
+    {
+      "From_Station": "Yeshwantpur",
+      "To_Station": "Majestic",
+      "total_trips": 27539
+    },
+    {
+      "From_Station": "Banashankari",
+      "To_Station": "Majestic",
+      "total_trips": 27130
+    },
+    {
+      "From_Station": "Indiranagar",
+      "To_Station": "Benniganahalli",
+      "total_trips": 27008
+    },
+    {
+      "From_Station": "Chickpete",
+      "To_Station": "Majestic",
+      "total_trips": 26947
+    },
+    {
+      "From_Station": "MG Road",
+      "To_Station": "Indiranagar",
+      "total_trips": 24365
+    },
+    {
+      "From_Station": "Majestic",
+      "To_Station": "Benniganahalli",
+      "total_trips": 23921
+    },
+    {
+      "From_Station": "MG Road",
+      "To_Station": "Benniganahalli",
+      "total_trips": 23641
+    },
+    {
+      "From_Station": "Benniganahalli",
+      "To_Station": "MG Road",
+      "total_trips": 23408
+    },
+    {
+      "From_Station": "KR Pura",
+      "To_Station": "Majestic",
+      "total_trips": 23402
+    },
+    {
+      "From_Station": "Konanakunte Cross",
+      "To_Station": "Majestic",
+      "total_trips": 23108
+    },
+    {
+      "From_Station": "Majestic",
+      "To_Station": "Yeshwantpur",
+      "total_trips": 22513
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "hourly_averages": [
+    {
+      "Hour": 0,
+      "day_type": "Weekday",
+      "Average_Ridership": 0.2031
+    },
+    {
+      "Hour": 0,
+      "day_type": "Weekend",
+      "Average_Ridership": 0.1171
+    },
+    {
+      "Hour": 1,
+      "day_type": "Weekday",
+      "Average_Ridership": 0
+    },
+    {
+      "Hour": 1,
+      "day_type": "Weekend",
+      "Average_Ridership": 0
+    },
+    {
+      "Hour": 2,
+      "day_type": "Weekday",
+      "Average_Ridership": 0
+    },
+    {
+      "Hour": 2,
+      "day_type": "Weekend",
+      "Average_Ridership": 0
+    },
+    {
+      "Hour": 3,
+      "day_type": "Weekday",
+      "Average_Ridership": 0.2415
+    },
+    {
+      "Hour": 3,
+      "day_type": "Weekend",
+      "Average_Ridership": 0
+    },
+    {
+      "Hour": 4,
+      "day_type": "Weekday",
+      "Average_Ridership": 15.9286
+    },
+    {
+      "Hour": 4,
+      "day_type": "Weekend",
+      "Average_Ridership": 4.5293
+    },
+    {
+      "Hour": 5,
+      "day_type": "Weekday",
+      "Average_Ridership": 71.6367
+    },
+    {
+      "Hour": 5,
+      "day_type": "Weekend",
+      "Average_Ridership": 30.8581
+    },
+    {
+      "Hour": 6,
+      "day_type": "Weekday",
+      "Average_Ridership": 162.3699
+    },
+    {
+      "Hour": 6,
+      "day_type": "Weekend",
+      "Average_Ridership": 84.0991
+    },
+    {
+      "Hour": 7,
+      "day_type": "Weekday",
+      "Average_Ridership": 407.3524
+    },
+    {
+      "Hour": 7,
+      "day_type": "Weekend",
+      "Average_Ridership": 227.0405
+    },
+    {
+      "Hour": 8,
+      "day_type": "Weekday",
+      "Average_Ridership": 798.5851
+    },
+    {
+      "Hour": 8,
+      "day_type": "Weekend",
+      "Average_Ridership": 327.4302
+    },
+    {
+      "Hour": 9,
+      "day_type": "Weekday",
+      "Average_Ridership": 957.2547
+    },
+    {
+      "Hour": 9,
+      "day_type": "Weekend",
+      "Average_Ridership": 425.0203
+    },
+    {
+      "Hour": 10,
+      "day_type": "Weekday",
+      "Average_Ridership": 670.7355
+    },
+    {
+      "Hour": 10,
+      "day_type": "Weekend",
+      "Average_Ridership": 444.0923
+    },
+    {
+      "Hour": 11,
+      "day_type": "Weekday",
+      "Average_Ridership": 473.5269
+    },
+    {
+      "Hour": 11,
+      "day_type": "Weekend",
+      "Average_Ridership": 483.6892
+    },
+    {
+      "Hour": 12,
+      "day_type": "Weekday",
+      "Average_Ridership": 438.1899
+    },
+    {
+      "Hour": 12,
+      "day_type": "Weekend",
+      "Average_Ridership": 532.5338
+    },
+    {
+      "Hour": 13,
+      "day_type": "Weekday",
+      "Average_Ridership": 452.7991
+    },
+    {
+      "Hour": 13,
+      "day_type": "Weekend",
+      "Average_Ridership": 540.7703
+    },
+    {
+      "Hour": 14,
+      "day_type": "Weekday",
+      "Average_Ridership": 449.146
+    },
+    {
+      "Hour": 14,
+      "day_type": "Weekend",
+      "Average_Ridership": 529.3964
+    },
+    {
+      "Hour": 15,
+      "day_type": "Weekday",
+      "Average_Ridership": 484.0241
+    },
+    {
+      "Hour": 15,
+      "day_type": "Weekend",
+      "Average_Ridership": 545.1779
+    },
+    {
+      "Hour": 16,
+      "day_type": "Weekday",
+      "Average_Ridership": 637.4116
+    },
+    {
+      "Hour": 16,
+      "day_type": "Weekend",
+      "Average_Ridership": 578.1486
+    },
+    {
+      "Hour": 17,
+      "day_type": "Weekday",
+      "Average_Ridership": 806.7892
+    },
+    {
+      "Hour": 17,
+      "day_type": "Weekend",
+      "Average_Ridership": 637.1847
+    },
+    {
+      "Hour": 18,
+      "day_type": "Weekday",
+      "Average_Ridership": 953.9759
+    },
+    {
+      "Hour": 18,
+      "day_type": "Weekend",
+      "Average_Ridership": 638.3198
+    },
+    {
+      "Hour": 19,
+      "day_type": "Weekday",
+      "Average_Ridership": 795.8408
+    },
+    {
+      "Hour": 19,
+      "day_type": "Weekend",
+      "Average_Ridership": 563.6599
+    },
+    {
+      "Hour": 20,
+      "day_type": "Weekday",
+      "Average_Ridership": 506.0834
+    },
+    {
+      "Hour": 20,
+      "day_type": "Weekend",
+      "Average_Ridership": 455.1689
+    },
+    {
+      "Hour": 21,
+      "day_type": "Weekday",
+      "Average_Ridership": 315.2854
+    },
+    {
+      "Hour": 21,
+      "day_type": "Weekend",
+      "Average_Ridership": 339.1239
+    },
+    {
+      "Hour": 22,
+      "day_type": "Weekday",
+      "Average_Ridership": 164.6619
+    },
+    {
+      "Hour": 22,
+      "day_type": "Weekend",
+      "Average_Ridership": 208.7072
+    },
+    {
+      "Hour": 23,
+      "day_type": "Weekday",
+      "Average_Ridership": 21.9802
+    },
+    {
+      "Hour": 23,
+      "day_type": "Weekend",
+      "Average_Ridership": 30.0833
+    }
+  ]
+}
