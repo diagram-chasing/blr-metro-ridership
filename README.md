@@ -1,6 +1,6 @@
 # blr-metro-ridership
 
-Data analysis and visualization code for [How Bangalore Uses the Metro](https://diagramchasing.fun/2025/how-blr-uses-the-metro).
+Data analysis and visualization code for [How Bangalore Uses the Metro](https://diagramchasing.fun/2025/how-bangalore-uses-the-metro).
 
 ## Getting Started
 
