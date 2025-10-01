@@ -4,6 +4,7 @@ export async function handle({ event, resolve }) {
   const baseUrl = "https://blr-metro-ridership.netlify.app";
   if (import.meta.env.PROD && analyticsId) {
     event.locals.analyticsID = analyticsId;
+    event.locals.baseUrl = baseUrl;
   }
 
   return resolve(event, {
