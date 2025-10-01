@@ -2554,7 +2554,7 @@ Most common origin for Nagasandra : Sandal Soap Factory (10,571 passengers)</cod
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Export daily totals for specific stations for a targeted spike visualization</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>selected_stations <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Mahalakshmi"</span>, <span class="st">"Lalbagh"</span>, <span class="st">"Vidhana Soudha"</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>selected_stations <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Mahalakshmi"</span>, <span class="st">"Lalbagh"</span>, <span class="st">"Dr. B. R. Ambedkar Station, Vidhana Soudha"</span>)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>station_daily_selected <span class="ot">&lt;-</span> hourly <span class="sc">%&gt;%</span></span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Station <span class="sc">%in%</span> selected_stations) <span class="sc">%&gt;%</span></span>
@@ -5299,7 +5299,7 @@ Writing 1732 features with 1 fields and geometry type Polygon.</code></pre>
 <span id="cb31-805"><a href="#cb31-805" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb31-806"><a href="#cb31-806" aria-hidden="true" tabindex="-1"></a><span class="in">```{r station-spike-daily-export}</span></span>
 <span id="cb31-807"><a href="#cb31-807" aria-hidden="true" tabindex="-1"></a><span class="co"># Export daily totals for specific stations for a targeted spike visualization</span></span>
-<span id="cb31-808"><a href="#cb31-808" aria-hidden="true" tabindex="-1"></a>selected_stations <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Mahalakshmi"</span>, <span class="st">"Lalbagh"</span>, <span class="st">"Vidhana Soudha"</span>)</span>
+<span id="cb31-808"><a href="#cb31-808" aria-hidden="true" tabindex="-1"></a>selected_stations <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Mahalakshmi"</span>, <span class="st">"Lalbagh"</span>, <span class="st">"Dr. B. R. Ambedkar Station, Vidhana Soudha"</span>)</span>
 <span id="cb31-809"><a href="#cb31-809" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb31-810"><a href="#cb31-810" aria-hidden="true" tabindex="-1"></a>station_daily_selected <span class="ot">&lt;-</span> hourly <span class="sc">%&gt;%</span></span>
 <span id="cb31-811"><a href="#cb31-811" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Station <span class="sc">%in%</span> selected_stations) <span class="sc">%&gt;%</span></span>

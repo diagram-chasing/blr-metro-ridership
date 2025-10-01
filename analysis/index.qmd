@@ -805,7 +805,7 @@ convert_to_short_names(top_spikes) %>%
 
 ```{r station-spike-daily-export}
 # Export daily totals for specific stations for a targeted spike visualization
-selected_stations <- c("Mahalakshmi", "Lalbagh", "Vidhana Soudha")
+selected_stations <- c("Mahalakshmi", "Lalbagh", "Dr. B. R. Ambedkar Station, Vidhana Soudha")
 
 station_daily_selected <- hourly %>%
   filter(Station %in% selected_stations) %>%

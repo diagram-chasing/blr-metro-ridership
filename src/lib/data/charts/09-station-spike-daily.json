@@ -3,8 +3,116 @@
     "start": "2025-08-15",
     "end": "2025-08-18"
   },
-  "stations": ["Mahalakshmi", "Lalbagh", null],
+  "stations": ["Mahalakshmi", "Lalbagh", "Vidhana Soudha"],
   "data": [
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-01",
+      "Total": 12493
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-02",
+      "Total": 10424
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-03",
+      "Total": 4956
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-04",
+      "Total": 13302
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-05",
+      "Total": 12681
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-06",
+      "Total": 13454
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-07",
+      "Total": 13108
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-08",
+      "Total": 8428
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-09",
+      "Total": 5116
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-10",
+      "Total": 4598
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-11",
+      "Total": 14563
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-12",
+      "Total": 14254
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-13",
+      "Total": 15240
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-14",
+      "Total": 14347
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-15",
+      "Total": 15995
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-16",
+      "Total": 10583
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-17",
+      "Total": 5607
+    },
+    {
+      "Station": "Vidhana Soudha",
+      "Line": "Purple",
+      "Date": "2025-08-18",
+      "Total": 14474
+    },
     {
       "Station": "Lalbagh",
       "Line": "Green",
