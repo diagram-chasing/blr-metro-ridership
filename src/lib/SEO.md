@@ -11,7 +11,7 @@ keywords: "Namma Metro, BMRCL, Bangalore, Bengaluru, ridership analysis, public 
 canonical: ""
 site_name: "How Bangalore Uses the Metro"
 twitter_creator: "@thedivtagguy"
-base_url: "https://preview--blr-metro-ridership.netlify.app"
+base_url: "https://blr-metro-ridership.netlify.app"
 og_image: "/sharecard.jpg"
 favicon: "/favicon.svg"
 date_published: "2025-10-01"
