@@ -25,7 +25,7 @@
 					<div class="glass-overlay"></div>
 					<div class="display-content">
 						<div class="title-section">
-							<div class="kannada-text">ಬೆಂಗಳೂರು ಮೆಟ್ರೋವನ್ನು ಹೇಗೆ ಚಲಿಸುತ್ತದೆ</div>
+							<div class="kannada-text">ಬೆಂಗಳೂರು ಮೆಟ್ರೋವನ್ನು ಹೇಗೆ ಬಳಿಸುತ್ತದೆ</div>
 							<div class="main-title-row">
 								<div class="main-title">
 									How <FlickerText text="Bangalore" flickerIntensity="medium" /> Uses the <FlickerText
